@@ -1,0 +1,1628 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+cinit CODE 0 46 46 1C 2
+text1 CODE 0 422 422 4A 2
+text2 CODE 0 7D0 7D0 14 2
+text3 CODE 0 4B3 4B3 3D 2
+text4 CODE 0 62 62 15A 2
+text5 CODE 0 F4F F4F E 2
+text6 CODE 0 1BC 1BC 73 2
+text7 CODE 0 5D7 5D7 35 2
+text8 CODE 0 4F0 4F0 3D 2
+text9 CODE 0 569 569 37 2
+text10 CODE 0 699 699 2A 2
+text11 CODE 0 3D7 3D7 4B 2
+text12 CODE 0 713 713 20 2
+text13 CODE 0 F27 F27 C 2
+text14 CODE 0 FA8 FA8 F 2
+text15 CODE 0 381 381 56 2
+text16 CODE 0 EBA EBA 3 2
+text17 CODE 0 EB7 EB7 3 2
+text18 CODE 0 EB4 EB4 3 2
+text19 CODE 0 EB1 EB1 3 2
+text20 CODE 0 EAE EAE 3 2
+text21 CODE 0 EAB EAB 3 2
+text22 CODE 0 FC8 FC8 11 2
+text23 CODE 0 EC1 EC1 5 2
+text24 CODE 0 F99 F99 F 2
+text25 CODE 0 770 770 19 2
+text26 CODE 0 EBD EBD 4 2
+text27 CODE 0 7E4 7E4 14 2
+text28 CODE 0 F08 F08 9 2
+text29 CODE 0 FEC FEC 14 2
+text30 CODE 0 EFF EFF 9 2
+text31 CODE 0 FD9 FD9 13 2
+text32 CODE 0 EF6 EF6 9 2
+text33 CODE 0 7A2 7A2 18 2
+text34 CODE 0 EED EED 9 2
+text35 CODE 0 789 789 19 2
+text36 CODE 0 7F8 7F8 7 2
+text37 CODE 0 6ED 6ED 26 2
+text38 CODE 0 EE4 EE4 9 2
+text39 CODE 0 EDB EDB 9 2
+text40 CODE 0 ED2 ED2 9 2
+text42 CODE 0 F8A F8A F 2
+text43 CODE 0 3 3 1 2
+text44 CODE 0 2A2 2A2 72 2
+text45 CODE 0 F41 F41 E 2
+text46 CODE 0 6C3 6C3 2A 2
+text47 CODE 0 EA8 EA8 3 2
+text48 CODE 0 F33 F33 E 2
+text49 CODE 0 F7B F7B F 2
+text50 CODE 0 F11 F11 A 2
+text51 CODE 0 F6C F6C F 2
+text52 CODE 0 2 2 1 2
+text53 CODE 0 314 314 6D 2
+text54 CODE 0 22F 22F 73 2
+text55 CODE 0 60C 60C 34 2
+text56 CODE 0 52D 52D 3C 2
+text57 CODE 0 5A0 5A0 37 2
+text58 CODE 0 F1B F1B C 2
+text59 CODE 0 EA5 EA5 3 2
+text60 CODE 0 66E 66E 2B 2
+text61 CODE 0 F5D F5D F 2
+text62 CODE 0 EA4 EA4 1 2
+text63 CODE 0 46C 46C 47 2
+text64 CODE 0 7BA 7BA 16 2
+text65 CODE 0 EA3 EA3 1 2
+text66 CODE 0 733 733 20 2
+text67 CODE 0 FB7 FB7 11 2
+nvBANK0 BANK0 1 6A 6A 2 1
+nvBANK1 BANK1 1 A0 A0 E 1
+idataCOMMON CODE 0 7FF 7FF 1 2
+maintext CODE 0 640 640 2E 2
+cstackCOMMON COMMON 1 70 70 D 1
+cstackBANK0 BANK0 1 55 55 15 1
+cstackBANK1 BANK1 1 AE AE A 1
+inittext CODE 0 ECC ECC 6 2
+intentry CODE 0 4 4 40 2
+bssBANK0 BANK0 1 3D 3D 18 1
+idataBANK0 CODE 0 753 753 1D 2
+dataBANK0 BANK0 1 20 20 1D 1
+dataCOMMON COMMON 1 7D 7D 1 1
+clrtext CODE 0 EC6 EC6 6 2
+bssEEDATA EEDATA 3 0 F000 A 2
+config CONFIG 4 8007 8007 2 2
+$/tmp/xcXNBCMPj.o
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 44 44 2 2
+config CONFIG 4 8007 8007 2 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6C-6F 1
+RAM B8-EF 1
+RAM 120-16F 1
+RAM 1A0-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-36F 1
+RAM 3A0-3EF 1
+RAM 420-46F 1
+RAM 4A0-4EF 1
+RAM 520-56F 1
+RAM 5A0-5EF 1
+RAM 620-64F 1
+BANK0 6C-6F 1
+BANK1 B8-EF 1
+BANK2 120-16F 1
+BANK3 1A0-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-36F 1
+BANK7 3A0-3EF 1
+BANK8 420-46F 1
+BANK9 4A0-4EF 1
+CONST 800-EA2 2
+CONST 1000-1FFF 2
+ENTRY 800-EA2 2
+ENTRY 1000-1FFF 2
+IDLOC 8000-8003 2
+SFR10 500-51F 1
+SFR11 580-59F 1
+SFR12 600-61F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+STACK 2068-23EF 1
+CODE 800-EA2 2
+CODE 1000-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-39F 1
+SFR8 400-41F 1
+SFR9 480-49F 1
+BANK10 520-56F 1
+BANK11 5A0-5EF 1
+BANK12 620-64F 1
+BIGRAM 2000-23EF 1
+EEDATA F00A-F0FF 2
+STRCODE 800-EA2 2
+STRCODE 1000-1FFF 2
+STRING 800-EA2 2
+STRING 1000-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+46 cinit CODE >3734:/tmp/xcXlKleGp.s
+46 cinit CODE >3737:/tmp/xcXlKleGp.s
+46 cinit CODE >3870:/tmp/xcXlKleGp.s
+49 cinit CODE >3871:/tmp/xcXlKleGp.s
+4A cinit CODE >3875:/tmp/xcXlKleGp.s
+4B cinit CODE >3876:/tmp/xcXlKleGp.s
+4C cinit CODE >3877:/tmp/xcXlKleGp.s
+4D cinit CODE >3878:/tmp/xcXlKleGp.s
+4E cinit CODE >3879:/tmp/xcXlKleGp.s
+4F cinit CODE >3880:/tmp/xcXlKleGp.s
+50 cinit CODE >3881:/tmp/xcXlKleGp.s
+51 cinit CODE >3882:/tmp/xcXlKleGp.s
+52 cinit CODE >3883:/tmp/xcXlKleGp.s
+53 cinit CODE >3884:/tmp/xcXlKleGp.s
+56 cinit CODE >3901:/tmp/xcXlKleGp.s
+57 cinit CODE >3902:/tmp/xcXlKleGp.s
+58 cinit CODE >3903:/tmp/xcXlKleGp.s
+59 cinit CODE >3904:/tmp/xcXlKleGp.s
+5A cinit CODE >3905:/tmp/xcXlKleGp.s
+5B cinit CODE >3906:/tmp/xcXlKleGp.s
+5E cinit CODE >3912:/tmp/xcXlKleGp.s
+5E cinit CODE >3914:/tmp/xcXlKleGp.s
+5F cinit CODE >3915:/tmp/xcXlKleGp.s
+60 cinit CODE >3916:/tmp/xcXlKleGp.s
+4 intentry CODE >52:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+6 intentry CODE >55:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+A intentry CODE >57:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+14 intentry CODE >59:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+17 intentry CODE >60:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+18 intentry CODE >61:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+22 intentry CODE >63:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+25 intentry CODE >64:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+26 intentry CODE >65:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+30 intentry CODE >67:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+33 intentry CODE >68:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+34 intentry CODE >69:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+3E intentry CODE >71:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+41 intentry CODE >72:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+42 intentry CODE >76:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+42 intentry CODE >82:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/interrupt_manager.c
+FB7 text67 CODE >120:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+FB7 text67 CODE >122:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+FBC text67 CODE >125:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+FBD text67 CODE >128:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+FBF text67 CODE >129:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+FC1 text67 CODE >132:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+FC2 text67 CODE >133:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+FC3 text67 CODE >137:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+FC5 text67 CODE >138:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+FC7 text67 CODE >140:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+733 text66 CODE >438:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+733 text66 CODE >442:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+738 text66 CODE >444:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+73E text66 CODE >446:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+743 text66 CODE >448:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+751 text66 CODE >459:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+752 text66 CODE >461:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+EA3 text65 CODE >175:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+EA3 text65 CODE >178:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7BA text64 CODE >157:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7BA text64 CODE >161:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7BC text64 CODE >162:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7C3 text64 CODE >164:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7CA text64 CODE >166:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7CF text64 CODE >168:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+46C text63 CODE >371:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+46C text63 CODE >375:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+46D text63 CODE >379:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+46F text63 CODE >381:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+474 text63 CODE >383:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+477 text63 CODE >384:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+478 text63 CODE >385:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+478 text63 CODE >387:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+47D text63 CODE >388:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+47E text63 CODE >391:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+480 text63 CODE >393:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+485 text63 CODE >395:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+488 text63 CODE >396:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+489 text63 CODE >397:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+489 text63 CODE >399:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+48E text63 CODE >400:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+48F text63 CODE >403:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+491 text63 CODE >405:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+496 text63 CODE >407:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+499 text63 CODE >408:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+49A text63 CODE >411:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+49D text63 CODE >412:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+49E text63 CODE >417:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+4A4 text63 CODE >417:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+4A9 text63 CODE >417:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+4AC text63 CODE >417:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+4AF text63 CODE >417:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+4B2 text63 CODE >418:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+EA4 text62 CODE >136:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EA4 text62 CODE >139:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+F5D text61 CODE >119:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+F5D text61 CODE >123:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+F5F text61 CODE >125:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+F66 text61 CODE >127:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+F6B text61 CODE >129:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+66E text60 CODE >335:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+66E text60 CODE >337:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+674 text60 CODE >339:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+67C text60 CODE >341:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+683 text60 CODE >342:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+684 text60 CODE >344:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+689 text60 CODE >345:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+689 text60 CODE >347:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+698 text60 CODE >350:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+EA5 text59 CODE >93:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+EA5 text59 CODE >96:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+EA7 text59 CODE >97:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+F1B text58 CODE >276:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F1B text58 CODE >278:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F20 text58 CODE >279:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F21 text58 CODE >280:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F26 text58 CODE >281:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5A0 text57 CODE >226:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5A0 text57 CODE >228:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5A5 text57 CODE >229:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5A6 text57 CODE >231:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5AB text57 CODE >234:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5AF text57 CODE >235:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5B0 text57 CODE >238:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5B5 text57 CODE >240:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5B6 text57 CODE >244:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5BA text57 CODE >245:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5BB text57 CODE >248:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5BF text57 CODE >249:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5C0 text57 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5C8 text57 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5CD text57 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5D0 text57 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5D3 text57 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+5D6 text57 CODE >258:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+52D text56 CODE >5:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+52D text56 CODE >13:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+52F text56 CODE >14:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+535 text56 CODE >15:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+537 text56 CODE >16:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+538 text56 CODE >17:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+53D text56 CODE >18:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+541 text56 CODE >16:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+545 text56 CODE >21:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+54A text56 CODE >22:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+54C text56 CODE >22:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+550 text56 CODE >22:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+554 text56 CODE >23:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+558 text56 CODE >24:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+559 text56 CODE >26:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+55E text56 CODE >27:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+564 text56 CODE >29:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+568 text56 CODE >30:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+60C text55 CODE >5:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+60C text55 CODE >12:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+612 text55 CODE >13:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+614 text55 CODE >14:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+615 text55 CODE >15:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+61A text55 CODE >16:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+61E text55 CODE >14:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+622 text55 CODE >19:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+624 text55 CODE >19:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+628 text55 CODE >19:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+62C text55 CODE >20:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+630 text55 CODE >21:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+635 text55 CODE >22:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+63B text55 CODE >24:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+63F text55 CODE >25:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+22F text54 CODE >501:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+22F text54 CODE >503:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+234 text54 CODE >505:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+237 text54 CODE >505:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+239 text54 CODE >505:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+23D text54 CODE >507:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+250 text54 CODE >508:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+263 text54 CODE >510:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+276 text54 CODE >512:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+289 text54 CODE >514:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+291 text54 CODE >515:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+299 text54 CODE >516:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2A1 text54 CODE >518:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+314 text53 CODE >712:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+314 text53 CODE >716:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+319 text53 CODE >718:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+31E text53 CODE >718:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+322 text53 CODE >718:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+326 text53 CODE >720:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+329 text53 CODE >721:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+32C text53 CODE >722:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+32F text53 CODE >724:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+33A text53 CODE >726:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+33D text53 CODE >727:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+340 text53 CODE >728:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+343 text53 CODE >729:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+346 text53 CODE >731:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+351 text53 CODE >733:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+354 text53 CODE >734:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+357 text53 CODE >735:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+35A text53 CODE >736:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+35D text53 CODE >737:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+360 text53 CODE >741:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+373 text53 CODE >745:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+376 text53 CODE >746:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+37E text53 CODE >749:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+380 text53 CODE >751:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2 text52 CODE >136:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+2 text52 CODE >139:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+F6C text51 CODE >119:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+F6C text51 CODE >123:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+F6E text51 CODE >125:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+F75 text51 CODE >127:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+F7A text51 CODE >129:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+F11 text50 CODE >132:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F12 text50 CODE >134:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F12 text50 CODE >136:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F17 text50 CODE >138:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F1A text50 CODE >139:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F7B text49 CODE >94:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F7B text49 CODE >96:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F89 text49 CODE >97:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F33 text48 CODE >522:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F34 text48 CODE >524:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F38 text48 CODE >524:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F3C text48 CODE >526:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F40 text48 CODE >528:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+EA8 text47 CODE >93:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+EA8 text47 CODE >96:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+EAA text47 CODE >97:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+6C3 text46 CODE >301:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6C3 text46 CODE >303:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6C9 text46 CODE >305:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6D0 text46 CODE >307:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6D9 text46 CODE >309:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6DD text46 CODE >312:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6EC text46 CODE >315:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F41 text45 CODE >839:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F41 text45 CODE >841:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F46 text45 CODE >842:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F4A text45 CODE >843:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F4E text45 CODE >844:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2A2 text44 CODE >753:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2A2 text44 CODE >757:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2A7 text44 CODE >759:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2AC text44 CODE >759:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2B0 text44 CODE >759:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2B4 text44 CODE >761:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2B7 text44 CODE >762:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2BA text44 CODE >763:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2BD text44 CODE >765:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2C8 text44 CODE >767:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2CB text44 CODE >768:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2CE text44 CODE >769:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2D1 text44 CODE >770:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2D4 text44 CODE >772:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2DF text44 CODE >774:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2E2 text44 CODE >775:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2E5 text44 CODE >776:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2E8 text44 CODE >777:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2EB text44 CODE >778:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+2EE text44 CODE >782:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+301 text44 CODE >786:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+304 text44 CODE >787:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+30A text44 CODE >788:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+30D text44 CODE >789:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+311 text44 CODE >792:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+313 text44 CODE >794:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+3 text43 CODE >136:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+3 text43 CODE >139:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+F8A text42 CODE >119:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+F8A text42 CODE >123:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+F8C text42 CODE >125:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+F93 text42 CODE >127:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+F98 text42 CODE >129:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+ED2 text40 CODE >165:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+ED2 text40 CODE >166:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EDA text40 CODE >167:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EDB text39 CODE >157:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EDB text39 CODE >158:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EE3 text39 CODE >159:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EE4 text38 CODE >161:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EE4 text38 CODE >162:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EEC text38 CODE >163:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+6ED text37 CODE >66:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+6ED text37 CODE >71:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+6F0 text37 CODE >74:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+6F2 text37 CODE >77:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+6F4 text37 CODE >80:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+6F6 text37 CODE >83:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+6F8 text37 CODE >86:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+700 text37 CODE >87:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+708 text37 CODE >88:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+710 text37 CODE >90:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+712 text37 CODE >92:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+7F8 text36 CODE >63:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+7F8 text36 CODE >66:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+7FB text36 CODE >68:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+7FC text36 CODE >70:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+7FE text36 CODE >71:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+789 text35 CODE >55:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+789 text35 CODE >60:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+78B text35 CODE >61:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+78C text35 CODE >62:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+78D text35 CODE >67:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+790 text35 CODE >68:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+792 text35 CODE >69:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+793 text35 CODE >74:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+795 text35 CODE >75:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+796 text35 CODE >76:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+798 text35 CODE >81:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+79A text35 CODE >82:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+79B text35 CODE >83:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+79C text35 CODE >84:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+79E text35 CODE >90:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+7A0 text35 CODE >91:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+7A1 text35 CODE >98:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/pin_manager.c
+EED text34 CODE >171:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+EED text34 CODE >172:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+EF5 text34 CODE >173:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7A2 text33 CODE >64:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7A2 text33 CODE >69:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7A4 text33 CODE >72:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7A6 text33 CODE >75:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7A7 text33 CODE >78:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7A8 text33 CODE >81:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7AC text33 CODE >84:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7AE text33 CODE >87:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7B6 text33 CODE >90:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+7B9 text33 CODE >91:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr1.c
+EF6 text32 CODE >132:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EF6 text32 CODE >133:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EFE text32 CODE >134:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+FD9 text31 CODE >64:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+FD9 text31 CODE >69:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+FDC text31 CODE >72:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+FDD text31 CODE >75:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+FDE text31 CODE >78:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+FE0 text31 CODE >81:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+FE8 text31 CODE >84:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+FEB text31 CODE >85:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EFF text30 CODE >132:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+EFF text30 CODE >133:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+F07 text30 CODE >134:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+FEC text29 CODE >64:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+FEC text29 CODE >69:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+FEF text29 CODE >72:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+FF0 text29 CODE >75:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+FF2 text29 CODE >78:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+FF4 text29 CODE >81:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+FFC text29 CODE >84:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+FFF text29 CODE >85:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+F08 text28 CODE >132:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+F08 text28 CODE >133:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+F10 text28 CODE >134:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+7E4 text27 CODE >64:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+7E4 text27 CODE >69:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+7E7 text27 CODE >72:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+7E8 text27 CODE >75:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+7EA text27 CODE >78:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+7EC text27 CODE >81:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+7F4 text27 CODE >84:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+7F7 text27 CODE >85:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+EBD text26 CODE >73:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+EBD text26 CODE >76:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+EC0 text26 CODE >77:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+770 text25 CODE >50:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+770 text25 CODE >53:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+773 text25 CODE >54:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+776 text25 CODE >55:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+779 text25 CODE >56:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+77C text25 CODE >57:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+77F text25 CODE >58:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+782 text25 CODE >59:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+785 text25 CODE >60:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+788 text25 CODE >61:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/mcc.c
+F99 text24 CODE >113:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F99 text24 CODE >115:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F99 text24 CODE >117:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F9E text24 CODE >119:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+F9F text24 CODE >121:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+FA4 text24 CODE >125:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+FA5 text24 CODE >126:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+FA6 text24 CODE >129:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+FA7 text24 CODE >130:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EC1 text23 CODE >99:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EC1 text23 CODE >101:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+EC5 text23 CODE >102:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/eusart.c
+FC8 text22 CODE >530:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+FC8 text22 CODE >534:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+FCC text22 CODE >534:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+FD0 text22 CODE >536:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+FD7 text22 CODE >537:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+FD8 text22 CODE >539:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+EAB text21 CODE >87:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EAB text21 CODE >90:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EAD text21 CODE >91:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EAE text20 CODE >93:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EAE text20 CODE >96:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EB0 text20 CODE >97:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr2.c
+EB1 text19 CODE >87:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+EB1 text19 CODE >90:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+EB3 text19 CODE >91:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+EB4 text18 CODE >93:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+EB4 text18 CODE >96:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+EB6 text18 CODE >97:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr4.c
+EB7 text17 CODE >87:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+EB7 text17 CODE >90:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+EB9 text17 CODE >91:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+EBA text16 CODE >93:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+EBA text16 CODE >96:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+EBC text16 CODE >97:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/mcc_generated_files/tmr6.c
+381 text15 CODE >39:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+383 text15 CODE >41:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+387 text15 CODE >43:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+38C text15 CODE >44:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+391 text15 CODE >44:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+39B text15 CODE >46:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3A1 text15 CODE >48:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3A2 text15 CODE >49:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3A2 text15 CODE >51:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3A7 text15 CODE >52:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3B3 text15 CODE >53:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3B8 text15 CODE >54:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3BA text15 CODE >55:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3BE text15 CODE >56:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3BF text15 CODE >57:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3BF text15 CODE >58:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3C0 text15 CODE >59:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3C2 text15 CODE >60:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3C4 text15 CODE >61:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3C6 text15 CODE >62:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3C7 text15 CODE >63:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3C8 text15 CODE >64:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3CD text15 CODE >65:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3CE text15 CODE >48:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+3D6 text15 CODE >101:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+FA8 text14 CODE >157:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+FAA text14 CODE >159:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+FB6 text14 CODE >161:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+F27 text13 CODE >276:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F27 text13 CODE >278:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F2C text13 CODE >279:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F2D text13 CODE >280:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F32 text13 CODE >281:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+713 text12 CODE >15:/opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+713 text12 CODE >43:/opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+716 text12 CODE >45:/opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+71A text12 CODE >46:/opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+71E text12 CODE >47:/opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+723 text12 CODE >48:/opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+728 text12 CODE >49:/opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+72E text12 CODE >52:/opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+732 text12 CODE >53:/opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+3D7 text11 CODE >479:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+3D7 text11 CODE >481:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+3F8 text11 CODE >481:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+421 text11 CODE >483:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+699 text10 CODE >301:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+699 text10 CODE >303:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+69F text10 CODE >305:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6A6 text10 CODE >307:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6AF text10 CODE >309:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6B3 text10 CODE >312:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6C2 text10 CODE >315:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+569 text9 CODE >226:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+569 text9 CODE >228:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+56E text9 CODE >229:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+56F text9 CODE >231:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+574 text9 CODE >234:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+578 text9 CODE >235:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+579 text9 CODE >238:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+57E text9 CODE >240:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+57F text9 CODE >244:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+583 text9 CODE >245:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+584 text9 CODE >248:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+588 text9 CODE >249:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+589 text9 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+591 text9 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+596 text9 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+599 text9 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+59C text9 CODE >254:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+59F text9 CODE >258:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+4F0 text8 CODE >5:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+4F0 text8 CODE >13:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+4F3 text8 CODE >14:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+4F9 text8 CODE >15:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+4FB text8 CODE >16:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+4FC text8 CODE >17:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+501 text8 CODE >18:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+505 text8 CODE >16:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+509 text8 CODE >21:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+50E text8 CODE >22:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+510 text8 CODE >22:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+514 text8 CODE >22:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+518 text8 CODE >23:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+51C text8 CODE >24:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+51D text8 CODE >26:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+522 text8 CODE >27:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+528 text8 CODE >29:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+52C text8 CODE >30:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+5D7 text7 CODE >5:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5D7 text7 CODE >12:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5DE text7 CODE >13:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5E0 text7 CODE >14:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5E1 text7 CODE >15:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5E6 text7 CODE >16:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5EA text7 CODE >14:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5EE text7 CODE >19:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5F0 text7 CODE >19:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5F4 text7 CODE >19:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5F8 text7 CODE >20:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+5FC text7 CODE >21:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+601 text7 CODE >22:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+607 text7 CODE >24:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+60B text7 CODE >25:/opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+1BC text6 CODE >501:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1BC text6 CODE >503:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1C1 text6 CODE >505:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1C4 text6 CODE >505:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1C6 text6 CODE >505:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1CA text6 CODE >507:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1DD text6 CODE >508:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1F0 text6 CODE >510:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+203 text6 CODE >512:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+216 text6 CODE >514:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+21E text6 CODE >515:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+226 text6 CODE >516:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+22E text6 CODE >518:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F4F text5 CODE >839:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F4F text5 CODE >841:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F54 text5 CODE >842:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F58 text5 CODE >843:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+F5C text5 CODE >844:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+62 text4 CODE >541:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+62 text4 CODE >545:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+66 text4 CODE >545:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+6A text4 CODE >547:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+71 text4 CODE >549:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+72 text4 CODE >553:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+75 text4 CODE >554:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+76 text4 CODE >558:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+79 text4 CODE >559:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+7C text4 CODE >560:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+7F text4 CODE >561:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+81 text4 CODE >562:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+82 text4 CODE >563:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+84 text4 CODE >568:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+87 text4 CODE >569:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+88 text4 CODE >573:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+8B text4 CODE >574:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+8C text4 CODE >578:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+8F text4 CODE >579:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+90 text4 CODE >583:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+93 text4 CODE >584:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+94 text4 CODE >588:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+9A text4 CODE >589:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+9B text4 CODE >593:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+A3 text4 CODE >594:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+A4 text4 CODE >599:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+AB text4 CODE >600:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+AC text4 CODE >605:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+B4 text4 CODE >606:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+BC text4 CODE >607:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+BD text4 CODE >612:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+C4 text4 CODE >613:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+C5 text4 CODE >618:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+CD text4 CODE >619:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+CE text4 CODE >624:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+DE text4 CODE >625:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+E1 text4 CODE >626:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+E2 text4 CODE >631:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+E5 text4 CODE >632:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+E6 text4 CODE >637:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+EC text4 CODE >638:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+FD text4 CODE >639:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+100 text4 CODE >640:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+101 text4 CODE >645:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+105 text4 CODE >652:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+10D text4 CODE >653:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+112 text4 CODE >654:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+113 text4 CODE >659:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+117 text4 CODE >660:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+11E text4 CODE >661:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+11F text4 CODE >666:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+127 text4 CODE >667:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+12C text4 CODE >668:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+12D text4 CODE >673:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+131 text4 CODE >674:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+138 text4 CODE >675:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+139 text4 CODE >680:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+141 text4 CODE >681:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+146 text4 CODE >682:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+147 text4 CODE >687:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+14B text4 CODE >688:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+152 text4 CODE >689:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+153 text4 CODE >694:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+15B text4 CODE >695:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+160 text4 CODE >696:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+161 text4 CODE >701:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+168 text4 CODE >702:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+169 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+16E text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+173 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+176 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+179 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+17C text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+17F text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+182 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+185 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+188 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+18B text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+18E text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+191 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+194 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+197 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+19A text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+19D text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1A0 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1A3 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1A6 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1A9 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1AC text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1AF text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1B2 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1B5 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1B8 text4 CODE >708:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+1BB text4 CODE >710:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+4B3 text3 CODE >6:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4B5 text3 CODE >8:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4B9 text3 CODE >10:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4BE text3 CODE >11:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4C9 text3 CODE >12:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4CA text3 CODE >13:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4CF text3 CODE >15:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4D5 text3 CODE >17:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4D6 text3 CODE >18:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4E2 text3 CODE >19:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4E7 text3 CODE >12:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+4EF text3 CODE >36:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+7D0 text2 CODE >112:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+7D2 text2 CODE >115:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+7DE text2 CODE >116:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+7E3 text2 CODE >117:/opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+422 text1 CODE >177:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+422 text1 CODE >179:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+424 text1 CODE >181:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+432 text1 CODE >183:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+438 text1 CODE >183:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+43C text1 CODE >185:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+445 text1 CODE >187:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+447 text1 CODE >188:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+448 text1 CODE >189:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+449 text1 CODE >191:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+44C text1 CODE >193:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+44E text1 CODE >194:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+456 text1 CODE >195:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+457 text1 CODE >197:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+458 text1 CODE >198:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+460 text1 CODE >199:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+461 text1 CODE >201:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+462 text1 CODE >202:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+46A text1 CODE >203:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+46B text1 CODE >205:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+640 maintext CODE >137:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+640 maintext CODE >139:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+643 maintext CODE >140:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+646 maintext CODE >142:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+647 maintext CODE >143:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+648 maintext CODE >145:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+650 maintext CODE >146:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+658 maintext CODE >147:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+660 maintext CODE >148:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+668 maintext CODE >152:/home/perseverance/MPLABXProjects/coffee_grinder_auxiliary_modified _v1.X/main.c
+EC6 clrtext CODE >3890:/tmp/xcXlKleGp.s
+EC6 clrtext CODE >3891:/tmp/xcXlKleGp.s
+EC7 clrtext CODE >3892:/tmp/xcXlKleGp.s
+EC7 clrtext CODE >3893:/tmp/xcXlKleGp.s
+EC8 clrtext CODE >3894:/tmp/xcXlKleGp.s
+EC9 clrtext CODE >3895:/tmp/xcXlKleGp.s
+ECA clrtext CODE >3896:/tmp/xcXlKleGp.s
+ECB clrtext CODE >3897:/tmp/xcXlKleGp.s
+ECC inittext CODE >3859:/tmp/xcXlKleGp.s
+ECC inittext CODE >3860:/tmp/xcXlKleGp.s
+ECD inittext CODE >3861:/tmp/xcXlKleGp.s
+ECD inittext CODE >3862:/tmp/xcXlKleGp.s
+ECE inittext CODE >3863:/tmp/xcXlKleGp.s
+ECF inittext CODE >3864:/tmp/xcXlKleGp.s
+ED0 inittext CODE >3865:/tmp/xcXlKleGp.s
+ED1 inittext CODE >3866:/tmp/xcXlKleGp.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_Read 1F32 0 CODE 0 text24 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___lwmod@counter 5E 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__size_of_handle_received_commands 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hspace_0 1000 0 ABS 0 - -
+__Hspace_1 B8 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 A 0 ABS 0 - -
+__Hspace_4 10010 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+_TMR4_StopTimer 1D68 0 CODE 0 text18 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+set_display_value@value 61 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_yekan 39 0 BANK0 1 dataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_blink_digit EA6 0 CODE 0 text66 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_g_time_ms_backup 45 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_T1CONbits 18 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_increase_digit D32 0 CODE 0 text10 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1_set_display_value 45E 0 CODE 0 text54 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1___lwdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_WDT_Initialize 1D82 0 CODE 0 text26 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_RX_Command 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+__end_of_EUSART_is_tx_ready 1F14 0 CODE 0 text49 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+handle_received_commands@rxData 50 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR6_StopTimer 1D74 0 CODE 0 text16 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_LATA 10C 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_LATB 10D 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_LATC 10E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR2 1A 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR4 415 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR6 41C 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_WPUA 20C 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_WPUB 20D 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_WPUC 20E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___sp 0 0 STACK 2 stack /tmp/xcXNBCMPj.o
+_main C80 0 CODE 0 maintext dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_display_refresh 966 0 CODE 0 text63 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+start 88 0 CODE 0 init /tmp/xcXNBCMPj.o
+_EUSART_Write 1E22 0 CODE 0 text50 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of___eetoi 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR6_Initialize 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR6_StartTimer 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of___itoee 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of___lwdiv 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of___lwmod 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_EUSART_SetFramingErrorHandler 1DC8 0 CODE 0 text39 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_EUSART_SetOverrunErrorHandler 1DDA 0 CODE 0 text38 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+?___wmul 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TX_Command 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_OPTION_REGbits 95 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__HbssEEDATA 0 0 ABS 0 bssEEDATA -
+__end_of_TMR2_StopTimer 1D62 0 CODE 0 text20 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_decrease_digit CDC 0 CODE 0 text60 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of___eecpymem 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__end_of_EUSART_Initialize E26 0 CODE 0 text37 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hpowerup 0 0 CODE 0 powerup -
+__size_of_TMR1_Initialize 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_middle_line_7seg 7D 0 COMMON 1 dataCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR1_WriteTimer 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR2_Initialize 1FB2 0 CODE 0 text31 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_get_display_value 844 0 CODE 0 text11 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR2_StartTimer 1D56 0 CODE 0 text21 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_time_ms 2A 0 BANK0 1 dataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_end_select_digit 1E66 0 CODE 0 text13 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___memcpyee 702 0 CODE 0 text15 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_SYSTEM_Initialize 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__HdataCOMMON 0 0 ABS 0 dataCOMMON -
+intlevel0 0 0 ENTRY 0 functab /tmp/xcXNBCMPj.o
+intlevel1 0 0 ENTRY 0 functab /tmp/xcXNBCMPj.o
+intlevel2 0 0 ENTRY 0 functab /tmp/xcXNBCMPj.o
+intlevel3 0 0 ENTRY 0 functab /tmp/xcXNBCMPj.o
+intlevel4 0 0 ENTRY 0 functab /tmp/xcXNBCMPj.o
+intlevel5 0 0 ENTRY 0 functab /tmp/xcXNBCMPj.o
+__end_of_TMR4_StopTimer 1D6E 0 CODE 0 text18 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1___lwdiv@quotient 75 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_is_tx_ready 1EF6 0 CODE 0 text49 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_end_select_digit 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_ofi1_end_select_digit 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+i1___lwmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__LbssEEDATA 0 0 ABS 0 bssEEDATA -
+_EUSART_DefaultFramingErrorHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_DefaultOverrunErrorHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_increase_digit D86 0 CODE 0 text10 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR1_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_EUSART_Write 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR4_SetInterruptHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+decrease_num@tmr4_counter 4F 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pidataCOMMON FFE 0 CODE 0 idataCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR6_StopTimer 1D7A 0 CODE 0 text16 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_display_refresh 8D8 0 CODE 0 text63 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR4_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_set_display_value 378 0 CODE 0 text6 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR1_DefaultInterruptHandler 1D48 0 CODE 0 text65 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_handle_received_commands 378 0 CODE 0 text4 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___wmul@multiplicand 5B 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+TX_Command@txData 71 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_ANSELA 18C 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_ANSELB 18D 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_ANSELC 18E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR4_DefaultInterruptHandler 6 0 CODE 0 text52 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_BORCON 116 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__LdataCOMMON 0 0 ABS 0 dataCOMMON -
+_EECON1bits 195 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_EUSART_is_rx_ready 1D8C 0 CODE 0 text23 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_INTERRUPT_InterruptManager 88 0 CODE 0 intentry dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_decrease_digit D32 0 CODE 0 text60 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR1_SetInterruptHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of___wmul E66 0 CODE 0 text12 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_EUSART_Write 1E36 0 CODE 0 text50 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EECON1 195 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EECON2 196 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EEDATA 193 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR6_DefaultInterruptHandler 6 0 CODE 0 text43 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_dahegan 35 0 BANK0 1 dataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+blink_digit@blink_counter 51 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__size_of_init_digit 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_ofi1___lwdiv AD2 0 CODE 0 text56 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_ofi1___lwmod C80 0 CODE 0 text55 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+select_digit@buffer 5B 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___memcpyee@from 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___memcpyee@size 5A 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__LnvBANK1 0 0 ABS 0 nvBANK1 -
+__end_ofi1_set_display_value 544 0 CODE 0 text54 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___lwmod@divisor 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_ofi1___lwdiv 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_ofi1___lwmod 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of___eetoi FC8 0 CODE 0 text2 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of___memcpyee 7AE 0 CODE 0 text15 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of___itoee 1F6E 0 CODE 0 text14 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of___lwdiv A5A 0 CODE 0 text8 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of___lwmod C18 0 CODE 0 text7 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___stackhi 23EF 0 ABS 0 - /tmp/xcXNBCMPj.o
+___stacklo 2068 0 ABS 0 - /tmp/xcXNBCMPj.o
+increase_num_automatic@tmr6_counter 4E 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_Initialize DDA 0 CODE 0 text37 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_select_digit AD2 0 CODE 0 text9 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___lwdiv@quotient 5E 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__LidataCOMMON 0 0 ABS 0 idataCOMMON -
+_TMR2_SetInterruptHandler 1DEC 0 CODE 0 text32 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_is_rx_ready 1D82 0 CODE 0 text23 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1___lwdiv A5A 0 CODE 0 text56 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1___lwmod C18 0 CODE 0 text55 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_get_display_value 7AE 0 CODE 0 text11 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_blink_digit 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR2_Initialize 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR2_StartTimer 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___lwmod@dividend 5B 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+display_refresh@pos 30 0 BANK0 1 dataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_PIN_MANAGER_Initialize F12 0 CODE 0 text35 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+start_initialization 8C 0 CODE 0 cinit dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_increase_num_automatic 544 0 CODE 0 text44 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_increase_delay 2C 0 BANK0 1 dataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_ofi1_select_digit 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_SetErrorHandler 1DA4 0 CODE 0 text40 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_OSCCON 99 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_ge_memory_mass 0 1E000 EEDATA 3 bssEEDATA dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+EUSART_SetOverrunErrorHandler@interruptHandler 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR4_SetInterruptHandler 1E10 0 CODE 0 text30 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_7seg_table 20 0 BANK0 1 dataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_EUSART_SetFramingErrorHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_EUSART_SetOverrunErrorHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_SYSTEM_Initialize F12 0 CODE 0 text25 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+clear_ram0 1D8C 0 CODE 0 clrtext dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_SPBRGH 19C 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_SPBRGL 19B 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pcstackBANK0 55 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pcstackBANK1 AE 0 BANK1 1 cstackBANK1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_T1GCON 19 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_display_refresh 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_decrease_delay 2E 0 BANK0 1 dataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR4_Initialize 2000 0 CODE 0 text29 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR4_StartTimer 1D68 0 CODE 0 text19 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_select_digit 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+TMR2_SetInterruptHandler@InterruptHandler 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR1_SetInterruptHandler 1DEC 0 CODE 0 text34 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_WDTCON 97 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1___lwmod@counter 75 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___int_sp 0 0 STACK 2 stack /tmp/xcXNBCMPj.o
+__end_of_EUSART_Read 1F50 0 CODE 0 text24 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_set_display_value_manual 1E9E 0 CODE 0 text5 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 ABS 0 bank7 -
+__Hbank8 0 0 ABS 0 bank8 -
+__Hbank9 0 0 ABS 0 bank9 -
+__Hcinit C4 0 CODE 0 cinit -
+increase_num_manual@tmr6_counter 4D 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_OSCILLATOR_Initialize 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 60 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hbank10 0 0 ABS 0 bank10 -
+__Hbank11 0 0 ABS 0 bank11 -
+__Hbank12 0 0 ABS 0 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 4 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 ABS 0 bank7 -
+__Lbank8 0 0 ABS 0 bank8 -
+__Lbank9 0 0 ABS 0 bank9 -
+__Lcinit 8C 0 CODE 0 cinit -
+_T1GCONbits 19 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_select_digit B40 0 CODE 0 text9 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+EUSART_SetErrorHandler@interruptHandler 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+_APFCON0 11D 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_APFCON1 11E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+init_ram 1D98 0 CODE 0 inittext dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1_TMR4_StopTimer 1D4A 0 CODE 0 text59 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_gp_selected_digit 52 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+_INTCONbits B 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 88 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 88 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 6A 0 BANK0 1 nvBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pnvBANK1 A0 0 BANK1 1 nvBANK1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___wmul E26 0 CODE 0 text12 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+int$flags 7E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1_increase_digit D86 0 CODE 0 text46 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__size_of_INTERRUPT_InterruptManager 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_WDT_Initialize 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_PR2 1B 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_PR4 416 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_PR6 41D 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__S0 1000 0 ABS 0 - -
+__S1 B8 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 F00A 0 ABS 0 - -
+__size_of_TMR1_ISR 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR2_ISR 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR4_ISR 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR6_ISR 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___eetoi@addr 63 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___eetoi@data 64 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1_TMR6_StopTimer 1D50 0 CODE 0 text47 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR4_Initialize 1FD8 0 CODE 0 text29 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR4_StartTimer 1D62 0 CODE 0 text19 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_EUSART_is_tx_ready 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_decrease_num 628 0 CODE 0 text53 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR6_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR2_StopTimer 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__HidataCOMMON 0 0 ABS 0 idataCOMMON -
+__size_of_TMR2_SetInterruptHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_ge_time_ms 10 1E000 EEDATA 3 bssEEDATA dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_SYSTEM_Initialize EE0 0 CODE 0 text25 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR2_DefaultInterruptHandler 1D48 0 CODE 0 text62 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR6_DefaultInterruptHandler 8 0 CODE 0 text43 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_mass 47 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___memcpyee@ptr 5D 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__HnvBANK1 0 0 ABS 0 nvBANK1 -
+__Lintentry 8 0 CODE 0 intentry -
+_TMR6_SetInterruptHandler 1E10 0 CODE 0 text28 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+reset_vec 0 0 CODE 0 reset_vec /tmp/xcXNBCMPj.o
+__size_of___memcpyee 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR4_StopTimer 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of___wmul 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1___lwdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_increase_digit 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_RCSTAbits 19D 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_PIE1bits 91 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_PIE3bits 93 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+EUSART_SetFramingErrorHandler@interruptHandler 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_decrease_num 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_RX_Command 1F90 0 CODE 0 text22 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR6_StopTimer 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR1_ISR F74 0 CODE 0 text64 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR2_ISR 1EBA 0 CODE 0 text61 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext10 D32 0 CODE 0 text10 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext11 7AE 0 CODE 0 text11 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext12 E26 0 CODE 0 text12 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext13 1E4E 0 CODE 0 text13 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext14 1F50 0 CODE 0 text14 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext15 702 0 CODE 0 text15 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext16 1D74 0 CODE 0 text16 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext17 1D6E 0 CODE 0 text17 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext18 1D68 0 CODE 0 text18 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext19 1D62 0 CODE 0 text19 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext20 1D5C 0 CODE 0 text20 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext21 1D56 0 CODE 0 text21 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext22 1F90 0 CODE 0 text22 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext23 1D82 0 CODE 0 text23 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext24 1F32 0 CODE 0 text24 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext25 EE0 0 CODE 0 text25 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext26 1D7A 0 CODE 0 text26 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext27 FC8 0 CODE 0 text27 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext28 1E10 0 CODE 0 text28 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext29 1FD8 0 CODE 0 text29 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext30 1DFE 0 CODE 0 text30 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext31 1FB2 0 CODE 0 text31 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext32 1DEC 0 CODE 0 text32 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext33 F44 0 CODE 0 text33 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext34 1DDA 0 CODE 0 text34 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext35 F12 0 CODE 0 text35 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext36 FF0 0 CODE 0 text36 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext37 DDA 0 CODE 0 text37 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext38 1DC8 0 CODE 0 text38 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext39 1DB6 0 CODE 0 text39 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext40 1DA4 0 CODE 0 text40 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext42 1F14 0 CODE 0 text42 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext43 6 0 CODE 0 text43 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext44 544 0 CODE 0 text44 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext45 1E82 0 CODE 0 text45 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext46 D86 0 CODE 0 text46 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext47 1D50 0 CODE 0 text47 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext48 1E66 0 CODE 0 text48 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext49 1EF6 0 CODE 0 text49 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext50 1E22 0 CODE 0 text50 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext51 1ED8 0 CODE 0 text51 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext52 4 0 CODE 0 text52 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext53 628 0 CODE 0 text53 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext54 45E 0 CODE 0 text54 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext55 C18 0 CODE 0 text55 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext56 A5A 0 CODE 0 text56 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext57 B40 0 CODE 0 text57 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext58 1E36 0 CODE 0 text58 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext59 1D4A 0 CODE 0 text59 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext60 CDC 0 CODE 0 text60 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext61 1EBA 0 CODE 0 text61 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext62 1D48 0 CODE 0 text62 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext63 8D8 0 CODE 0 text63 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext64 F74 0 CODE 0 text64 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext65 1D46 0 CODE 0 text65 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext66 E66 0 CODE 0 text66 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext67 1F6E 0 CODE 0 text67 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR4_ISR 1ED8 0 CODE 0 text51 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR6_ISR 1F14 0 CODE 0 text42 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_PIN_MANAGER_Initialize F44 0 CODE 0 text35 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_ofi1_set_display_value_manual 1E9E 0 CODE 0 text45 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___eetoi FA0 0 CODE 0 text2 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___itoee 1F50 0 CODE 0 text14 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_BAUDCON 19F 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___lwdiv 9E0 0 CODE 0 text8 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___lwmod BAE 0 CODE 0 text7 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_increase_num_automatic 628 0 CODE 0 text44 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lbank10 0 0 ABS 0 bank10 -
+__Lbank11 0 0 ABS 0 bank11 -
+__Lbank12 0 0 ABS 0 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext C80 0 CODE 0 maintext dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__end_of_EUSART_SetErrorHandler 1DB6 0 CODE 0 text40 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_ofi1_TMR4_StopTimer 1D50 0 CODE 0 text59 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_blink_digit E66 0 CODE 0 text66 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_of_TMR1_ISR FA0 0 CODE 0 text64 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR2_ISR 1ED8 0 CODE 0 text61 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR4_ISR 1EF6 0 CODE 0 text51 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+__end_of_TMR6_ISR 1F32 0 CODE 0 text42 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_set_display_value_manual 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TX_Command 1E66 0 CODE 0 text48 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___wmul@multiplier 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1___lwmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_LATAbits 10C 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_LATBbits 10D 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+TMR4_SetInterruptHandler@InterruptHandler 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_decrease_digit 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR6_InterruptHandler A0 0 BANK1 1 nvBANK1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___eecpymem 966 0 CODE 0 text3 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_ofi1_TMR4_StopTimer 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+?_get_display_value 5F 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_ofi1_increase_digit DDA 0 CODE 0 text46 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_T6CONbits 41E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_EUSART_is_rx_ready 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___lwdiv@divisor 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_decrease_num 702 0 CODE 0 text53 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_ofi1_TMR6_StopTimer 1D56 0 CODE 0 text47 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_EUSART_Read 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_FramingErrorHandler AC 0 BANK1 1 nvBANK1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_OverrunErrorHandler AA 0 BANK1 1 nvBANK1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_ofi1_increase_digit 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___eecpymem@cp 5D 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___eecpymem@to 5E 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1end_select_digit@buffer 71 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR4_Initialize 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR4_StartTimer 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_OSCTUNE 98 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_ofi1_TMR6_StopTimer 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_ErrorHandler A8 0 BANK1 1 nvBANK1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_ofi1_end_select_digit 1E4E 0 CODE 0 text58 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__end_of_TMR2_SetInterruptHandler 1DFE 0 CODE 0 text32 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+set_display_value@buffer 66 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_PIR1bits 11 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_PIR3bits 13 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lend_init 88 0 CODE 0 end_init -
+_EUSART_DefaultErrorHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pbssEEDATA 0 1E000 EEDATA 3 bssEEDATA dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___itoee@addr 63 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___itoee@data 5F 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_SetFramingErrorHandler 1DB6 0 CODE 0 text39 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_SetOverrunErrorHandler 1DC8 0 CODE 0 text38 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+end_of_initialization BC 0 CODE 0 cinit dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1select_digit@buffer 72 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hintentry 88 0 CODE 0 intentry -
+__end_of_RX_Command 1FB2 0 CODE 0 text22 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_sadegan 31 0 BANK0 1 dataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 5B 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+?___eetoi 5F 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+?___lwdiv 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+?___lwmod 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+TMR1_SetInterruptHandler@InterruptHandler 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_TMR6_Initialize FF0 0 CODE 0 text27 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR6_StartTimer 1D74 0 CODE 0 text17 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_set_display_value 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1_select_digit B40 0 CODE 0 text57 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_handle_received_commands C4 0 CODE 0 text4 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TX_Command 1E82 0 CODE 0 text48 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext1 844 0 CODE 0 text1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext2 FA0 0 CODE 0 text2 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext3 966 0 CODE 0 text3 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext4 C4 0 CODE 0 text4 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext5 1E9E 0 CODE 0 text5 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext6 378 0 CODE 0 text6 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext7 BAE 0 CODE 0 text7 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext8 9E0 0 CODE 0 text8 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__ptext9 AD2 0 CODE 0 text9 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of___eecpymem 9E0 0 CODE 0 text3 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR4_InterruptHandler A2 0 BANK1 1 nvBANK1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1_end_select_digit 1E36 0 CODE 0 text58 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1set_display_value@value 78 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_init_digit 844 0 CODE 0 text1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR6_SetInterruptHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+i1___lwdiv@counter 77 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___memcpyee@to 5E 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+TMR1_WriteTimer@timerVal 70 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR1_Initialize F74 0 CODE 0 text33 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR1_WriteTimer 1F90 0 CODE 0 text67 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_T4CONbits 417 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EUSART_is_tx_ready$262 70 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_set_display_value_manual 1EBA 0 CODE 0 text5 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+?i1___lwdiv 70 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+?i1___lwmod 70 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_TMR2_DefaultInterruptHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+EUSART_Write@txData 70 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of__initialization BC 0 CODE 0 cinit dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+___eecpymem@from 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___eecpymem@size 5A 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pidataBANK0 EA6 0 CODE 0 idataBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR2_DefaultInterruptHandler 1D4A 0 CODE 0 text62 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+_timer1ReloadVal 6A 0 BANK0 1 nvBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR1_DefaultInterruptHandler 1D46 0 CODE 0 text65 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_EUSART_Initialize 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR6_Initialize FC8 0 CODE 0 text27 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR6_StartTimer 1D6E 0 CODE 0 text17 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_setted_value 49 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+RX_Command@buffer 5A 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TXSTAbits 19E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_get_display_value 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_ofi1_set_display_value_manual 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR4_DefaultInterruptHandler 4 0 CODE 0 text52 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_ofi1_select_digit BAE 0 CODE 0 text57 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hend_init 8C 0 CODE 0 end_init -
+init_digit@i 67 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+TMR6_SetInterruptHandler@InterruptHandler 59 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_main CDC 0 CODE 0 maintext dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_EEADR 191 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+end_select_digit@buffer 5A 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_RCREG 199 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_RCSTA 19D 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_T1CON 18 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_T2CON 1C 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_T4CON 417 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_T6CON 41E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR1H 17 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR1L 16 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TRISA 8C 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TRISB 8D 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TRISC 8E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TXREG 19A 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TXSTA 19E 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_TMR1_Initialize F44 0 CODE 0 text33 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR1_WriteTimer 1F6E 0 CODE 0 text67 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR2_InterruptHandler A4 0 BANK1 1 nvBANK1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR4_SetInterruptHandler 1DFE 0 CODE 0 text30 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_init_digit 8D8 0 CODE 0 text1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_PIN_MANAGER_Initialize 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_eusartRxLastError 54 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_WDT_Initialize 1D7A 0 CODE 0 text26 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_of_increase_num_automatic 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__size_ofi1_set_display_value 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_end_select_digit 1E4E 0 CODE 0 text13 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__size_of_EUSART_SetErrorHandler 0 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1set_display_value@buffer 55 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_OSCILLATOR_Initialize FFE 0 CODE 0 text36 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__initialization 8C 0 CODE 0 cinit dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_g_memory_mass 3D 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pbssBANK0 3D 0 BANK0 1 bssBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__pdataCOMMON 7D 0 COMMON 1 dataCOMMON dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_T2CONbits 1C 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+___wmul@product 5D 0 BANK0 1 cstackBANK0 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR2_StopTimer 1D5C 0 CODE 0 text20 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR6_SetInterruptHandler 1E22 0 CODE 0 text28 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR1_SetInterruptHandler 1DDA 0 CODE 0 text34 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_STATUSbits 3 0 ABS 0 - dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+i1_set_display_value_manual 1E82 0 CODE 0 text45 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_TMR1_InterruptHandler A6 0 BANK1 1 nvBANK1 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+_OSCILLATOR_Initialize FF0 0 CODE 0 text36 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_set_display_value 45E 0 CODE 0 text6 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR2_Initialize 1FD8 0 CODE 0 text31 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+__end_of_TMR2_StartTimer 1D5C 0 CODE 0 text21 dist/default/production/coffee_grinder_auxiliary_modified__v1.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text5 0 F4F 1E9E E 2
+text13 0 F27 1E4E C 2
+text14 0 FA8 1F50 F 2
+text16 0 EBA 1D74 3 2
+text17 0 EB7 1D6E 3 2
+text18 0 EB4 1D68 3 2
+text19 0 EB1 1D62 3 2
+text20 0 EAE 1D5C 3 2
+text21 0 EAB 1D56 3 2
+text22 0 FC8 1F90 11 2
+text23 0 EC1 1D82 5 2
+text24 0 F99 1F32 F 2
+text26 0 EBD 1D7A 4 2
+text28 0 F08 1E10 9 2
+text29 0 FEC 1FD8 14 2
+text30 0 EFF 1DFE 9 2
+text31 0 FD9 1FB2 13 2
+text32 0 EF6 1DEC 9 2
+text34 0 EED 1DDA 9 2
+text38 0 EE4 1DC8 9 2
+text39 0 EDB 1DB6 9 2
+text40 0 ED2 1DA4 9 2
+text42 0 F8A 1F14 F 2
+text43 0 3 6 1 2
+text45 0 F41 1E82 E 2
+text47 0 EA8 1D50 3 2
+text48 0 F33 1E66 E 2
+text49 0 F7B 1EF6 F 2
+text50 0 F11 1E22 A 2
+text51 0 F6C 1ED8 F 2
+text58 0 F1B 1E36 C 2
+text59 0 EA5 1D4A 3 2
+text61 0 F5D 1EBA F 2
+text62 0 EA4 1D48 1 2
+text65 0 EA3 1D46 1 2
+text67 0 FB7 1F6E 11 2
+nvBANK1 1 A0 A0 18 1
+cstackCOMMON 1 70 70 E 1
+inittext 0 ECC 1D98 6 2
+intentry 0 4 8 7FC 2
+reset_vec 0 0 0 3 2
+dataBANK0 1 20 20 4C 1
+clrtext 0 EC6 1D8C 6 2
+bssEEDATA 3 0 1E000 A 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
