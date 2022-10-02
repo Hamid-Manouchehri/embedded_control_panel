@@ -1,0 +1,3241 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"80 main.c
+[; ;main.c: 80: sss_status_e g_sss_status;
+[c E2858 1 2 3 .. ]
+[n E2858 . start_e stop_e set_e  ]
+"88
+[; ;main.c: 88: mode_status_e g_mode_status;
+[c E2864 1 2 3 .. ]
+[n E2864 . automatic_e manual_e timer_e  ]
+"96
+[; ;main.c: 96: digit_status_e g_digit_status;
+[c E2870 1 2 3 .. ]
+[n E2870 . yekan_e dahegan_e sadegan_e  ]
+"123
+[; ;main.c: 123: typedef struct {
+[s S374 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S374 . PushButton up next memories ]
+"132
+[; ;main.c: 132: typedef struct {
+[s S375 `uc 1 `uc 1 `uc 1 ]
+[n S375 . yekan dahegan sadegan ]
+"140
+[; ;main.c: 140: typedef struct {
+[s S376 `uc 1 `uc 1 `uc 1 ]
+[n S376 . yekan dahegan sadegan ]
+"148
+[; ;main.c: 148: typedef struct {
+[s S377 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S377 . off_led touch_leds touches motor _7segment PushButton ]
+"159
+[; ;main.c: 159: typedef struct {
+[s S378 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S378 . automatic manual timer ]
+[p mainexit ]
+"74 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 74: void SYSTEM_Initialize(void);
+[v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
+[v F2913 `(v ~T0 @X0 1 tf ]
+"169 main.c
+[; ;main.c: 169: __attribute__((inline)) void EEPROM_init(void);
+[v _EEPROM_init `TF2913 ~T0 @X0 0 e ]
+[v F2911 `(v ~T0 @X0 1 tf ]
+"168
+[; ;main.c: 168: __attribute__((inline)) void init_panel(void);
+[v _init_panel `TF2911 ~T0 @X0 0 e ]
+"357 /opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 357:     struct {
+[s S31 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S31 . IOCIF INTF TMR0IF IOCIE INTE TMR0IE PEIE GIE ]
+"367
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 367:     struct {
+[s S32 :2 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S32 . . T0IF . T0IE ]
+"356
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 356: typedef union {
+[u S30 `S31 1 `S32 1 ]
+[n S30 . . . ]
+"374
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 374: extern volatile INTCONbits_t INTCONbits __attribute__((address(0x00B)));
+[v _INTCONbits `VS30 ~T0 @X0 0 e@11 ]
+[v F2637 `(v ~T0 @X0 0 tf ]
+"238 ./mcc_generated_files/tmr0.h
+[; ;./mcc_generated_files/tmr0.h: 238:  void TMR0_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _TMR0_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F2637 ]
+[v F2915 `(v ~T0 @X0 1 tf ]
+"170 main.c
+[; ;main.c: 170: __attribute__((inline)) void tmr0_long_press_duration(void);
+[v _tmr0_long_press_duration `TF2915 ~T0 @X0 0 e ]
+[v F2624 `(v ~T0 @X0 0 tf ]
+"385 ./mcc_generated_files/tmr1.h
+[; ;./mcc_generated_files/tmr1.h: 385:  void TMR1_SetInterruptHandler(void (* InterruptHandler)(void));
+[v _TMR1_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F2624 ]
+[v F2917 `(v ~T0 @X0 1 tf ]
+"171 main.c
+[; ;main.c: 171: __attribute__((inline)) void tmr1_motor_on_duration(void);
+[v _tmr1_motor_on_duration `TF2917 ~T0 @X0 0 e ]
+[v F2943 `(v ~T0 @X0 1 tf ]
+"183
+[; ;main.c: 183: __attribute__((inline)) void Main_Routine(void);
+[v _Main_Routine `TF2943 ~T0 @X0 0 e ]
+[v F2927 `(v ~T0 @X0 1 tf ]
+"176
+[; ;main.c: 176: __attribute__((inline)) void Toggle_OFFLED(void);
+[v _Toggle_OFFLED `TF2927 ~T0 @X0 0 e ]
+[v F2925 `(v ~T0 @X0 1 tf ]
+"175
+[; ;main.c: 175: __attribute__((inline)) void Toggle_Touch_LEDs(void);
+[v _Toggle_Touch_LEDs `TF2925 ~T0 @X0 0 e ]
+[v F2931 `(v ~T0 @X0 1 tf ]
+"178
+[; ;main.c: 178: __attribute__((inline)) void Toggle_7seg(void);
+[v _Toggle_7seg `TF2931 ~T0 @X0 0 e ]
+"2105 /opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2105:     struct {
+[s S114 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S114 . LATA0 LATA1 LATA2 . LATA4 LATA5 ]
+"2104
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2104: typedef union {
+[u S113 `S114 1 ]
+[n S113 . . ]
+"2114
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2114: extern volatile LATAbits_t LATAbits __attribute__((address(0x10C)));
+[v _LATAbits `VS113 ~T0 @X0 0 e@268 ]
+[v F2951 `(v ~T0 @X0 1 tf ]
+"187 main.c
+[; ;main.c: 187: __attribute__((inline)) void Reset_Digit_Value(void);
+[v _Reset_Digit_Value `TF2951 ~T0 @X0 0 e ]
+[v F2938 `(v ~T0 @X0 1 tf1`uc ]
+"181
+[; ;main.c: 181: __attribute__((inline)) void TX_Command(uint8_t);
+[v _TX_Command `TF2938 ~T0 @X0 0 e ]
+"289
+[; ;main.c: 289:     TX_Command(TX_SELECT_DIGIT);
+[c E2827 11 12 21 22 23 24 30 31 32 33 35 41 42 43 50 62 63 64 65 66 67 68 111 112 121 122 131 132 141 142 .. ]
+[n E2827 . TX_7SEG_ON TX_7SEG_OFF TX_MEM_1 TX_MEM_2 TX_MEM_3 TX_MEM_4 TX_7SEG_MANUAL TX_7SEG_SET_ZERO TX_7SEG_SHOW_TIME TX_7SEG_STORE_TIME TX_7SEG_STORE_INITIAL_VALUE TX_SELECT_DIGIT TX_END_SELECT_DIGIT TX_INCREASE_DIGIT COUNT_DOWN_FINISHED TX_START_DECREASE TX_STOP_DECREASE TX_START_INCREASE TX_STOP_INCREASE_SET_MANUAL TX_7SEG_SHOW_MASS TX_7SEG_STORE_MASS RX_7SEG_REACHED_999 TX_7SEG_STORE_MEM_1 TX_7SEG_SET_MEM_1 TX_7SEG_STORE_MEM_2 TX_7SEG_SET_MEM_2 TX_7SEG_STORE_MEM_3 TX_7SEG_SET_MEM_3 TX_7SEG_STORE_MEM_4 TX_7SEG_SET_MEM_4  ]
+[v F2929 `(v ~T0 @X0 1 tf ]
+"177
+[; ;main.c: 177: __attribute__((inline)) void Toggle_Touches(void);
+[v _Toggle_Touches `TF2929 ~T0 @X0 0 e ]
+[v F2933 `(v ~T0 @X0 1 tf ]
+"179
+[; ;main.c: 179: __attribute__((inline)) void Toggle_PushButton(void);
+[v _Toggle_PushButton `TF2933 ~T0 @X0 0 e ]
+"391
+[; ;main.c: 391:     SET_SOUND_MODE(learn_rf_code_is_start);
+[c E2805 0 1 2 3 4 5 6 7 8 .. ]
+[n E2805 . learn_rf_code_is_start learn_rf_code_is_done learn_rf_code_is_abort rf_code_is_remove memory_is_full turn_off turn_on dimmer_is_max dimmer_is_min  ]
+"41 ./sound/sound_unit.h
+[; ;./sound/sound_unit.h: 41: void SET_SOUND_MODE(sound_mode_E MODE) ;
+[v _SET_SOUND_MODE `(v ~T0 @X0 0 ef1`E2805 ]
+"2189 /opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2189:     struct {
+[s S118 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S118 . LATC0 LATC1 LATC2 LATC3 LATC4 LATC5 LATC6 LATC7 ]
+"2188
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2188: typedef union {
+[u S117 `S118 1 ]
+[n S117 . . ]
+"2200
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2200: extern volatile LATCbits_t LATCbits __attribute__((address(0x10E)));
+[v _LATCbits `VS117 ~T0 @X0 0 e@270 ]
+"129 ./mcc_generated_files/tmr1.h
+[; ;./mcc_generated_files/tmr1.h: 129: void TMR1_StartTimer(void);
+[v _TMR1_StartTimer `(v ~T0 @X0 0 ef ]
+"158 ./mcc_generated_files/eusart.h
+[; ;./mcc_generated_files/eusart.h: 158: _Bool EUSART_is_tx_ready(void);
+[v _EUSART_is_tx_ready `(a ~T0 @X0 0 ef ]
+"341
+[; ;./mcc_generated_files/eusart.h: 341: void EUSART_Write(uint8_t txData);
+[v _EUSART_Write `(v ~T0 @X0 0 ef1`uc ]
+"206
+[; ;./mcc_generated_files/eusart.h: 206: _Bool EUSART_is_rx_ready(void);
+[v _EUSART_is_rx_ready `(a ~T0 @X0 0 ef ]
+"321
+[; ;./mcc_generated_files/eusart.h: 321: uint8_t EUSART_Read(void);
+[v _EUSART_Read `(uc ~T0 @X0 0 ef ]
+"161 ./mcc_generated_files/tmr1.h
+[; ;./mcc_generated_files/tmr1.h: 161: void TMR1_StopTimer(void);
+[v _TMR1_StopTimer `(v ~T0 @X0 0 ef ]
+"55 ./mcc_generated_files/mtouch/mtouch.h
+[; ;./mcc_generated_files/mtouch/mtouch.h: 55:     _Bool MTOUCH_Service_Mainloop (void);
+[v _MTOUCH_Service_Mainloop `(a ~T0 @X0 0 ef ]
+"526 main.c
+[; ;main.c: 526:         if (1 == MTOUCH_Button_isPressed(T_6)) {
+[c E2704 0 1 2 3 4 5 6 7 8 .. ]
+[n E2704 mtouch_button_names Button0 Button1 Button2 Button3 Button4 Button5 Button6 Button7 Button8  ]
+"125 ./mcc_generated_files/mtouch/mtouch_button.h
+[; ;./mcc_generated_files/mtouch/mtouch_button.h: 125:     _Bool MTOUCH_Button_isPressed (enum mtouch_button_names button);
+[v _MTOUCH_Button_isPressed `(a ~T0 @X0 0 ef1`E2704 ]
+"526 main.c
+[; ;main.c: 526:         if (1 == MTOUCH_Button_isPressed(T_6)) {
+[c E2643 0 1 2 3 4 5 6 7 8 .. ]
+[n E2643 mtouch_sensor_names T_1 T_2 T_3 T_4 T_8 T_7 T_6 T_5 T_9  ]
+[v F2949 `(v ~T0 @X0 1 tf ]
+"186
+[; ;main.c: 186: __attribute__((inline)) void Automatic_Mode(void);
+[v _Automatic_Mode `TF2949 ~T0 @X0 0 e ]
+"435 /opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 435:     struct {
+[s S34 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S34 . RA0 RA1 RA2 RA3 RA4 RA5 ]
+"434
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 434: typedef union {
+[u S33 `S34 1 ]
+[n S33 . . ]
+"444
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 444: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x00C)));
+[v _PORTAbits `VS33 ~T0 @X0 0 e@12 ]
+"485
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 485:     struct {
+[s S36 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S36 . . RB4 RB5 RB6 RB7 ]
+"484
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 484: typedef union {
+[u S35 `S36 1 ]
+[n S35 . . ]
+"493
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 493: extern volatile PORTBbits_t PORTBbits __attribute__((address(0x00D)));
+[v _PORTBbits `VS35 ~T0 @X0 0 e@13 ]
+[v F2955 `(v ~T0 @X0 1 tf2`us`us ]
+"189 main.c
+[; ;main.c: 189: __attribute__((inline)) void set_digit_counters(uint16_t, uint16_t);
+[v _set_digit_counters `TF2955 ~T0 @X0 0 e ]
+"54 /opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 54: __asm("INDF0 equ 00h");
+[; <" INDF0 equ 00h ;# ">
+"74
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 74: __asm("INDF1 equ 01h");
+[; <" INDF1 equ 01h ;# ">
+"94
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 94: __asm("PCL equ 02h");
+[; <" PCL equ 02h ;# ">
+"114
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 114: __asm("STATUS equ 03h");
+[; <" STATUS equ 03h ;# ">
+"177
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 177: __asm("FSR0L equ 04h");
+[; <" FSR0L equ 04h ;# ">
+"197
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 197: __asm("FSR0H equ 05h");
+[; <" FSR0H equ 05h ;# ">
+"221
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 221: __asm("FSR1L equ 06h");
+[; <" FSR1L equ 06h ;# ">
+"241
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 241: __asm("FSR1H equ 07h");
+[; <" FSR1H equ 07h ;# ">
+"261
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 261: __asm("BSR equ 08h");
+[; <" BSR equ 08h ;# ">
+"313
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 313: __asm("WREG equ 09h");
+[; <" WREG equ 09h ;# ">
+"333
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 333: __asm("PCLATH equ 0Ah");
+[; <" PCLATH equ 0Ah ;# ">
+"353
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 353: __asm("INTCON equ 0Bh");
+[; <" INTCON equ 0Bh ;# ">
+"431
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 431: __asm("PORTA equ 0Ch");
+[; <" PORTA equ 0Ch ;# ">
+"481
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 481: __asm("PORTB equ 0Dh");
+[; <" PORTB equ 0Dh ;# ">
+"520
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 520: __asm("PORTC equ 0Eh");
+[; <" PORTC equ 0Eh ;# ">
+"582
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 582: __asm("PIR1 equ 011h");
+[; <" PIR1 equ 011h ;# ">
+"644
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 644: __asm("PIR2 equ 012h");
+[; <" PIR2 equ 012h ;# ">
+"695
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 695: __asm("PIR3 equ 013h");
+[; <" PIR3 equ 013h ;# ">
+"735
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 735: __asm("PIR4 equ 014h");
+[; <" PIR4 equ 014h ;# ">
+"761
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 761: __asm("TMR0 equ 015h");
+[; <" TMR0 equ 015h ;# ">
+"781
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 781: __asm("TMR1 equ 016h");
+[; <" TMR1 equ 016h ;# ">
+"788
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 788: __asm("TMR1L equ 016h");
+[; <" TMR1L equ 016h ;# ">
+"808
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 808: __asm("TMR1H equ 017h");
+[; <" TMR1H equ 017h ;# ">
+"828
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 828: __asm("T1CON equ 018h");
+[; <" T1CON equ 018h ;# ">
+"900
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 900: __asm("T1GCON equ 019h");
+[; <" T1GCON equ 019h ;# ">
+"970
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 970: __asm("TMR2 equ 01Ah");
+[; <" TMR2 equ 01Ah ;# ">
+"990
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 990: __asm("PR2 equ 01Bh");
+[; <" PR2 equ 01Bh ;# ">
+"1010
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1010: __asm("T2CON equ 01Ch");
+[; <" T2CON equ 01Ch ;# ">
+"1081
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1081: __asm("CPSCON0 equ 01Eh");
+[; <" CPSCON0 equ 01Eh ;# ">
+"1141
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1141: __asm("CPSCON1 equ 01Fh");
+[; <" CPSCON1 equ 01Fh ;# ">
+"1187
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1187: __asm("TRISA equ 08Ch");
+[; <" TRISA equ 08Ch ;# ">
+"1237
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1237: __asm("TRISB equ 08Dh");
+[; <" TRISB equ 08Dh ;# ">
+"1276
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1276: __asm("TRISC equ 08Eh");
+[; <" TRISC equ 08Eh ;# ">
+"1338
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1338: __asm("PIE1 equ 091h");
+[; <" PIE1 equ 091h ;# ">
+"1400
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1400: __asm("PIE2 equ 092h");
+[; <" PIE2 equ 092h ;# ">
+"1451
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1451: __asm("PIE3 equ 093h");
+[; <" PIE3 equ 093h ;# ">
+"1491
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1491: __asm("PIE4 equ 094h");
+[; <" PIE4 equ 094h ;# ">
+"1517
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1517: __asm("OPTION_REG equ 095h");
+[; <" OPTION_REG equ 095h ;# ">
+"1600
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1600: __asm("PCON equ 096h");
+[; <" PCON equ 096h ;# ">
+"1651
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1651: __asm("WDTCON equ 097h");
+[; <" WDTCON equ 097h ;# ">
+"1710
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1710: __asm("OSCTUNE equ 098h");
+[; <" OSCTUNE equ 098h ;# ">
+"1768
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1768: __asm("OSCCON equ 099h");
+[; <" OSCCON equ 099h ;# ">
+"1840
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1840: __asm("OSCSTAT equ 09Ah");
+[; <" OSCSTAT equ 09Ah ;# ">
+"1902
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1902: __asm("ADRES equ 09Bh");
+[; <" ADRES equ 09Bh ;# ">
+"1909
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1909: __asm("ADRESL equ 09Bh");
+[; <" ADRESL equ 09Bh ;# ">
+"1929
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1929: __asm("ADRESH equ 09Ch");
+[; <" ADRESH equ 09Ch ;# ">
+"1949
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 1949: __asm("ADCON0 equ 09Dh");
+[; <" ADCON0 equ 09Dh ;# ">
+"2029
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2029: __asm("ADCON1 equ 09Eh");
+[; <" ADCON1 equ 09Eh ;# ">
+"2101
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2101: __asm("LATA equ 010Ch");
+[; <" LATA equ 010Ch ;# ">
+"2146
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2146: __asm("LATB equ 010Dh");
+[; <" LATB equ 010Dh ;# ">
+"2185
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2185: __asm("LATC equ 010Eh");
+[; <" LATC equ 010Eh ;# ">
+"2247
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2247: __asm("CM1CON0 equ 0111h");
+[; <" CM1CON0 equ 0111h ;# ">
+"2304
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2304: __asm("CM1CON1 equ 0112h");
+[; <" CM1CON1 equ 0112h ;# ">
+"2370
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2370: __asm("CM2CON0 equ 0113h");
+[; <" CM2CON0 equ 0113h ;# ">
+"2427
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2427: __asm("CM2CON1 equ 0114h");
+[; <" CM2CON1 equ 0114h ;# ">
+"2493
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2493: __asm("CMOUT equ 0115h");
+[; <" CMOUT equ 0115h ;# ">
+"2519
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2519: __asm("BORCON equ 0116h");
+[; <" BORCON equ 0116h ;# ">
+"2546
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2546: __asm("FVRCON equ 0117h");
+[; <" FVRCON equ 0117h ;# ">
+"2622
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2622: __asm("DACCON0 equ 0118h");
+[; <" DACCON0 equ 0118h ;# ">
+"2683
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2683: __asm("DACCON1 equ 0119h");
+[; <" DACCON1 equ 0119h ;# ">
+"2735
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2735: __asm("SRCON0 equ 011Ah");
+[; <" SRCON0 equ 011Ah ;# ">
+"2806
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2806: __asm("SRCON1 equ 011Bh");
+[; <" SRCON1 equ 011Bh ;# ">
+"2868
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2868: __asm("APFCON0 equ 011Dh");
+[; <" APFCON0 equ 011Dh ;# ">
+"2902
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2902: __asm("APFCON1 equ 011Eh");
+[; <" APFCON1 equ 011Eh ;# ">
+"2952
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2952: __asm("ANSELA equ 018Ch");
+[; <" ANSELA equ 018Ch ;# ">
+"2999
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 2999: __asm("ANSELB equ 018Dh");
+[; <" ANSELB equ 018Dh ;# ">
+"3035
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3035: __asm("ANSELC equ 018Eh");
+[; <" ANSELC equ 018Eh ;# ">
+"3094
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3094: __asm("EEADR equ 0191h");
+[; <" EEADR equ 0191h ;# ">
+"3101
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3101: __asm("EEADRL equ 0191h");
+[; <" EEADRL equ 0191h ;# ">
+"3121
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3121: __asm("EEADRH equ 0192h");
+[; <" EEADRH equ 0192h ;# ">
+"3141
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3141: __asm("EEDAT equ 0193h");
+[; <" EEDAT equ 0193h ;# ">
+"3148
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3148: __asm("EEDATL equ 0193h");
+[; <" EEDATL equ 0193h ;# ">
+"3153
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3153: __asm("EEDATA equ 0193h");
+[; <" EEDATA equ 0193h ;# ">
+"3186
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3186: __asm("EEDATH equ 0194h");
+[; <" EEDATH equ 0194h ;# ">
+"3206
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3206: __asm("EECON1 equ 0195h");
+[; <" EECON1 equ 0195h ;# ">
+"3268
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3268: __asm("EECON2 equ 0196h");
+[; <" EECON2 equ 0196h ;# ">
+"3288
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3288: __asm("RCREG equ 0199h");
+[; <" RCREG equ 0199h ;# ">
+"3308
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3308: __asm("TXREG equ 019Ah");
+[; <" TXREG equ 019Ah ;# ">
+"3328
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3328: __asm("SPBRG equ 019Bh");
+[; <" SPBRG equ 019Bh ;# ">
+"3335
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3335: __asm("SPBRGL equ 019Bh");
+[; <" SPBRGL equ 019Bh ;# ">
+"3355
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3355: __asm("SPBRGH equ 019Ch");
+[; <" SPBRGH equ 019Ch ;# ">
+"3375
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3375: __asm("RCSTA equ 019Dh");
+[; <" RCSTA equ 019Dh ;# ">
+"3437
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3437: __asm("TXSTA equ 019Eh");
+[; <" TXSTA equ 019Eh ;# ">
+"3499
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3499: __asm("BAUDCON equ 019Fh");
+[; <" BAUDCON equ 019Fh ;# ">
+"3551
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3551: __asm("WPUA equ 020Ch");
+[; <" WPUA equ 020Ch ;# ">
+"3609
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3609: __asm("WPUB equ 020Dh");
+[; <" WPUB equ 020Dh ;# ">
+"3657
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3657: __asm("WPUC equ 020Eh");
+[; <" WPUC equ 020Eh ;# ">
+"3727
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3727: __asm("SSP1BUF equ 0211h");
+[; <" SSP1BUF equ 0211h ;# ">
+"3732
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3732: __asm("SSPBUF equ 0211h");
+[; <" SSPBUF equ 0211h ;# ">
+"3765
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3765: __asm("SSP1ADD equ 0212h");
+[; <" SSP1ADD equ 0212h ;# ">
+"3770
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3770: __asm("SSPADD equ 0212h");
+[; <" SSPADD equ 0212h ;# ">
+"3803
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3803: __asm("SSP1MSK equ 0213h");
+[; <" SSP1MSK equ 0213h ;# ">
+"3808
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3808: __asm("SSPMSK equ 0213h");
+[; <" SSPMSK equ 0213h ;# ">
+"3841
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3841: __asm("SSP1STAT equ 0214h");
+[; <" SSP1STAT equ 0214h ;# ">
+"3846
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3846: __asm("SSPSTAT equ 0214h");
+[; <" SSPSTAT equ 0214h ;# ">
+"3963
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3963: __asm("SSP1CON1 equ 0215h");
+[; <" SSP1CON1 equ 0215h ;# ">
+"3968
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3968: __asm("SSPCON1 equ 0215h");
+[; <" SSPCON1 equ 0215h ;# ">
+"3972
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 3972: __asm("SSPCON equ 0215h");
+[; <" SSPCON equ 0215h ;# ">
+"4167
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4167: __asm("SSP1CON2 equ 0216h");
+[; <" SSP1CON2 equ 0216h ;# ">
+"4172
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4172: __asm("SSPCON2 equ 0216h");
+[; <" SSPCON2 equ 0216h ;# ">
+"4289
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4289: __asm("SSP1CON3 equ 0217h");
+[; <" SSP1CON3 equ 0217h ;# ">
+"4294
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4294: __asm("SSPCON3 equ 0217h");
+[; <" SSPCON3 equ 0217h ;# ">
+"4411
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4411: __asm("SSP2BUF equ 0219h");
+[; <" SSP2BUF equ 0219h ;# ">
+"4431
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4431: __asm("SSP2ADD equ 021Ah");
+[; <" SSP2ADD equ 021Ah ;# ">
+"4451
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4451: __asm("SSP2MSK equ 021Bh");
+[; <" SSP2MSK equ 021Bh ;# ">
+"4471
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4471: __asm("SSP2STAT equ 021Ch");
+[; <" SSP2STAT equ 021Ch ;# ">
+"4533
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4533: __asm("SSP2CON1 equ 021Dh");
+[; <" SSP2CON1 equ 021Dh ;# ">
+"4603
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4603: __asm("SSP2CON2 equ 021Eh");
+[; <" SSP2CON2 equ 021Eh ;# ">
+"4665
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4665: __asm("SSP2CON3 equ 021Fh");
+[; <" SSP2CON3 equ 021Fh ;# ">
+"4727
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4727: __asm("CCPR1 equ 0291h");
+[; <" CCPR1 equ 0291h ;# ">
+"4734
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4734: __asm("CCPR1L equ 0291h");
+[; <" CCPR1L equ 0291h ;# ">
+"4754
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4754: __asm("CCPR1H equ 0292h");
+[; <" CCPR1H equ 0292h ;# ">
+"4774
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4774: __asm("CCP1CON equ 0293h");
+[; <" CCP1CON equ 0293h ;# ">
+"4856
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4856: __asm("PWM1CON equ 0294h");
+[; <" PWM1CON equ 0294h ;# ">
+"4926
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4926: __asm("CCP1AS equ 0295h");
+[; <" CCP1AS equ 0295h ;# ">
+"4931
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 4931: __asm("ECCP1AS equ 0295h");
+[; <" ECCP1AS equ 0295h ;# ">
+"5088
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5088: __asm("PSTR1CON equ 0296h");
+[; <" PSTR1CON equ 0296h ;# ">
+"5132
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5132: __asm("CCPR2 equ 0298h");
+[; <" CCPR2 equ 0298h ;# ">
+"5139
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5139: __asm("CCPR2L equ 0298h");
+[; <" CCPR2L equ 0298h ;# ">
+"5159
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5159: __asm("CCPR2H equ 0299h");
+[; <" CCPR2H equ 0299h ;# ">
+"5179
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5179: __asm("CCP2CON equ 029Ah");
+[; <" CCP2CON equ 029Ah ;# ">
+"5261
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5261: __asm("PWM2CON equ 029Bh");
+[; <" PWM2CON equ 029Bh ;# ">
+"5331
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5331: __asm("CCP2AS equ 029Ch");
+[; <" CCP2AS equ 029Ch ;# ">
+"5413
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5413: __asm("PSTR2CON equ 029Dh");
+[; <" PSTR2CON equ 029Dh ;# ">
+"5457
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5457: __asm("CCPTMRS equ 029Eh");
+[; <" CCPTMRS equ 029Eh ;# ">
+"5545
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5545: __asm("CCPR3 equ 0311h");
+[; <" CCPR3 equ 0311h ;# ">
+"5552
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5552: __asm("CCPR3L equ 0311h");
+[; <" CCPR3L equ 0311h ;# ">
+"5572
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5572: __asm("CCPR3H equ 0312h");
+[; <" CCPR3H equ 0312h ;# ">
+"5592
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5592: __asm("CCP3CON equ 0313h");
+[; <" CCP3CON equ 0313h ;# ">
+"5656
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5656: __asm("CCPR4 equ 0318h");
+[; <" CCPR4 equ 0318h ;# ">
+"5663
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5663: __asm("CCPR4L equ 0318h");
+[; <" CCPR4L equ 0318h ;# ">
+"5683
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5683: __asm("CCPR4H equ 0319h");
+[; <" CCPR4H equ 0319h ;# ">
+"5703
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5703: __asm("CCP4CON equ 031Ah");
+[; <" CCP4CON equ 031Ah ;# ">
+"5767
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5767: __asm("INLVLA equ 038Ch");
+[; <" INLVLA equ 038Ch ;# ">
+"5825
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5825: __asm("INLVLB equ 038Dh");
+[; <" INLVLB equ 038Dh ;# ">
+"5873
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5873: __asm("INLVLC equ 038Eh");
+[; <" INLVLC equ 038Eh ;# ">
+"5943
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 5943: __asm("IOCAP equ 0391h");
+[; <" IOCAP equ 0391h ;# ">
+"6001
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6001: __asm("IOCAN equ 0392h");
+[; <" IOCAN equ 0392h ;# ">
+"6059
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6059: __asm("IOCAF equ 0393h");
+[; <" IOCAF equ 0393h ;# ">
+"6117
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6117: __asm("IOCBP equ 0394h");
+[; <" IOCBP equ 0394h ;# ">
+"6165
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6165: __asm("IOCBN equ 0395h");
+[; <" IOCBN equ 0395h ;# ">
+"6213
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6213: __asm("IOCBF equ 0396h");
+[; <" IOCBF equ 0396h ;# ">
+"6261
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6261: __asm("CLKRCON equ 039Ah");
+[; <" CLKRCON equ 039Ah ;# ">
+"6337
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6337: __asm("MDCON equ 039Ch");
+[; <" MDCON equ 039Ch ;# ">
+"6388
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6388: __asm("MDSRC equ 039Dh");
+[; <" MDSRC equ 039Dh ;# ">
+"6441
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6441: __asm("MDCARL equ 039Eh");
+[; <" MDCARL equ 039Eh ;# ">
+"6506
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6506: __asm("MDCARH equ 039Fh");
+[; <" MDCARH equ 039Fh ;# ">
+"6571
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6571: __asm("TMR4 equ 0415h");
+[; <" TMR4 equ 0415h ;# ">
+"6591
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6591: __asm("PR4 equ 0416h");
+[; <" PR4 equ 0416h ;# ">
+"6611
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6611: __asm("T4CON equ 0417h");
+[; <" T4CON equ 0417h ;# ">
+"6682
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6682: __asm("TMR6 equ 041Ch");
+[; <" TMR6 equ 041Ch ;# ">
+"6702
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6702: __asm("PR6 equ 041Dh");
+[; <" PR6 equ 041Dh ;# ">
+"6722
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6722: __asm("T6CON equ 041Eh");
+[; <" T6CON equ 041Eh ;# ">
+"6793
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6793: __asm("STATUS_SHAD equ 0FE4h");
+[; <" STATUS_SHAD equ 0FE4h ;# ">
+"6825
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6825: __asm("WREG_SHAD equ 0FE5h");
+[; <" WREG_SHAD equ 0FE5h ;# ">
+"6845
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6845: __asm("BSR_SHAD equ 0FE6h");
+[; <" BSR_SHAD equ 0FE6h ;# ">
+"6865
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6865: __asm("PCLATH_SHAD equ 0FE7h");
+[; <" PCLATH_SHAD equ 0FE7h ;# ">
+"6885
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6885: __asm("FSR0L_SHAD equ 0FE8h");
+[; <" FSR0L_SHAD equ 0FE8h ;# ">
+"6905
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6905: __asm("FSR0H_SHAD equ 0FE9h");
+[; <" FSR0H_SHAD equ 0FE9h ;# ">
+"6925
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6925: __asm("FSR1L_SHAD equ 0FEAh");
+[; <" FSR1L_SHAD equ 0FEAh ;# ">
+"6945
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6945: __asm("FSR1H_SHAD equ 0FEBh");
+[; <" FSR1H_SHAD equ 0FEBh ;# ">
+"6965
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6965: __asm("STKPTR equ 0FEDh");
+[; <" STKPTR equ 0FEDh ;# ">
+"6985
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 6985: __asm("TOSL equ 0FEEh");
+[; <" TOSL equ 0FEEh ;# ">
+"7005
+[; ;/opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h: 7005: __asm("TOSH equ 0FEFh");
+[; <" TOSH equ 0FEFh ;# ">
+"80 main.c
+[; ;main.c: 80: sss_status_e g_sss_status;
+[v _g_sss_status `E2858 ~T0 @X0 1 e ]
+"88
+[; ;main.c: 88: mode_status_e g_mode_status;
+[v _g_mode_status `E2864 ~T0 @X0 1 e ]
+"96
+[; ;main.c: 96: digit_status_e g_digit_status;
+[v _g_digit_status `E2870 ~T0 @X0 1 e ]
+"130
+[; ;main.c: 130: touch_status_t g_touch_status;
+[v _g_touch_status `S374 ~T0 @X0 1 e ]
+"138
+[; ;main.c: 138: timer_calc_t g_time_calc;
+[v _g_time_calc `S375 ~T0 @X0 1 e ]
+"146
+[; ;main.c: 146: mass_calc_t g_mass_calc;
+[v _g_mass_calc `S376 ~T0 @X0 1 e ]
+"157
+[; ;main.c: 157: status_t g_status;
+[v _g_status `S377 ~T0 @X0 1 e ]
+"165
+[; ;main.c: 165: power_event_t g_power_event = {0, 0, 0};
+[v _g_power_event `S378 ~T0 @X0 1 e ]
+[i _g_power_event
+:U ..
+:U ..
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+-> -> 0 `i `uc
+..
+..
+]
+"193
+[; ;main.c: 193: __eeprom uint16_t ge_memory_mass[4];
+[v _ge_memory_mass `Eus ~T0 @X0 -> 4 `i e ]
+"194
+[; ;main.c: 194: __eeprom uint16_t ge_time_ms;
+[v _ge_time_ms `Eus ~T0 @X0 1 e ]
+"196
+[; ;main.c: 196: uint16_t g_memory_mass[4];
+[v _g_memory_mass `us ~T0 @X0 -> 4 `i e ]
+"197
+[; ;main.c: 197: uint16_t g_motor_on_duration_ms;
+[v _g_motor_on_duration_ms `us ~T0 @X0 1 e ]
+"198
+[; ;main.c: 198: uint16_t g_7seg_change_digit_duration;
+[v _g_7seg_change_digit_duration `us ~T0 @X0 1 e ]
+"200
+[; ;main.c: 200: uint16_t g_tmr0_longpress_duration_counter;
+[v _g_tmr0_longpress_duration_counter `us ~T0 @X0 1 e ]
+"202
+[; ;main.c: 202: volatile uint16_t g_mass = 0;
+[v _g_mass `Vus ~T0 @X0 1 e ]
+[i _g_mass
+-> -> 0 `i `us
+]
+"203
+[; ;main.c: 203: volatile uint16_t g_time_ms = 100;
+[v _g_time_ms `Vus ~T0 @X0 1 e ]
+[i _g_time_ms
+-> -> 100 `i `us
+]
+"205
+[; ;main.c: 205: uint16_t g_mass_backup;
+[v _g_mass_backup `us ~T0 @X0 1 e ]
+"206
+[; ;main.c: 206: uint16_t g_time_ms_backup;
+[v _g_time_ms_backup `us ~T0 @X0 1 e ]
+"208
+[; ;main.c: 208: uint16_t g_tmr1_motor_counter;
+[v _g_tmr1_motor_counter `us ~T0 @X0 1 e ]
+"210
+[; ;main.c: 210: _Bool gb_motor_timer_off;
+[v _gb_motor_timer_off `a ~T0 @X0 1 e ]
+[v $root$_main `(v ~T0 @X0 0 e ]
+"214
+[; ;main.c: 214: void main(void) {
+[v _main `(v ~T0 @X0 1 ef ]
+{
+[e :U _main ]
+[f ]
+"216
+[; ;main.c: 216:     SYSTEM_Initialize();
+[e ( _SYSTEM_Initialize ..  ]
+"217
+[; ;main.c: 217:     EEPROM_init();
+[e ( _EEPROM_init ..  ]
+"218
+[; ;main.c: 218:     init_panel();
+[e ( _init_panel ..  ]
+"220
+[; ;main.c: 220:     (INTCONbits.GIE = 1);
+[e = . . _INTCONbits 0 7 -> -> 1 `i `uc ]
+"221
+[; ;main.c: 221:     (INTCONbits.PEIE = 1);
+[e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
+"223
+[; ;main.c: 223:     TMR0_SetInterruptHandler(tmr0_long_press_duration);
+[e ( _TMR0_SetInterruptHandler (1 &U _tmr0_long_press_duration ]
+"224
+[; ;main.c: 224:     TMR1_SetInterruptHandler(tmr1_motor_on_duration);
+[e ( _TMR1_SetInterruptHandler (1 &U _tmr1_motor_on_duration ]
+"227
+[; ;main.c: 227:     while (1) {
+[e :U 381 ]
+{
+"229
+[; ;main.c: 229:         Main_Routine();
+[e ( _Main_Routine ..  ]
+"231
+[; ;main.c: 231:     }
+}
+[e :U 380 ]
+[e $U 381  ]
+[e :U 382 ]
+"232
+[; ;main.c: 232: }
+[e :UE 379 ]
+}
+[v F2974 `(v ~T0 @X0 1 tf ]
+"241
+[; ;main.c: 241: __attribute__((inline)) void init_panel(void) {
+[v _init_panel `TF2974 ~T0 @X0 1 e ]
+{
+[e :U _init_panel ]
+[f ]
+"243
+[; ;main.c: 243:     g_mass = 0;
+[e = _g_mass -> -> 0 `i `us ]
+"246
+[; ;main.c: 246:     g_status.off_led = 1;
+[e = . _g_status 0 -> -> 1 `i `uc ]
+"247
+[; ;main.c: 247:     Toggle_OFFLED();
+[e ( _Toggle_OFFLED ..  ]
+"249
+[; ;main.c: 249:     g_status.touch_leds = 0;
+[e = . _g_status 1 -> -> 0 `i `uc ]
+"250
+[; ;main.c: 250:     Toggle_Touch_LEDs();
+[e ( _Toggle_Touch_LEDs ..  ]
+"252
+[; ;main.c: 252:     g_status.touches = 0;
+[e = . _g_status 2 -> -> 0 `i `uc ]
+"254
+[; ;main.c: 254:     g_status._7segment = 0;
+[e = . _g_status 4 -> -> 0 `i `uc ]
+"255
+[; ;main.c: 255:     Toggle_7seg();
+[e ( _Toggle_7seg ..  ]
+"257
+[; ;main.c: 257:     g_status.PushButton = 0;
+[e = . _g_status 5 -> -> 0 `i `uc ]
+"259
+[; ;main.c: 259:     do { LATAbits.LATA5 = 0; } while(0);
+[e :U 386 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 385 ]
+"261
+[; ;main.c: 261:     g_touch_status.next = 1;
+[e = . _g_touch_status 2 -> -> 1 `i `uc ]
+"262
+[; ;main.c: 262:     g_touch_status.up = 1;
+[e = . _g_touch_status 1 -> -> 1 `i `uc ]
+"263
+[; ;main.c: 263:     g_touch_status.memories = 1;
+[e = . _g_touch_status 3 -> -> 1 `i `uc ]
+"265
+[; ;main.c: 265:     Reset_Digit_Value();
+[e ( _Reset_Digit_Value ..  ]
+"267
+[; ;main.c: 267:     g_sss_status = set_e;
+[e = _g_sss_status . `E2858 2 ]
+"268
+[; ;main.c: 268:     g_mode_status = automatic_e;
+[e = _g_mode_status . `E2864 0 ]
+"269
+[; ;main.c: 269:     g_digit_status = yekan_e;
+[e = _g_digit_status . `E2870 0 ]
+"270
+[; ;main.c: 270: }
+[e :UE 383 ]
+}
+[v F2976 `(v ~T0 @X0 1 tf ]
+"272
+[; ;main.c: 272: __attribute__((inline)) void EEPROM_init(void) {
+[v _EEPROM_init `TF2976 ~T0 @X0 1 e ]
+{
+[e :U _EEPROM_init ]
+[f ]
+"274
+[; ;main.c: 274:     for (register uint8_t i = 0; i < 4; i++) {
+{
+[v _i `uc ~T0 @X0 1 A ]
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 4 `i 388  ]
+[e $U 389  ]
+[e :U 388 ]
+{
+"276
+[; ;main.c: 276:         g_memory_mass[i] = ge_memory_mass[i];
+[e = *U + &U _g_memory_mass * -> _i `ux -> -> # *U &U _g_memory_mass `ui `ux *U + &U _ge_memory_mass * -> _i `ux -> -> # *U &U _ge_memory_mass `ui `ux ]
+"277
+[; ;main.c: 277:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 4 `i 388  ]
+[e :U 389 ]
+}
+"279
+[; ;main.c: 279:     g_time_ms = ge_time_ms;
+[e = _g_time_ms _ge_time_ms ]
+"280
+[; ;main.c: 280: }
+[e :UE 387 ]
+}
+[v F2979 `(v ~T0 @X0 1 tf ]
+"287
+[; ;main.c: 287: __attribute__((inline)) void FCN_NEXT(void) {
+[v _FCN_NEXT `TF2979 ~T0 @X0 1 e ]
+{
+[e :U _FCN_NEXT ]
+[f ]
+"289
+[; ;main.c: 289:     TX_Command(TX_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 11 `uc ]
+"291
+[; ;main.c: 291:     switch (g_digit_status) {
+[e $U 393  ]
+{
+"293
+[; ;main.c: 293:         case yekan_e:
+[e :U 394 ]
+"294
+[; ;main.c: 294:             g_digit_status = dahegan_e;
+[e = _g_digit_status . `E2870 1 ]
+"295
+[; ;main.c: 295:             break;
+[e $U 392  ]
+"297
+[; ;main.c: 297:         case dahegan_e:
+[e :U 395 ]
+"298
+[; ;main.c: 298:             g_digit_status = sadegan_e;
+[e = _g_digit_status . `E2870 2 ]
+"299
+[; ;main.c: 299:             break;
+[e $U 392  ]
+"301
+[; ;main.c: 301:         case sadegan_e:
+[e :U 396 ]
+"302
+[; ;main.c: 302:             g_digit_status = yekan_e;
+[e = _g_digit_status . `E2870 0 ]
+"303
+[; ;main.c: 303:             break;
+[e $U 392  ]
+"305
+[; ;main.c: 305:         default:
+[e :U 397 ]
+"307
+[; ;main.c: 307:             break;
+[e $U 392  ]
+"308
+[; ;main.c: 308:     }
+}
+[e $U 392  ]
+[e :U 393 ]
+[e [\ -> _g_digit_status `ui , $ -> . `E2870 0 `ui 394
+ , $ -> . `E2870 1 `ui 395
+ , $ -> . `E2870 2 `ui 396
+ 397 ]
+[e :U 392 ]
+"309
+[; ;main.c: 309: }
+[e :UE 391 ]
+}
+[v F2981 `(v ~T0 @X0 1 tf ]
+"316
+[; ;main.c: 316: __attribute__((inline)) void FCN_UP(void) {
+[v _FCN_UP `TF2981 ~T0 @X0 1 e ]
+{
+[e :U _FCN_UP ]
+[f ]
+"318
+[; ;main.c: 318:     TX_Command(TX_INCREASE_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 13 `uc ]
+"320
+[; ;main.c: 320:     switch (g_mode_status) {
+[e $U 400  ]
+{
+"322
+[; ;main.c: 322:         case automatic_e:
+[e :U 401 ]
+"324
+[; ;main.c: 324:             if (yekan_e == g_digit_status) {
+[e $ ! == -> . `E2870 0 `ui -> _g_digit_status `ui 402  ]
+{
+"326
+[; ;main.c: 326:                 g_mass_calc.yekan++;
+[e ++ . _g_mass_calc 0 -> -> 1 `i `uc ]
+"327
+[; ;main.c: 327:                 if (10 == g_mass_calc.yekan) {
+[e $ ! == -> 10 `i -> . _g_mass_calc 0 `i 403  ]
+{
+"328
+[; ;main.c: 328:                     g_mass_calc.yekan = 0;
+[e = . _g_mass_calc 0 -> -> 0 `i `uc ]
+"329
+[; ;main.c: 329:                 }
+}
+[e :U 403 ]
+"330
+[; ;main.c: 330:             } else if (dahegan_e == g_digit_status) {
+}
+[e $U 404  ]
+[e :U 402 ]
+[e $ ! == -> . `E2870 1 `ui -> _g_digit_status `ui 405  ]
+{
+"332
+[; ;main.c: 332:                 g_mass_calc.dahegan++;
+[e ++ . _g_mass_calc 1 -> -> 1 `i `uc ]
+"333
+[; ;main.c: 333:                 if (10 == g_mass_calc.dahegan) {
+[e $ ! == -> 10 `i -> . _g_mass_calc 1 `i 406  ]
+{
+"334
+[; ;main.c: 334:                     g_mass_calc.dahegan = 0;
+[e = . _g_mass_calc 1 -> -> 0 `i `uc ]
+"335
+[; ;main.c: 335:                 }
+}
+[e :U 406 ]
+"336
+[; ;main.c: 336:             } else if (sadegan_e == g_digit_status) {
+}
+[e $U 407  ]
+[e :U 405 ]
+[e $ ! == -> . `E2870 2 `ui -> _g_digit_status `ui 408  ]
+{
+"338
+[; ;main.c: 338:                 g_mass_calc.sadegan++;
+[e ++ . _g_mass_calc 2 -> -> 1 `i `uc ]
+"339
+[; ;main.c: 339:                 if (10 == g_mass_calc.sadegan) {
+[e $ ! == -> 10 `i -> . _g_mass_calc 2 `i 409  ]
+{
+"340
+[; ;main.c: 340:                     g_mass_calc.sadegan = 0;
+[e = . _g_mass_calc 2 -> -> 0 `i `uc ]
+"341
+[; ;main.c: 341:                 }
+}
+[e :U 409 ]
+"342
+[; ;main.c: 342:             }
+}
+[e :U 408 ]
+[e :U 407 ]
+[e :U 404 ]
+"344
+[; ;main.c: 344:             break;
+[e $U 399  ]
+"346
+[; ;main.c: 346:         case timer_e:
+[e :U 410 ]
+"348
+[; ;main.c: 348:             if (yekan_e == g_digit_status) {
+[e $ ! == -> . `E2870 0 `ui -> _g_digit_status `ui 411  ]
+{
+"350
+[; ;main.c: 350:                 g_time_calc.yekan++;
+[e ++ . _g_time_calc 0 -> -> 1 `i `uc ]
+"351
+[; ;main.c: 351:                 if (10 == g_time_calc.yekan) {
+[e $ ! == -> 10 `i -> . _g_time_calc 0 `i 412  ]
+{
+"352
+[; ;main.c: 352:                     g_time_calc.yekan = 0;
+[e = . _g_time_calc 0 -> -> 0 `i `uc ]
+"353
+[; ;main.c: 353:                 }
+}
+[e :U 412 ]
+"354
+[; ;main.c: 354:             } else if (dahegan_e == g_digit_status) {
+}
+[e $U 413  ]
+[e :U 411 ]
+[e $ ! == -> . `E2870 1 `ui -> _g_digit_status `ui 414  ]
+{
+"356
+[; ;main.c: 356:                 g_time_calc.dahegan++;
+[e ++ . _g_time_calc 1 -> -> 1 `i `uc ]
+"357
+[; ;main.c: 357:                 if (10 == g_time_calc.dahegan) {
+[e $ ! == -> 10 `i -> . _g_time_calc 1 `i 415  ]
+{
+"358
+[; ;main.c: 358:                     g_time_calc.dahegan = 0;
+[e = . _g_time_calc 1 -> -> 0 `i `uc ]
+"359
+[; ;main.c: 359:                 }
+}
+[e :U 415 ]
+"360
+[; ;main.c: 360:             } else if (sadegan_e == g_digit_status) {
+}
+[e $U 416  ]
+[e :U 414 ]
+[e $ ! == -> . `E2870 2 `ui -> _g_digit_status `ui 417  ]
+{
+"362
+[; ;main.c: 362:                 g_time_calc.sadegan++;
+[e ++ . _g_time_calc 2 -> -> 1 `i `uc ]
+"363
+[; ;main.c: 363:                 if (10 == g_time_calc.sadegan) {
+[e $ ! == -> 10 `i -> . _g_time_calc 2 `i 418  ]
+{
+"364
+[; ;main.c: 364:                     g_time_calc.sadegan = 0;
+[e = . _g_time_calc 2 -> -> 0 `i `uc ]
+"365
+[; ;main.c: 365:                 }
+}
+[e :U 418 ]
+"366
+[; ;main.c: 366:             }
+}
+[e :U 417 ]
+[e :U 416 ]
+[e :U 413 ]
+"368
+[; ;main.c: 368:             break;
+[e $U 399  ]
+"370
+[; ;main.c: 370:         default:
+[e :U 419 ]
+"372
+[; ;main.c: 372:             break;
+[e $U 399  ]
+"373
+[; ;main.c: 373:     }
+}
+[e $U 399  ]
+[e :U 400 ]
+[e [\ -> _g_mode_status `ui , $ -> . `E2864 0 `ui 401
+ , $ -> . `E2864 2 `ui 410
+ 419 ]
+[e :U 399 ]
+"374
+[; ;main.c: 374: }
+[e :UE 398 ]
+}
+[v F2983 `(v ~T0 @X0 1 tf ]
+"381
+[; ;main.c: 381: __attribute__((inline)) void FCN_POWER(void) {
+[v _FCN_POWER `TF2983 ~T0 @X0 1 e ]
+{
+[e :U _FCN_POWER ]
+[f ]
+"383
+[; ;main.c: 383:     Toggle_Touch_LEDs();
+[e ( _Toggle_Touch_LEDs ..  ]
+"384
+[; ;main.c: 384:     Toggle_OFFLED();
+[e ( _Toggle_OFFLED ..  ]
+"385
+[; ;main.c: 385:     Toggle_Touches();
+[e ( _Toggle_Touches ..  ]
+"386
+[; ;main.c: 386:     Toggle_7seg();
+[e ( _Toggle_7seg ..  ]
+"387
+[; ;main.c: 387:     Toggle_PushButton();
+[e ( _Toggle_PushButton ..  ]
+"388
+[; ;main.c: 388:     EEPROM_init();
+[e ( _EEPROM_init ..  ]
+"389
+[; ;main.c: 389:     do { LATAbits.LATA5 = 0; } while(0);
+[e :U 423 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 422 ]
+"391
+[; ;main.c: 391:     SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"392
+[; ;main.c: 392: }
+[e :UE 420 ]
+}
+[v F2985 `(v ~T0 @X0 1 tf ]
+"399
+[; ;main.c: 399: __attribute__((inline)) void Toggle_Touch_LEDs(void) {
+[v _Toggle_Touch_LEDs `TF2985 ~T0 @X0 1 e ]
+{
+[e :U _Toggle_Touch_LEDs ]
+[f ]
+"401
+[; ;main.c: 401:     if (g_status.touch_leds) {
+[e $ ! != -> . _g_status 1 `i -> 0 `i 425  ]
+{
+"403
+[; ;main.c: 403:         do { LATCbits.LATC4 = 1; } while(0);
+[e :U 428 ]
+{
+[e = . . _LATCbits 0 4 -> -> 1 `i `uc ]
+}
+[e :U 427 ]
+"404
+[; ;main.c: 404:     } else {
+}
+[e $U 429  ]
+[e :U 425 ]
+{
+"406
+[; ;main.c: 406:         do { LATCbits.LATC4 = 0; } while(0);
+[e :U 432 ]
+{
+[e = . . _LATCbits 0 4 -> -> 0 `i `uc ]
+}
+[e :U 431 ]
+"407
+[; ;main.c: 407:     }
+}
+[e :U 429 ]
+"409
+[; ;main.c: 409:     g_status.touch_leds ^= 1;
+[e =^ . _g_status 1 -> -> 1 `i `uc ]
+"410
+[; ;main.c: 410: }
+[e :UE 424 ]
+}
+[v F2987 `(v ~T0 @X0 1 tf ]
+"412
+[; ;main.c: 412: __attribute__((inline)) void Toggle_OFFLED(void) {
+[v _Toggle_OFFLED `TF2987 ~T0 @X0 1 e ]
+{
+[e :U _Toggle_OFFLED ]
+[f ]
+"414
+[; ;main.c: 414:     if (g_status.off_led) {
+[e $ ! != -> . _g_status 0 `i -> 0 `i 434  ]
+{
+"416
+[; ;main.c: 416:         do { LATCbits.LATC5 = 1; } while(0);
+[e :U 437 ]
+{
+[e = . . _LATCbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 436 ]
+"417
+[; ;main.c: 417:     } else {
+}
+[e $U 438  ]
+[e :U 434 ]
+{
+"419
+[; ;main.c: 419:         do { LATCbits.LATC5 = 0; } while(0);
+[e :U 441 ]
+{
+[e = . . _LATCbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 440 ]
+"420
+[; ;main.c: 420:     }
+}
+[e :U 438 ]
+"422
+[; ;main.c: 422:     g_status.off_led ^= 1;
+[e =^ . _g_status 0 -> -> 1 `i `uc ]
+"423
+[; ;main.c: 423: }
+[e :UE 433 ]
+}
+[v F2989 `(v ~T0 @X0 1 tf ]
+"425
+[; ;main.c: 425: __attribute__((inline)) void Toggle_Touches(void) {
+[v _Toggle_Touches `TF2989 ~T0 @X0 1 e ]
+{
+[e :U _Toggle_Touches ]
+[f ]
+"427
+[; ;main.c: 427:     g_status.touches ^= 1;
+[e =^ . _g_status 2 -> -> 1 `i `uc ]
+"428
+[; ;main.c: 428: }
+[e :UE 442 ]
+}
+[v F2991 `(v ~T0 @X0 1 tf ]
+"430
+[; ;main.c: 430: __attribute__((inline)) void Toggle_7seg(void) {
+[v _Toggle_7seg `TF2991 ~T0 @X0 1 e ]
+{
+[e :U _Toggle_7seg ]
+[f ]
+"432
+[; ;main.c: 432:     if (g_status._7segment) {
+[e $ ! != -> . _g_status 4 `i -> 0 `i 444  ]
+{
+"434
+[; ;main.c: 434:         TX_Command(TX_7SEG_ON);
+[e ( _TX_Command (1 -> . `E2827 0 `uc ]
+"436
+[; ;main.c: 436:     } else {
+}
+[e $U 445  ]
+[e :U 444 ]
+{
+"439
+[; ;main.c: 439:         TX_Command(TX_7SEG_OFF);
+[e ( _TX_Command (1 -> . `E2827 1 `uc ]
+"440
+[; ;main.c: 440:     }
+}
+[e :U 445 ]
+"442
+[; ;main.c: 442:     g_status._7segment ^= 1;
+[e =^ . _g_status 4 -> -> 1 `i `uc ]
+"443
+[; ;main.c: 443: }
+[e :UE 443 ]
+}
+[v F2993 `(v ~T0 @X0 1 tf ]
+"445
+[; ;main.c: 445: __attribute__((inline)) void Toggle_PushButton(void) {
+[v _Toggle_PushButton `TF2993 ~T0 @X0 1 e ]
+{
+[e :U _Toggle_PushButton ]
+[f ]
+"447
+[; ;main.c: 447:     g_status.PushButton ^= 1;
+[e =^ . _g_status 5 -> -> 1 `i `uc ]
+"448
+[; ;main.c: 448: }
+[e :UE 446 ]
+}
+[v F2995 `(v ~T0 @X0 1 tf1`um ]
+"455
+[; ;main.c: 455: __attribute__((inline)) void Motor_ON(uint24_t motor_on_time_ms) {
+[v _Motor_ON `TF2995 ~T0 @X0 1 e ]
+{
+[e :U _Motor_ON ]
+[v _motor_on_time_ms `um ~T0 @X0 1 r1 ]
+[f ]
+"457
+[; ;main.c: 457:     g_motor_on_duration_ms = (uint16_t) (motor_on_time_ms / 10);
+[e = _g_motor_on_duration_ms -> / _motor_on_time_ms -> -> -> 10 `i `m `um `us ]
+"459
+[; ;main.c: 459:     g_tmr1_motor_counter = 0;
+[e = _g_tmr1_motor_counter -> -> 0 `i `us ]
+"460
+[; ;main.c: 460:     TMR1_StartTimer();
+[e ( _TMR1_StartTimer ..  ]
+"461
+[; ;main.c: 461:     do { LATAbits.LATA5 = 1; } while(0);
+[e :U 450 ]
+{
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 449 ]
+"462
+[; ;main.c: 462: }
+[e :UE 447 ]
+}
+[v F2998 `(v ~T0 @X0 1 tf1`uc ]
+"469
+[; ;main.c: 469: __attribute__((inline)) void TX_Command(uint8_t txData) {
+[v _TX_Command `TF2998 ~T0 @X0 1 e ]
+{
+[e :U _TX_Command ]
+[v _txData `uc ~T0 @X0 1 r1 ]
+[f ]
+"471
+[; ;main.c: 471:     if (EUSART_is_tx_ready()) {
+[e $ ! != -> ( _EUSART_is_tx_ready ..  `i -> 0 `i 452  ]
+{
+"473
+[; ;main.c: 473:         EUSART_Write(txData);
+[e ( _EUSART_Write (1 _txData ]
+"474
+[; ;main.c: 474:     }
+}
+[e :U 452 ]
+"475
+[; ;main.c: 475: }
+[e :UE 451 ]
+}
+[v F3001 `(uc ~T0 @X0 1 tf ]
+"482
+[; ;main.c: 482: __attribute__((inline)) uint8_t RX_Command(void) {
+[v _RX_Command `TF3001 ~T0 @X0 1 e ]
+{
+[e :U _RX_Command ]
+[f ]
+"484
+[; ;main.c: 484:     uint8_t buffer;
+[v _buffer `uc ~T0 @X0 1 a ]
+"486
+[; ;main.c: 486:     if (EUSART_is_rx_ready()) {
+[e $ ! != -> ( _EUSART_is_rx_ready ..  `i -> 0 `i 454  ]
+{
+"488
+[; ;main.c: 488:         buffer = EUSART_Read();
+[e = _buffer ( _EUSART_Read ..  ]
+"489
+[; ;main.c: 489:         return buffer;
+[e ) _buffer ]
+[e $UE 453  ]
+"490
+[; ;main.c: 490:     }
+}
+[e :U 454 ]
+"491
+[; ;main.c: 491: }
+[e :UE 453 ]
+}
+[v F3004 `(v ~T0 @X0 1 tf ]
+"498
+[; ;main.c: 498: __attribute__((inline)) void tmr0_long_press_duration(void) {
+[v _tmr0_long_press_duration `TF3004 ~T0 @X0 1 e ]
+{
+[e :U _tmr0_long_press_duration ]
+[f ]
+"500
+[; ;main.c: 500:     g_tmr0_longpress_duration_counter++;
+[e ++ _g_tmr0_longpress_duration_counter -> -> 1 `i `us ]
+"501
+[; ;main.c: 501: }
+[e :UE 455 ]
+}
+[v F3006 `(v ~T0 @X0 1 tf ]
+"503
+[; ;main.c: 503: __attribute__((inline)) void tmr1_motor_on_duration(void) {
+[v _tmr1_motor_on_duration `TF3006 ~T0 @X0 1 e ]
+{
+[e :U _tmr1_motor_on_duration ]
+[f ]
+"505
+[; ;main.c: 505:     g_tmr1_motor_counter++;
+[e ++ _g_tmr1_motor_counter -> -> 1 `i `us ]
+"507
+[; ;main.c: 507:     if (g_motor_on_duration_ms == g_tmr1_motor_counter) {
+[e $ ! == -> _g_motor_on_duration_ms `ui -> _g_tmr1_motor_counter `ui 457  ]
+{
+"509
+[; ;main.c: 509:         do { LATAbits.LATA5 = 0; } while(0);
+[e :U 460 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 459 ]
+"510
+[; ;main.c: 510:         g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"511
+[; ;main.c: 511:         TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"512
+[; ;main.c: 512:         g_tmr1_motor_counter = 0;
+[e = _g_tmr1_motor_counter -> -> 0 `i `us ]
+"513
+[; ;main.c: 513:         gb_motor_timer_off = 1;
+[e = _gb_motor_timer_off -> -> 1 `i `a ]
+"514
+[; ;main.c: 514:     }
+}
+[e :U 457 ]
+"515
+[; ;main.c: 515: }
+[e :UE 456 ]
+}
+[v F3008 `(v ~T0 @X0 1 tf ]
+"522
+[; ;main.c: 522: __attribute__((inline)) void Main_Routine(void) {
+[v _Main_Routine `TF3008 ~T0 @X0 1 e ]
+{
+[e :U _Main_Routine ]
+[f ]
+"524
+[; ;main.c: 524:     if (1 == MTOUCH_Service_Mainloop()) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Service_Mainloop ..  `i 462  ]
+{
+"526
+[; ;main.c: 526:         if (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 6 `i 463  ]
+{
+"528
+[; ;main.c: 528:             while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $U 464  ]
+[e :U 465 ]
+{
+"529
+[; ;main.c: 529:                 MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"530
+[; ;main.c: 530:             }
+}
+[e :U 464 ]
+"528
+[; ;main.c: 528:             while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 6 `i 465  ]
+[e :U 466 ]
+"532
+[; ;main.c: 532:             FCN_POWER();
+[e ( _FCN_POWER ..  ]
+"534
+[; ;main.c: 534:             Automatic_Mode();
+[e ( _Automatic_Mode ..  ]
+"536
+[; ;main.c: 536:             while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $U 467  ]
+[e :U 468 ]
+{
+"537
+[; ;main.c: 537:                 MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"538
+[; ;main.c: 538:             }
+}
+[e :U 467 ]
+"536
+[; ;main.c: 536:             while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 6 `i 468  ]
+[e :U 469 ]
+"539
+[; ;main.c: 539:         }
+}
+[e :U 463 ]
+"540
+[; ;main.c: 540:     }
+}
+[e :U 462 ]
+"541
+[; ;main.c: 541: }
+[e :UE 461 ]
+}
+[v F3010 `(v ~T0 @X0 1 tf ]
+"548
+[; ;main.c: 548: __attribute__((inline)) void Manual_Mode(void) {
+[v _Manual_Mode `TF3010 ~T0 @X0 1 e ]
+{
+[e :U _Manual_Mode ]
+[f ]
+"550
+[; ;main.c: 550:     uint8_t received_command;
+[v _received_command `uc ~T0 @X0 1 a ]
+"551
+[; ;main.c: 551:     _Bool b_mode_touched = 0;
+[v _b_mode_touched `a ~T0 @X0 1 a ]
+[e = _b_mode_touched -> -> 0 `i `a ]
+"552
+[; ;main.c: 552:     _Bool b_power_touched = 0;
+[v _b_power_touched `a ~T0 @X0 1 a ]
+[e = _b_power_touched -> -> 0 `i `a ]
+"553
+[; ;main.c: 553:     _Bool Flag = 0;
+[v _Flag `a ~T0 @X0 1 a ]
+[e = _Flag -> -> 0 `i `a ]
+"554
+[; ;main.c: 554:     _Bool Flag_sound = 1;
+[v _Flag_sound `a ~T0 @X0 1 a ]
+[e = _Flag_sound -> -> 1 `i `a ]
+"556
+[; ;main.c: 556:     TX_Command(TX_7SEG_ON);
+[e ( _TX_Command (1 -> . `E2827 0 `uc ]
+"557
+[; ;main.c: 557:     TX_Command(TX_7SEG_MANUAL);
+[e ( _TX_Command (1 -> . `E2827 6 `uc ]
+"559
+[; ;main.c: 559:     while (1) {
+[e :U 472 ]
+{
+"561
+[; ;main.c: 561:         if (1 == MTOUCH_Service_Mainloop()) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Service_Mainloop ..  `i 474  ]
+{
+"563
+[; ;main.c: 563:             if (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 5 `i 475  ]
+{
+"565
+[; ;main.c: 565:                 b_mode_touched = 1;
+[e = _b_mode_touched -> -> 1 `i `a ]
+"567
+[; ;main.c: 567:                 SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"568
+[; ;main.c: 568:                 while (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $U 476  ]
+[e :U 477 ]
+{
+"569
+[; ;main.c: 569:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"570
+[; ;main.c: 570:                 }
+}
+[e :U 476 ]
+"568
+[; ;main.c: 568:                 while (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 5 `i 477  ]
+[e :U 478 ]
+"571
+[; ;main.c: 571:                 break;
+[e $U 473  ]
+"572
+[; ;main.c: 572:             }
+}
+[e :U 475 ]
+"575
+[; ;main.c: 575:             if (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 6 `i 479  ]
+{
+"577
+[; ;main.c: 577:                 b_power_touched = 1;
+[e = _b_power_touched -> -> 1 `i `a ]
+"579
+[; ;main.c: 579:                 while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $U 480  ]
+[e :U 481 ]
+{
+"580
+[; ;main.c: 580:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"581
+[; ;main.c: 581:                 }
+}
+[e :U 480 ]
+"579
+[; ;main.c: 579:                 while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 6 `i 481  ]
+[e :U 482 ]
+"582
+[; ;main.c: 582:                 break;
+[e $U 473  ]
+"583
+[; ;main.c: 583:             }
+}
+[e :U 479 ]
+"586
+[; ;main.c: 586:             if (1 == MTOUCH_Button_isPressed(T_8)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 4 `i 483  ]
+{
+"588
+[; ;main.c: 588:                 if (PORTAbits.RA5) {
+[e $ ! != -> . . _PORTAbits 0 5 `i -> 0 `i 484  ]
+{
+"590
+[; ;main.c: 590:                     TX_Command(TX_STOP_INCREASE_SET_MANUAL);
+[e ( _TX_Command (1 -> . `E2827 18 `uc ]
+"591
+[; ;main.c: 591:                     do { LATAbits.LATA5 = 0; } while(0);
+[e :U 487 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 486 ]
+"592
+[; ;main.c: 592:                 } else {
+}
+[e $U 488  ]
+[e :U 484 ]
+{
+"594
+[; ;main.c: 594:                     TX_Command(TX_START_INCREASE);
+[e ( _TX_Command (1 -> . `E2827 17 `uc ]
+"595
+[; ;main.c: 595:                     do { LATAbits.LATA5 = 1; } while(0);
+[e :U 491 ]
+{
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 490 ]
+"596
+[; ;main.c: 596:                 }
+}
+[e :U 488 ]
+"598
+[; ;main.c: 598:                 SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"599
+[; ;main.c: 599:                 while (1 == MTOUCH_Button_isPressed(T_8)) {
+[e $U 492  ]
+[e :U 493 ]
+{
+"600
+[; ;main.c: 600:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"601
+[; ;main.c: 601:                 }
+}
+[e :U 492 ]
+"599
+[; ;main.c: 599:                 while (1 == MTOUCH_Button_isPressed(T_8)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 4 `i 493  ]
+[e :U 494 ]
+"602
+[; ;main.c: 602:             }
+}
+[e :U 483 ]
+"604
+[; ;main.c: 604:             Flag_sound = 1;
+[e = _Flag_sound -> -> 1 `i `a ]
+"605
+[; ;main.c: 605:             while (!PORTBbits.RB4) {
+[e $U 495  ]
+[e :U 496 ]
+{
+"607
+[; ;main.c: 607:                 Flag = 1;
+[e = _Flag -> -> 1 `i `a ]
+"609
+[; ;main.c: 609:                 do { LATAbits.LATA5 = 1; } while(0);
+[e :U 500 ]
+{
+[e = . . _LATAbits 0 5 -> -> 1 `i `uc ]
+}
+[e :U 499 ]
+"610
+[; ;main.c: 610:                 if (Flag_sound) {
+[e $ ! != -> _Flag_sound `i -> 0 `i 501  ]
+{
+"612
+[; ;main.c: 612:                     TX_Command(TX_START_INCREASE);
+[e ( _TX_Command (1 -> . `E2827 17 `uc ]
+"613
+[; ;main.c: 613:                     SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"614
+[; ;main.c: 614:                     Flag_sound = 0;
+[e = _Flag_sound -> -> 0 `i `a ]
+"615
+[; ;main.c: 615:                 }
+}
+[e :U 501 ]
+"616
+[; ;main.c: 616:             }
+}
+[e :U 495 ]
+"605
+[; ;main.c: 605:             while (!PORTBbits.RB4) {
+[e $ ! != -> . . _PORTBbits 0 1 `i -> 0 `i 496  ]
+[e :U 497 ]
+"617
+[; ;main.c: 617:             if (Flag) {
+[e $ ! != -> _Flag `i -> 0 `i 502  ]
+{
+"619
+[; ;main.c: 619:                 TX_Command(TX_STOP_INCREASE_SET_MANUAL);
+[e ( _TX_Command (1 -> . `E2827 18 `uc ]
+"620
+[; ;main.c: 620:                 do { LATAbits.LATA5 = 0; } while(0);
+[e :U 505 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 504 ]
+"621
+[; ;main.c: 621:                 Flag = 0;
+[e = _Flag -> -> 0 `i `a ]
+"622
+[; ;main.c: 622:             }
+}
+[e :U 502 ]
+"623
+[; ;main.c: 623:         }
+}
+[e :U 474 ]
+"625
+[; ;main.c: 625:         received_command = RX_Command();
+[e = _received_command ( _RX_Command ..  ]
+"627
+[; ;main.c: 627:         if (RX_7SEG_REACHED_999 == received_command) {
+[e $ ! == -> . `E2827 21 `i -> _received_command `i 506  ]
+{
+"629
+[; ;main.c: 629:             do { LATAbits.LATA5 = 0; } while(0);
+[e :U 509 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 508 ]
+"630
+[; ;main.c: 630:             SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"631
+[; ;main.c: 631:         }
+}
+[e :U 506 ]
+"632
+[; ;main.c: 632:     }
+}
+[e :U 471 ]
+[e $U 472  ]
+[e :U 473 ]
+"634
+[; ;main.c: 634:     if (1 == b_mode_touched) {
+[e $ ! == -> 1 `i -> _b_mode_touched `i 510  ]
+{
+"636
+[; ;main.c: 636:         do { LATAbits.LATA5 = 0; } while(0);
+[e :U 513 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 512 ]
+"637
+[; ;main.c: 637:         g_mode_status = automatic_e;
+[e = _g_mode_status . `E2864 0 ]
+"640
+[; ;main.c: 640:         TX_Command(TX_STOP_INCREASE_SET_MANUAL);
+[e ( _TX_Command (1 -> . `E2827 18 `uc ]
+"641
+[; ;main.c: 641:         TX_Command(TX_7SEG_SHOW_MASS);
+[e ( _TX_Command (1 -> . `E2827 19 `uc ]
+"642
+[; ;main.c: 642:     }
+}
+[e :U 510 ]
+"644
+[; ;main.c: 644:     if (1 == b_power_touched) {
+[e $ ! == -> 1 `i -> _b_power_touched `i 514  ]
+{
+"646
+[; ;main.c: 646:         g_power_event.manual = 1;
+[e = . _g_power_event 1 -> -> 1 `i `uc ]
+"647
+[; ;main.c: 647:         TX_Command(TX_STOP_INCREASE_SET_MANUAL);
+[e ( _TX_Command (1 -> . `E2827 18 `uc ]
+"648
+[; ;main.c: 648:         TX_Command(TX_7SEG_OFF);
+[e ( _TX_Command (1 -> . `E2827 1 `uc ]
+"649
+[; ;main.c: 649:     }
+}
+[e :U 514 ]
+"650
+[; ;main.c: 650: }
+[e :UE 470 ]
+}
+[v F3017 `(v ~T0 @X0 1 tf ]
+"657
+[; ;main.c: 657: __attribute__((inline)) void Timer_Mode(void) {
+[v _Timer_Mode `TF3017 ~T0 @X0 1 e ]
+{
+[e :U _Timer_Mode ]
+[f ]
+"659
+[; ;main.c: 659:     uint16_t buffer;
+[v _buffer `us ~T0 @X0 1 a ]
+"660
+[; ;main.c: 660:     _Bool b_mode_touched = 0;
+[v _b_mode_touched `a ~T0 @X0 1 a ]
+[e = _b_mode_touched -> -> 0 `i `a ]
+"661
+[; ;main.c: 661:     _Bool b_power_touched = 0;
+[v _b_power_touched `a ~T0 @X0 1 a ]
+[e = _b_power_touched -> -> 0 `i `a ]
+"663
+[; ;main.c: 663:     g_digit_status = sadegan_e;
+[e = _g_digit_status . `E2870 2 ]
+"664
+[; ;main.c: 664:     g_mode_status = timer_e;
+[e = _g_mode_status . `E2864 2 ]
+"669
+[; ;main.c: 669:     g_time_calc.sadegan = g_time_ms / 100;
+[e = . _g_time_calc 2 -> / -> _g_time_ms `ui -> -> 100 `i `ui `uc ]
+"670
+[; ;main.c: 670:     buffer = g_time_ms % 100;
+[e = _buffer -> % -> _g_time_ms `ui -> -> 100 `i `ui `us ]
+"671
+[; ;main.c: 671:     g_time_calc.dahegan = buffer / 10;
+[e = . _g_time_calc 1 -> / -> _buffer `ui -> -> 10 `i `ui `uc ]
+"672
+[; ;main.c: 672:     g_time_calc.yekan = buffer % 10;
+[e = . _g_time_calc 0 -> % -> _buffer `ui -> -> 10 `i `ui `uc ]
+"674
+[; ;main.c: 674:     while (1) {
+[e :U 517 ]
+{
+"676
+[; ;main.c: 676:         if (1 == MTOUCH_Service_Mainloop()) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Service_Mainloop ..  `i 519  ]
+{
+"678
+[; ;main.c: 678:             if (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 5 `i 520  ]
+{
+"680
+[; ;main.c: 680:                 b_mode_touched = 1;
+[e = _b_mode_touched -> -> 1 `i `a ]
+"682
+[; ;main.c: 682:                 SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"683
+[; ;main.c: 683:                 while (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $U 521  ]
+[e :U 522 ]
+{
+"684
+[; ;main.c: 684:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"685
+[; ;main.c: 685:                 }
+}
+[e :U 521 ]
+"683
+[; ;main.c: 683:                 while (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 5 `i 522  ]
+[e :U 523 ]
+"686
+[; ;main.c: 686:                 break;
+[e $U 518  ]
+"687
+[; ;main.c: 687:             }
+}
+[e :U 520 ]
+"690
+[; ;main.c: 690:             if (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 6 `i 524  ]
+{
+"692
+[; ;main.c: 692:                 b_power_touched = 1;
+[e = _b_power_touched -> -> 1 `i `a ]
+"694
+[; ;main.c: 694:                 while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $U 525  ]
+[e :U 526 ]
+{
+"695
+[; ;main.c: 695:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"696
+[; ;main.c: 696:                 }
+}
+[e :U 525 ]
+"694
+[; ;main.c: 694:                 while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 6 `i 526  ]
+[e :U 527 ]
+"697
+[; ;main.c: 697:                 break;
+[e $U 518  ]
+"698
+[; ;main.c: 698:             }
+}
+[e :U 524 ]
+"701
+[; ;main.c: 701:             if (1 == MTOUCH_Button_isPressed(T_8)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 4 `i 528  ]
+{
+"703
+[; ;main.c: 703:                 g_digit_status = sadegan_e;
+[e = _g_digit_status . `E2870 2 ]
+"705
+[; ;main.c: 705:                 g_time_ms = (g_time_calc.yekan +
+[e = _g_time_ms -> + + -> . _g_time_calc 0 `ui * -> -> 10 `i `ui -> -> . _g_time_calc 1 `us `ui * -> -> 100 `i `ui -> -> . _g_time_calc 2 `us `ui `us ]
+"709
+[; ;main.c: 709:                 TX_Command(TX_7SEG_STORE_TIME);
+[e ( _TX_Command (1 -> . `E2827 9 `uc ]
+"710
+[; ;main.c: 710:                 ge_time_ms = g_time_ms;
+[e = _ge_time_ms _g_time_ms ]
+"711
+[; ;main.c: 711:                 TX_Command(TX_END_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 12 `uc ]
+"713
+[; ;main.c: 713:                 SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"714
+[; ;main.c: 714:                 while (1 == MTOUCH_Button_isPressed(T_8)) {
+[e $U 529  ]
+[e :U 530 ]
+{
+"715
+[; ;main.c: 715:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"716
+[; ;main.c: 716:                 }
+}
+[e :U 529 ]
+"714
+[; ;main.c: 714:                 while (1 == MTOUCH_Button_isPressed(T_8)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 4 `i 530  ]
+[e :U 531 ]
+"717
+[; ;main.c: 717:             }
+}
+[e :U 528 ]
+"720
+[; ;main.c: 720:             if (1 == MTOUCH_Button_isPressed(T_9)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 8 `i 532  ]
+{
+"722
+[; ;main.c: 722:                 g_mode_status = timer_e;
+[e = _g_mode_status . `E2864 2 ]
+"723
+[; ;main.c: 723:                 g_sss_status = set_e;
+[e = _g_sss_status . `E2858 2 ]
+"724
+[; ;main.c: 724:                 FCN_UP();
+[e ( _FCN_UP ..  ]
+"726
+[; ;main.c: 726:                 while (1 == MTOUCH_Button_isPressed(T_9)) {
+[e $U 533  ]
+[e :U 534 ]
+{
+"727
+[; ;main.c: 727:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"728
+[; ;main.c: 728:                 }
+}
+[e :U 533 ]
+"726
+[; ;main.c: 726:                 while (1 == MTOUCH_Button_isPressed(T_9)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 8 `i 534  ]
+[e :U 535 ]
+"729
+[; ;main.c: 729:             }
+}
+[e :U 532 ]
+"732
+[; ;main.c: 732:             if (1 == MTOUCH_Button_isPressed(T_5)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 7 `i 536  ]
+{
+"734
+[; ;main.c: 734:                 g_sss_status = set_e;
+[e = _g_sss_status . `E2858 2 ]
+"735
+[; ;main.c: 735:                 FCN_NEXT();
+[e ( _FCN_NEXT ..  ]
+"737
+[; ;main.c: 737:                 while (1 == MTOUCH_Button_isPressed(T_5)) {
+[e $U 537  ]
+[e :U 538 ]
+{
+"738
+[; ;main.c: 738:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"739
+[; ;main.c: 739:                 }
+}
+[e :U 537 ]
+"737
+[; ;main.c: 737:                 while (1 == MTOUCH_Button_isPressed(T_5)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 7 `i 538  ]
+[e :U 539 ]
+"740
+[; ;main.c: 740:             }
+}
+[e :U 536 ]
+"741
+[; ;main.c: 741:         }
+}
+[e :U 519 ]
+"742
+[; ;main.c: 742:     }
+}
+[e :U 516 ]
+[e $U 517  ]
+[e :U 518 ]
+"745
+[; ;main.c: 745:     if (1 == b_mode_touched) {
+[e $ ! == -> 1 `i -> _b_mode_touched `i 540  ]
+{
+"747
+[; ;main.c: 747:         g_mode_status = automatic_e;
+[e = _g_mode_status . `E2864 0 ]
+"748
+[; ;main.c: 748:         g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"751
+[; ;main.c: 751:         TX_Command(TX_END_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 12 `uc ]
+"752
+[; ;main.c: 752:         TX_Command(TX_7SEG_SHOW_MASS);
+[e ( _TX_Command (1 -> . `E2827 19 `uc ]
+"753
+[; ;main.c: 753:     }
+}
+[e :U 540 ]
+"755
+[; ;main.c: 755:     if (1 == b_power_touched) {
+[e $ ! == -> 1 `i -> _b_power_touched `i 541  ]
+{
+"757
+[; ;main.c: 757:         g_power_event.timer = 1;
+[e = . _g_power_event 2 -> -> 1 `i `uc ]
+"758
+[; ;main.c: 758:         TX_Command(TX_7SEG_OFF);
+[e ( _TX_Command (1 -> . `E2827 1 `uc ]
+"759
+[; ;main.c: 759:     }
+}
+[e :U 541 ]
+"760
+[; ;main.c: 760: }
+[e :UE 515 ]
+}
+[v F3022 `(v ~T0 @X0 1 tf ]
+"767
+[; ;main.c: 767: __attribute__((inline)) void Automatic_Mode(void) {
+[v _Automatic_Mode `TF3022 ~T0 @X0 1 e ]
+{
+[e :U _Automatic_Mode ]
+[f ]
+"769
+[; ;main.c: 769:     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"771
+[; ;main.c: 771:     uint24_t motor_on_time_ms;
+[v _motor_on_time_ms `um ~T0 @X0 1 a ]
+"772
+[; ;main.c: 772:     uint16_t buffer;
+[v _buffer `us ~T0 @X0 1 a ]
+"773
+[; ;main.c: 773:     _Bool b_mode_longpress = 0;
+[v _b_mode_longpress `a ~T0 @X0 1 a ]
+[e = _b_mode_longpress -> -> 0 `i `a ]
+"774
+[; ;main.c: 774:     _Bool b_mode_shortpress = 0;
+[v _b_mode_shortpress `a ~T0 @X0 1 a ]
+[e = _b_mode_shortpress -> -> 0 `i `a ]
+"775
+[; ;main.c: 775:     _Bool memory_touched = 0;
+[v _memory_touched `a ~T0 @X0 1 a ]
+[e = _memory_touched -> -> 0 `i `a ]
+"777
+[; ;main.c: 777:     g_digit_status = sadegan_e;
+[e = _g_digit_status . `E2870 2 ]
+"779
+[; ;main.c: 779:     if (0 != g_mass) {
+[e $ ! != -> -> 0 `i `ui -> _g_mass `ui 543  ]
+{
+"781
+[; ;main.c: 781:         g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"782
+[; ;main.c: 782:     } else {
+}
+[e $U 544  ]
+[e :U 543 ]
+{
+"784
+[; ;main.c: 784:         g_sss_status = set_e;
+[e = _g_sss_status . `E2858 2 ]
+"785
+[; ;main.c: 785:     }
+}
+[e :U 544 ]
+"787
+[; ;main.c: 787:     TX_Command(TX_7SEG_ON);
+[e ( _TX_Command (1 -> . `E2827 0 `uc ]
+"788
+[; ;main.c: 788:     TX_Command(TX_7SEG_SHOW_MASS);
+[e ( _TX_Command (1 -> . `E2827 19 `uc ]
+"790
+[; ;main.c: 790:     g_mass_calc.sadegan = g_mass / 100;
+[e = . _g_mass_calc 2 -> / -> _g_mass `ui -> -> 100 `i `ui `uc ]
+"791
+[; ;main.c: 791:     buffer = g_mass % 100;
+[e = _buffer -> % -> _g_mass `ui -> -> 100 `i `ui `us ]
+"792
+[; ;main.c: 792:     g_mass_calc.dahegan = buffer / 10;
+[e = . _g_mass_calc 1 -> / -> _buffer `ui -> -> 10 `i `ui `uc ]
+"793
+[; ;main.c: 793:     g_mass_calc.yekan = buffer % 10;
+[e = . _g_mass_calc 0 -> % -> _buffer `ui -> -> 10 `i `ui `uc ]
+"795
+[; ;main.c: 795:     while (1) {
+[e :U 546 ]
+{
+"797
+[; ;main.c: 797:         if (1 == MTOUCH_Service_Mainloop()) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Service_Mainloop ..  `i 548  ]
+{
+"799
+[; ;main.c: 799:             if (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 5 `i 549  ]
+{
+"801
+[; ;main.c: 801:                 TX_Command(TX_END_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 12 `uc ]
+"802
+[; ;main.c: 802:                 TX_Command(TX_STOP_DECREASE);
+[e ( _TX_Command (1 -> . `E2827 16 `uc ]
+"803
+[; ;main.c: 803:                 TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"804
+[; ;main.c: 804:                 do { LATAbits.LATA5 = 0; } while(0);
+[e :U 552 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 551 ]
+"806
+[; ;main.c: 806:                 g_tmr0_longpress_duration_counter = 0;
+[e = _g_tmr0_longpress_duration_counter -> -> 0 `i `us ]
+"808
+[; ;main.c: 808:                 while ((1 == MTOUCH_Button_isPressed(T_7)) &&
+[e $U 553  ]
+[e :U 554 ]
+"809
+[; ;main.c: 809:                         (g_tmr0_longpress_duration_counter < 80)) {
+{
+"810
+[; ;main.c: 810:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"811
+[; ;main.c: 811:                 }
+}
+[e :U 553 ]
+"808
+[; ;main.c: 808:                 while ((1 == MTOUCH_Button_isPressed(T_7)) &&
+[e $ && == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 5 `i < -> _g_tmr0_longpress_duration_counter `ui -> -> 80 `i `ui 554  ]
+[e :U 555 ]
+"813
+[; ;main.c: 813:                 if (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 5 `i 556  ]
+{
+"815
+[; ;main.c: 815:                     SET_SOUND_MODE(dimmer_is_min);
+[e ( _SET_SOUND_MODE (1 . `E2805 8 ]
+"816
+[; ;main.c: 816:                     TX_Command(TX_7SEG_ON);
+[e ( _TX_Command (1 -> . `E2827 0 `uc ]
+"817
+[; ;main.c: 817:                     TX_Command(TX_7SEG_SHOW_TIME);
+[e ( _TX_Command (1 -> . `E2827 8 `uc ]
+"820
+[; ;main.c: 820:                     while (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $U 557  ]
+[e :U 558 ]
+{
+"821
+[; ;main.c: 821:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"822
+[; ;main.c: 822:                     }
+}
+[e :U 557 ]
+"820
+[; ;main.c: 820:                     while (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 5 `i 558  ]
+[e :U 559 ]
+"825
+[; ;main.c: 825:                     Timer_Mode();
+[e ( _Timer_Mode ..  ]
+"827
+[; ;main.c: 827:                     if (g_power_event.timer) {
+[e $ ! != -> . _g_power_event 2 `i -> 0 `i 560  ]
+{
+"829
+[; ;main.c: 829:                         g_power_event.timer = 0;
+[e = . _g_power_event 2 -> -> 0 `i `uc ]
+"830
+[; ;main.c: 830:                         g_power_event.automatic = 1;
+[e = . _g_power_event 0 -> -> 1 `i `uc ]
+"831
+[; ;main.c: 831:                         break;
+[e $U 547  ]
+"832
+[; ;main.c: 832:                     }
+}
+[e :U 560 ]
+"834
+[; ;main.c: 834:                     g_digit_status = sadegan_e;
+[e = _g_digit_status . `E2870 2 ]
+"835
+[; ;main.c: 835:                 } else {
+}
+[e $U 561  ]
+[e :U 556 ]
+{
+"837
+[; ;main.c: 837:                     while (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $U 562  ]
+[e :U 563 ]
+{
+"838
+[; ;main.c: 838:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"839
+[; ;main.c: 839:                     }
+}
+[e :U 562 ]
+"837
+[; ;main.c: 837:                     while (1 == MTOUCH_Button_isPressed(T_7)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 5 `i 563  ]
+[e :U 564 ]
+"840
+[; ;main.c: 840:                     SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"842
+[; ;main.c: 842:                     Manual_Mode();
+[e ( _Manual_Mode ..  ]
+"844
+[; ;main.c: 844:                     if (g_power_event.manual) {
+[e $ ! != -> . _g_power_event 1 `i -> 0 `i 565  ]
+{
+"846
+[; ;main.c: 846:                         g_power_event.manual = 0;
+[e = . _g_power_event 1 -> -> 0 `i `uc ]
+"847
+[; ;main.c: 847:                         g_power_event.automatic = 1;
+[e = . _g_power_event 0 -> -> 1 `i `uc ]
+"848
+[; ;main.c: 848:                         break;
+[e $U 547  ]
+"849
+[; ;main.c: 849:                     }
+}
+[e :U 565 ]
+"851
+[; ;main.c: 851:                     g_digit_status = sadegan_e;
+[e = _g_digit_status . `E2870 2 ]
+"852
+[; ;main.c: 852:                 }
+}
+[e :U 561 ]
+"854
+[; ;main.c: 854:                 g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"855
+[; ;main.c: 855:             }
+}
+[e :U 549 ]
+"858
+[; ;main.c: 858:             if (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 6 `i 566  ]
+{
+"860
+[; ;main.c: 860:                 g_power_event.automatic = 1;
+[e = . _g_power_event 0 -> -> 1 `i `uc ]
+"862
+[; ;main.c: 862:                 while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $U 567  ]
+[e :U 568 ]
+{
+"863
+[; ;main.c: 863:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"864
+[; ;main.c: 864:                 }
+}
+[e :U 567 ]
+"862
+[; ;main.c: 862:                 while (1 == MTOUCH_Button_isPressed(T_6)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 6 `i 568  ]
+[e :U 569 ]
+"865
+[; ;main.c: 865:                 break;
+[e $U 547  ]
+"866
+[; ;main.c: 866:             }
+}
+[e :U 566 ]
+"869
+[; ;main.c: 869:             if (1 == MTOUCH_Button_isPressed(T_8)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 4 `i 570  ]
+{
+"871
+[; ;main.c: 871:                 switch (g_sss_status) {
+[e $U 572  ]
+{
+"873
+[; ;main.c: 873:                     case set_e:
+[e :U 573 ]
+"875
+[; ;main.c: 875:                         g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"876
+[; ;main.c: 876:                         g_digit_status = sadegan_e;
+[e = _g_digit_status . `E2870 2 ]
+"878
+[; ;main.c: 878:                         g_mass = (g_mass_calc.yekan +
+[e = _g_mass -> + + -> . _g_mass_calc 0 `ui * -> -> 10 `i `ui -> -> . _g_mass_calc 1 `us `ui * -> -> 100 `i `ui -> -> . _g_mass_calc 2 `us `ui `us ]
+"883
+[; ;main.c: 883:                         TX_Command(TX_7SEG_STORE_MASS);
+[e ( _TX_Command (1 -> . `E2827 20 `uc ]
+"884
+[; ;main.c: 884:                         TX_Command(TX_END_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 12 `uc ]
+"885
+[; ;main.c: 885:                         SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"886
+[; ;main.c: 886:                         break;
+[e $U 571  ]
+"888
+[; ;main.c: 888:                     case start_e:
+[e :U 574 ]
+"890
+[; ;main.c: 890:                         g_digit_status = sadegan_e;
+[e = _g_digit_status . `E2870 2 ]
+"892
+[; ;main.c: 892:                         motor_on_time_ms = (uint24_t) g_mass * g_time_ms;
+[e = _motor_on_time_ms * -> _g_mass `um -> _g_time_ms `um ]
+"894
+[; ;main.c: 894:                         if (0 != motor_on_time_ms) {
+[e $ ! != -> -> -> 0 `i `m `um _motor_on_time_ms 575  ]
+{
+"896
+[; ;main.c: 896:                             TX_Command(TX_7SEG_STORE_INITIAL_VALUE);
+[e ( _TX_Command (1 -> . `E2827 10 `uc ]
+"897
+[; ;main.c: 897:                             TX_Command(TX_START_DECREASE);
+[e ( _TX_Command (1 -> . `E2827 15 `uc ]
+"898
+[; ;main.c: 898:                             g_sss_status = stop_e;
+[e = _g_sss_status . `E2858 1 ]
+"899
+[; ;main.c: 899:                             Motor_ON(motor_on_time_ms);
+[e ( _Motor_ON (1 _motor_on_time_ms ]
+"900
+[; ;main.c: 900:                             SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"901
+[; ;main.c: 901:                         } else {
+}
+[e $U 576  ]
+[e :U 575 ]
+{
+"903
+[; ;main.c: 903:                             g_sss_status = set_e;
+[e = _g_sss_status . `E2858 2 ]
+"904
+[; ;main.c: 904:                             SET_SOUND_MODE(memory_is_full);
+[e ( _SET_SOUND_MODE (1 . `E2805 4 ]
+"905
+[; ;main.c: 905:                         }
+}
+[e :U 576 ]
+"907
+[; ;main.c: 907:                         break;
+[e $U 571  ]
+"909
+[; ;main.c: 909:                     case stop_e:
+[e :U 577 ]
+"911
+[; ;main.c: 911:                         g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"912
+[; ;main.c: 912:                         do { LATAbits.LATA5 = 0; } while(0);
+[e :U 580 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 579 ]
+"913
+[; ;main.c: 913:                         TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"914
+[; ;main.c: 914:                         g_tmr1_motor_counter = 0;
+[e = _g_tmr1_motor_counter -> -> 0 `i `us ]
+"915
+[; ;main.c: 915:                         TX_Command(TX_STOP_DECREASE);
+[e ( _TX_Command (1 -> . `E2827 16 `uc ]
+"916
+[; ;main.c: 916:                         TX_Command(TX_7SEG_SHOW_MASS);
+[e ( _TX_Command (1 -> . `E2827 19 `uc ]
+"918
+[; ;main.c: 918:                         SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"919
+[; ;main.c: 919:                         break;
+[e $U 571  ]
+"921
+[; ;main.c: 921:                     default:
+[e :U 581 ]
+"923
+[; ;main.c: 923:                         break;
+[e $U 571  ]
+"924
+[; ;main.c: 924:                 }
+}
+[e $U 571  ]
+[e :U 572 ]
+[e [\ -> _g_sss_status `ui , $ -> . `E2858 2 `ui 573
+ , $ -> . `E2858 0 `ui 574
+ , $ -> . `E2858 1 `ui 577
+ 581 ]
+[e :U 571 ]
+"926
+[; ;main.c: 926:                 while (1 == MTOUCH_Button_isPressed(T_8)) {
+[e $U 582  ]
+[e :U 583 ]
+{
+"927
+[; ;main.c: 927:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"928
+[; ;main.c: 928:                 }
+}
+[e :U 582 ]
+"926
+[; ;main.c: 926:                 while (1 == MTOUCH_Button_isPressed(T_8)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 4 `i 583  ]
+[e :U 584 ]
+"929
+[; ;main.c: 929:             }
+}
+[e :U 570 ]
+"933
+[; ;main.c: 933:             if (1 == MTOUCH_Button_isPressed(T_9)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 8 `i 585  ]
+{
+"935
+[; ;main.c: 935:                 g_mode_status = automatic_e;
+[e = _g_mode_status . `E2864 0 ]
+"936
+[; ;main.c: 936:                 g_sss_status = set_e;
+[e = _g_sss_status . `E2858 2 ]
+"937
+[; ;main.c: 937:                 FCN_UP();
+[e ( _FCN_UP ..  ]
+"939
+[; ;main.c: 939:                 while (1 == MTOUCH_Button_isPressed(T_9)) {
+[e $U 586  ]
+[e :U 587 ]
+{
+"940
+[; ;main.c: 940:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"941
+[; ;main.c: 941:                 }
+}
+[e :U 586 ]
+"939
+[; ;main.c: 939:                 while (1 == MTOUCH_Button_isPressed(T_9)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 8 `i 587  ]
+[e :U 588 ]
+"942
+[; ;main.c: 942:             }
+}
+[e :U 585 ]
+"945
+[; ;main.c: 945:             if (1 == MTOUCH_Button_isPressed(T_5)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 7 `i 589  ]
+{
+"947
+[; ;main.c: 947:                 g_sss_status = set_e;
+[e = _g_sss_status . `E2858 2 ]
+"948
+[; ;main.c: 948:                 FCN_NEXT();
+[e ( _FCN_NEXT ..  ]
+"950
+[; ;main.c: 950:                 while (1 == MTOUCH_Button_isPressed(T_5)) {
+[e $U 590  ]
+[e :U 591 ]
+{
+"951
+[; ;main.c: 951:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"952
+[; ;main.c: 952:                 }
+}
+[e :U 590 ]
+"950
+[; ;main.c: 950:                 while (1 == MTOUCH_Button_isPressed(T_5)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 7 `i 591  ]
+[e :U 592 ]
+"953
+[; ;main.c: 953:             }
+}
+[e :U 589 ]
+"956
+[; ;main.c: 956:             if (1 == MTOUCH_Button_isPressed(T_3)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 2 `i 593  ]
+{
+"958
+[; ;main.c: 958:                 TX_Command(TX_END_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 12 `uc ]
+"959
+[; ;main.c: 959:                 TX_Command(TX_STOP_DECREASE);
+[e ( _TX_Command (1 -> . `E2827 16 `uc ]
+"960
+[; ;main.c: 960:                 TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"961
+[; ;main.c: 961:                 do { LATAbits.LATA5 = 0; } while(0);
+[e :U 596 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 595 ]
+"963
+[; ;main.c: 963:                 g_tmr0_longpress_duration_counter = 0;
+[e = _g_tmr0_longpress_duration_counter -> -> 0 `i `us ]
+"965
+[; ;main.c: 965:                 while ((1 == MTOUCH_Button_isPressed(T_3)) &&
+[e $U 597  ]
+[e :U 598 ]
+"966
+[; ;main.c: 966:                         (g_tmr0_longpress_duration_counter < 80)) {
+{
+"967
+[; ;main.c: 967:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"968
+[; ;main.c: 968:                 }
+}
+[e :U 597 ]
+"965
+[; ;main.c: 965:                 while ((1 == MTOUCH_Button_isPressed(T_3)) &&
+[e $ && == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 2 `i < -> _g_tmr0_longpress_duration_counter `ui -> -> 80 `i `ui 598  ]
+[e :U 599 ]
+"970
+[; ;main.c: 970:                 if (1 == MTOUCH_Button_isPressed(T_3)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 2 `i 600  ]
+{
+"972
+[; ;main.c: 972:                     SET_SOUND_MODE(dimmer_is_min);
+[e ( _SET_SOUND_MODE (1 . `E2805 8 ]
+"974
+[; ;main.c: 974:                     while (1 == MTOUCH_Button_isPressed(T_3)) {
+[e $U 601  ]
+[e :U 602 ]
+{
+"975
+[; ;main.c: 975:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"976
+[; ;main.c: 976:                     }
+}
+[e :U 601 ]
+"974
+[; ;main.c: 974:                     while (1 == MTOUCH_Button_isPressed(T_3)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 2 `i 602  ]
+[e :U 603 ]
+"978
+[; ;main.c: 978:                     TX_Command(TX_7SEG_STORE_MEM_1);
+[e ( _TX_Command (1 -> . `E2827 22 `uc ]
+"979
+[; ;main.c: 979:                     TX_Command(TX_7SEG_SET_MEM_1);
+[e ( _TX_Command (1 -> . `E2827 23 `uc ]
+"981
+[; ;main.c: 981:                     ge_memory_mass[0] = g_mass;
+[e = *U + &U _ge_memory_mass * -> -> -> 0 `i `ui `ux -> -> # *U &U _ge_memory_mass `ui `ux _g_mass ]
+"982
+[; ;main.c: 982:                     g_memory_mass[0] = g_mass;
+[e = *U + &U _g_memory_mass * -> -> -> 0 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux _g_mass ]
+"984
+[; ;main.c: 984:                     ge_time_ms = g_time_ms;
+[e = _ge_time_ms _g_time_ms ]
+"986
+[; ;main.c: 986:                 } else {
+}
+[e $U 604  ]
+[e :U 600 ]
+{
+"988
+[; ;main.c: 988:                     SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"990
+[; ;main.c: 990:                     while (1 == MTOUCH_Button_isPressed(T_3)) {
+[e $U 605  ]
+[e :U 606 ]
+{
+"991
+[; ;main.c: 991:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"992
+[; ;main.c: 992:                     }
+}
+[e :U 605 ]
+"990
+[; ;main.c: 990:                     while (1 == MTOUCH_Button_isPressed(T_3)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 2 `i 606  ]
+[e :U 607 ]
+"994
+[; ;main.c: 994:                     TX_Command(TX_7SEG_SET_MEM_1);
+[e ( _TX_Command (1 -> . `E2827 23 `uc ]
+"996
+[; ;main.c: 996:                     g_mass = g_memory_mass[0];
+[e = _g_mass *U + &U _g_memory_mass * -> -> -> 0 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux ]
+"997
+[; ;main.c: 997:                     g_time_ms = ge_time_ms;
+[e = _g_time_ms _ge_time_ms ]
+"999
+[; ;main.c: 999:                 }
+}
+[e :U 604 ]
+"1001
+[; ;main.c: 1001:                 TX_Command(TX_7SEG_STORE_MASS);
+[e ( _TX_Command (1 -> . `E2827 20 `uc ]
+"1002
+[; ;main.c: 1002:                 set_digit_counters(g_memory_mass[0], g_time_ms);
+[e ( _set_digit_counters (2 , *U + &U _g_memory_mass * -> -> -> 0 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux _g_time_ms ]
+"1003
+[; ;main.c: 1003:                 g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"1004
+[; ;main.c: 1004:             }
+}
+[e :U 593 ]
+"1007
+[; ;main.c: 1007:             if (1 == MTOUCH_Button_isPressed(T_1)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 0 `i 608  ]
+{
+"1009
+[; ;main.c: 1009:                 TX_Command(TX_END_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 12 `uc ]
+"1010
+[; ;main.c: 1010:                 TX_Command(TX_STOP_DECREASE);
+[e ( _TX_Command (1 -> . `E2827 16 `uc ]
+"1011
+[; ;main.c: 1011:                 TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"1012
+[; ;main.c: 1012:                 do { LATAbits.LATA5 = 0; } while(0);
+[e :U 611 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 610 ]
+"1014
+[; ;main.c: 1014:                 g_tmr0_longpress_duration_counter = 0;
+[e = _g_tmr0_longpress_duration_counter -> -> 0 `i `us ]
+"1016
+[; ;main.c: 1016:                 while ((1 == MTOUCH_Button_isPressed(T_1)) &&
+[e $U 612  ]
+[e :U 613 ]
+"1017
+[; ;main.c: 1017:                         (g_tmr0_longpress_duration_counter < 80)) {
+{
+"1018
+[; ;main.c: 1018:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"1019
+[; ;main.c: 1019:                 }
+}
+[e :U 612 ]
+"1016
+[; ;main.c: 1016:                 while ((1 == MTOUCH_Button_isPressed(T_1)) &&
+[e $ && == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 0 `i < -> _g_tmr0_longpress_duration_counter `ui -> -> 80 `i `ui 613  ]
+[e :U 614 ]
+"1021
+[; ;main.c: 1021:                 if (1 == MTOUCH_Button_isPressed(T_1)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 0 `i 615  ]
+{
+"1023
+[; ;main.c: 1023:                     SET_SOUND_MODE(dimmer_is_min);
+[e ( _SET_SOUND_MODE (1 . `E2805 8 ]
+"1025
+[; ;main.c: 1025:                     while (1 == MTOUCH_Button_isPressed(T_1)) {
+[e $U 616  ]
+[e :U 617 ]
+{
+"1026
+[; ;main.c: 1026:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"1027
+[; ;main.c: 1027:                     }
+}
+[e :U 616 ]
+"1025
+[; ;main.c: 1025:                     while (1 == MTOUCH_Button_isPressed(T_1)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 0 `i 617  ]
+[e :U 618 ]
+"1029
+[; ;main.c: 1029:                     TX_Command(TX_7SEG_STORE_MEM_2);
+[e ( _TX_Command (1 -> . `E2827 24 `uc ]
+"1030
+[; ;main.c: 1030:                     TX_Command(TX_7SEG_SET_MEM_2);
+[e ( _TX_Command (1 -> . `E2827 25 `uc ]
+"1032
+[; ;main.c: 1032:                     ge_memory_mass[1] = g_mass;
+[e = *U + &U _ge_memory_mass * -> -> -> 1 `i `ui `ux -> -> # *U &U _ge_memory_mass `ui `ux _g_mass ]
+"1033
+[; ;main.c: 1033:                     g_memory_mass[1] = g_mass;
+[e = *U + &U _g_memory_mass * -> -> -> 1 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux _g_mass ]
+"1035
+[; ;main.c: 1035:                     ge_time_ms = g_time_ms;
+[e = _ge_time_ms _g_time_ms ]
+"1037
+[; ;main.c: 1037:                 } else {
+}
+[e $U 619  ]
+[e :U 615 ]
+{
+"1039
+[; ;main.c: 1039:                     SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"1040
+[; ;main.c: 1040:                     while (1 == MTOUCH_Button_isPressed(T_1)) {
+[e $U 620  ]
+[e :U 621 ]
+{
+"1041
+[; ;main.c: 1041:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"1042
+[; ;main.c: 1042:                     }
+}
+[e :U 620 ]
+"1040
+[; ;main.c: 1040:                     while (1 == MTOUCH_Button_isPressed(T_1)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 0 `i 621  ]
+[e :U 622 ]
+"1044
+[; ;main.c: 1044:                     TX_Command(TX_7SEG_SET_MEM_2);
+[e ( _TX_Command (1 -> . `E2827 25 `uc ]
+"1046
+[; ;main.c: 1046:                     g_mass = g_memory_mass[1];
+[e = _g_mass *U + &U _g_memory_mass * -> -> -> 1 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux ]
+"1047
+[; ;main.c: 1047:                     g_time_ms = ge_time_ms;
+[e = _g_time_ms _ge_time_ms ]
+"1048
+[; ;main.c: 1048:                 }
+}
+[e :U 619 ]
+"1050
+[; ;main.c: 1050:                 TX_Command(TX_7SEG_STORE_MASS);
+[e ( _TX_Command (1 -> . `E2827 20 `uc ]
+"1051
+[; ;main.c: 1051:                 set_digit_counters(g_memory_mass[1], g_time_ms);
+[e ( _set_digit_counters (2 , *U + &U _g_memory_mass * -> -> -> 1 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux _g_time_ms ]
+"1052
+[; ;main.c: 1052:                 g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"1053
+[; ;main.c: 1053:             }
+}
+[e :U 608 ]
+"1056
+[; ;main.c: 1056:             if (1 == MTOUCH_Button_isPressed(T_2)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 1 `i 623  ]
+{
+"1058
+[; ;main.c: 1058:                 TX_Command(TX_END_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 12 `uc ]
+"1059
+[; ;main.c: 1059:                 TX_Command(TX_STOP_DECREASE);
+[e ( _TX_Command (1 -> . `E2827 16 `uc ]
+"1060
+[; ;main.c: 1060:                 TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"1061
+[; ;main.c: 1061:                 do { LATAbits.LATA5 = 0; } while(0);
+[e :U 626 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 625 ]
+"1063
+[; ;main.c: 1063:                 g_tmr0_longpress_duration_counter = 0;
+[e = _g_tmr0_longpress_duration_counter -> -> 0 `i `us ]
+"1065
+[; ;main.c: 1065:                 while ((1 == MTOUCH_Button_isPressed(T_2)) &&
+[e $U 627  ]
+[e :U 628 ]
+"1066
+[; ;main.c: 1066:                         (g_tmr0_longpress_duration_counter < 80)) {
+{
+"1067
+[; ;main.c: 1067:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"1068
+[; ;main.c: 1068:                 }
+}
+[e :U 627 ]
+"1065
+[; ;main.c: 1065:                 while ((1 == MTOUCH_Button_isPressed(T_2)) &&
+[e $ && == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 1 `i < -> _g_tmr0_longpress_duration_counter `ui -> -> 80 `i `ui 628  ]
+[e :U 629 ]
+"1070
+[; ;main.c: 1070:                 if (1 == MTOUCH_Button_isPressed(T_2)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 1 `i 630  ]
+{
+"1072
+[; ;main.c: 1072:                     SET_SOUND_MODE(dimmer_is_min);
+[e ( _SET_SOUND_MODE (1 . `E2805 8 ]
+"1074
+[; ;main.c: 1074:                     while (1 == MTOUCH_Button_isPressed(T_2)) {
+[e $U 631  ]
+[e :U 632 ]
+{
+"1075
+[; ;main.c: 1075:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"1076
+[; ;main.c: 1076:                     }
+}
+[e :U 631 ]
+"1074
+[; ;main.c: 1074:                     while (1 == MTOUCH_Button_isPressed(T_2)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 1 `i 632  ]
+[e :U 633 ]
+"1078
+[; ;main.c: 1078:                     TX_Command(TX_7SEG_STORE_MEM_3);
+[e ( _TX_Command (1 -> . `E2827 26 `uc ]
+"1079
+[; ;main.c: 1079:                     TX_Command(TX_7SEG_SET_MEM_3);
+[e ( _TX_Command (1 -> . `E2827 27 `uc ]
+"1081
+[; ;main.c: 1081:                     ge_memory_mass[2] = g_mass;
+[e = *U + &U _ge_memory_mass * -> -> -> 2 `i `ui `ux -> -> # *U &U _ge_memory_mass `ui `ux _g_mass ]
+"1082
+[; ;main.c: 1082:                     g_memory_mass[2] = g_mass;
+[e = *U + &U _g_memory_mass * -> -> -> 2 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux _g_mass ]
+"1084
+[; ;main.c: 1084:                     ge_time_ms = g_time_ms;
+[e = _ge_time_ms _g_time_ms ]
+"1086
+[; ;main.c: 1086:                 } else {
+}
+[e $U 634  ]
+[e :U 630 ]
+{
+"1088
+[; ;main.c: 1088:                     SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"1090
+[; ;main.c: 1090:                     while (1 == MTOUCH_Button_isPressed(T_2)) {
+[e $U 635  ]
+[e :U 636 ]
+{
+"1091
+[; ;main.c: 1091:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"1092
+[; ;main.c: 1092:                     }
+}
+[e :U 635 ]
+"1090
+[; ;main.c: 1090:                     while (1 == MTOUCH_Button_isPressed(T_2)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 1 `i 636  ]
+[e :U 637 ]
+"1094
+[; ;main.c: 1094:                     TX_Command(TX_7SEG_SET_MEM_3);
+[e ( _TX_Command (1 -> . `E2827 27 `uc ]
+"1096
+[; ;main.c: 1096:                     g_mass = g_memory_mass[2];
+[e = _g_mass *U + &U _g_memory_mass * -> -> -> 2 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux ]
+"1097
+[; ;main.c: 1097:                     g_time_ms = ge_time_ms;
+[e = _g_time_ms _ge_time_ms ]
+"1098
+[; ;main.c: 1098:                 }
+}
+[e :U 634 ]
+"1100
+[; ;main.c: 1100:                 TX_Command(TX_7SEG_STORE_MASS);
+[e ( _TX_Command (1 -> . `E2827 20 `uc ]
+"1101
+[; ;main.c: 1101:                 set_digit_counters(g_memory_mass[2], g_time_ms);
+[e ( _set_digit_counters (2 , *U + &U _g_memory_mass * -> -> -> 2 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux _g_time_ms ]
+"1102
+[; ;main.c: 1102:                 g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"1103
+[; ;main.c: 1103:             }
+}
+[e :U 623 ]
+"1106
+[; ;main.c: 1106:             if (1 == MTOUCH_Button_isPressed(T_4)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 3 `i 638  ]
+{
+"1108
+[; ;main.c: 1108:                 TX_Command(TX_END_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 12 `uc ]
+"1109
+[; ;main.c: 1109:                 TX_Command(TX_STOP_DECREASE);
+[e ( _TX_Command (1 -> . `E2827 16 `uc ]
+"1110
+[; ;main.c: 1110:                 TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"1111
+[; ;main.c: 1111:                 do { LATAbits.LATA5 = 0; } while(0);
+[e :U 641 ]
+{
+[e = . . _LATAbits 0 5 -> -> 0 `i `uc ]
+}
+[e :U 640 ]
+"1113
+[; ;main.c: 1113:                 g_tmr0_longpress_duration_counter = 0;
+[e = _g_tmr0_longpress_duration_counter -> -> 0 `i `us ]
+"1115
+[; ;main.c: 1115:                 while ((1 == MTOUCH_Button_isPressed(T_4)) &&
+[e $U 642  ]
+[e :U 643 ]
+"1116
+[; ;main.c: 1116:                         (g_tmr0_longpress_duration_counter < 80)) {
+{
+"1117
+[; ;main.c: 1117:                     MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"1118
+[; ;main.c: 1118:                 }
+}
+[e :U 642 ]
+"1115
+[; ;main.c: 1115:                 while ((1 == MTOUCH_Button_isPressed(T_4)) &&
+[e $ && == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 3 `i < -> _g_tmr0_longpress_duration_counter `ui -> -> 80 `i `ui 643  ]
+[e :U 644 ]
+"1120
+[; ;main.c: 1120:                 if (1 == MTOUCH_Button_isPressed(T_4)) {
+[e $ ! == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 3 `i 645  ]
+{
+"1122
+[; ;main.c: 1122:                     SET_SOUND_MODE(dimmer_is_min);
+[e ( _SET_SOUND_MODE (1 . `E2805 8 ]
+"1124
+[; ;main.c: 1124:                     while (1 == MTOUCH_Button_isPressed(T_4)) {
+[e $U 646  ]
+[e :U 647 ]
+{
+"1125
+[; ;main.c: 1125:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"1126
+[; ;main.c: 1126:                     }
+}
+[e :U 646 ]
+"1124
+[; ;main.c: 1124:                     while (1 == MTOUCH_Button_isPressed(T_4)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 3 `i 647  ]
+[e :U 648 ]
+"1128
+[; ;main.c: 1128:                     TX_Command(TX_7SEG_STORE_MEM_4);
+[e ( _TX_Command (1 -> . `E2827 28 `uc ]
+"1129
+[; ;main.c: 1129:                     TX_Command(TX_7SEG_SET_MEM_4);
+[e ( _TX_Command (1 -> . `E2827 29 `uc ]
+"1131
+[; ;main.c: 1131:                     ge_memory_mass[3] = g_mass;
+[e = *U + &U _ge_memory_mass * -> -> -> 3 `i `ui `ux -> -> # *U &U _ge_memory_mass `ui `ux _g_mass ]
+"1132
+[; ;main.c: 1132:                     g_memory_mass[3] = g_mass;
+[e = *U + &U _g_memory_mass * -> -> -> 3 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux _g_mass ]
+"1134
+[; ;main.c: 1134:                     ge_time_ms = g_time_ms;
+[e = _ge_time_ms _g_time_ms ]
+"1136
+[; ;main.c: 1136:                 } else {
+}
+[e $U 649  ]
+[e :U 645 ]
+{
+"1138
+[; ;main.c: 1138:                     SET_SOUND_MODE(learn_rf_code_is_start);
+[e ( _SET_SOUND_MODE (1 . `E2805 0 ]
+"1140
+[; ;main.c: 1140:                     while (1 == MTOUCH_Button_isPressed(T_4)) {
+[e $U 650  ]
+[e :U 651 ]
+{
+"1141
+[; ;main.c: 1141:                         MTOUCH_Service_Mainloop();
+[e ( _MTOUCH_Service_Mainloop ..  ]
+"1142
+[; ;main.c: 1142:                     }
+}
+[e :U 650 ]
+"1140
+[; ;main.c: 1140:                     while (1 == MTOUCH_Button_isPressed(T_4)) {
+[e $ == -> 1 `i -> ( _MTOUCH_Button_isPressed (1 . `E2643 3 `i 651  ]
+[e :U 652 ]
+"1144
+[; ;main.c: 1144:                     TX_Command(TX_7SEG_SET_MEM_4);
+[e ( _TX_Command (1 -> . `E2827 29 `uc ]
+"1146
+[; ;main.c: 1146:                     g_mass = g_memory_mass[3];
+[e = _g_mass *U + &U _g_memory_mass * -> -> -> 3 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux ]
+"1147
+[; ;main.c: 1147:                     g_time_ms = ge_time_ms;
+[e = _g_time_ms _ge_time_ms ]
+"1148
+[; ;main.c: 1148:                 }
+}
+[e :U 649 ]
+"1150
+[; ;main.c: 1150:                 TX_Command(TX_7SEG_STORE_MASS);
+[e ( _TX_Command (1 -> . `E2827 20 `uc ]
+"1151
+[; ;main.c: 1151:                 set_digit_counters(g_memory_mass[3], g_time_ms);
+[e ( _set_digit_counters (2 , *U + &U _g_memory_mass * -> -> -> 3 `i `ui `ux -> -> # *U &U _g_memory_mass `ui `ux _g_time_ms ]
+"1152
+[; ;main.c: 1152:                 g_sss_status = start_e;
+[e = _g_sss_status . `E2858 0 ]
+"1153
+[; ;main.c: 1153:             }
+}
+[e :U 638 ]
+"1156
+[; ;main.c: 1156:             if (gb_motor_timer_off) {
+[e $ ! != -> _gb_motor_timer_off `i -> 0 `i 653  ]
+{
+"1158
+[; ;main.c: 1158:                 gb_motor_timer_off = 0;
+[e = _gb_motor_timer_off -> -> 0 `i `a ]
+"1164
+[; ;main.c: 1164:                 SET_SOUND_MODE(dimmer_is_max);
+[e ( _SET_SOUND_MODE (1 . `E2805 7 ]
+"1165
+[; ;main.c: 1165:             }
+}
+[e :U 653 ]
+"1166
+[; ;main.c: 1166:         }
+}
+[e :U 548 ]
+"1167
+[; ;main.c: 1167:     }
+}
+[e :U 545 ]
+[e $U 546  ]
+[e :U 547 ]
+"1169
+[; ;main.c: 1169:     if (g_power_event.automatic) {
+[e $ ! != -> . _g_power_event 0 `i -> 0 `i 654  ]
+{
+"1171
+[; ;main.c: 1171:         g_power_event.automatic = 0;
+[e = . _g_power_event 0 -> -> 0 `i `uc ]
+"1172
+[; ;main.c: 1172:         TMR1_StopTimer();
+[e ( _TMR1_StopTimer ..  ]
+"1173
+[; ;main.c: 1173:         g_tmr1_motor_counter = 0;
+[e = _g_tmr1_motor_counter -> -> 0 `i `us ]
+"1174
+[; ;main.c: 1174:         TX_Command(TX_END_SELECT_DIGIT);
+[e ( _TX_Command (1 -> . `E2827 12 `uc ]
+"1176
+[; ;main.c: 1176:         FCN_POWER();
+[e ( _FCN_POWER ..  ]
+"1177
+[; ;main.c: 1177:     }
+}
+[e :U 654 ]
+"1178
+[; ;main.c: 1178: }
+[e :UE 542 ]
+}
+[v F3029 `(v ~T0 @X0 1 tf ]
+"1180
+[; ;main.c: 1180: __attribute__((inline)) void Reset_Digit_Value(void) {
+[v _Reset_Digit_Value `TF3029 ~T0 @X0 1 e ]
+{
+[e :U _Reset_Digit_Value ]
+[f ]
+"1182
+[; ;main.c: 1182:     g_mass_calc.yekan = 0;
+[e = . _g_mass_calc 0 -> -> 0 `i `uc ]
+"1183
+[; ;main.c: 1183:     g_mass_calc.dahegan = 0;
+[e = . _g_mass_calc 1 -> -> 0 `i `uc ]
+"1184
+[; ;main.c: 1184:     g_mass_calc.sadegan = 0;
+[e = . _g_mass_calc 2 -> -> 0 `i `uc ]
+"1186
+[; ;main.c: 1186:     g_time_calc.yekan = 0;
+[e = . _g_time_calc 0 -> -> 0 `i `uc ]
+"1187
+[; ;main.c: 1187:     g_time_calc.dahegan = 0;
+[e = . _g_time_calc 1 -> -> 0 `i `uc ]
+"1188
+[; ;main.c: 1188:     g_time_calc.sadegan = 1;
+[e = . _g_time_calc 2 -> -> 1 `i `uc ]
+"1189
+[; ;main.c: 1189: }
+[e :UE 655 ]
+}
+[v F3031 `(v ~T0 @X0 1 tf2`us`us ]
+"1191
+[; ;main.c: 1191: __attribute__((inline)) void set_digit_counters(uint16_t mass, uint16_t time) {
+[v _set_digit_counters `TF3031 ~T0 @X0 1 e ]
+{
+[e :U _set_digit_counters ]
+[v _mass `us ~T0 @X0 1 r1 ]
+[v _time `us ~T0 @X0 1 r2 ]
+[f ]
+"1193
+[; ;main.c: 1193:     uint16_t buffer;
+[v _buffer `us ~T0 @X0 1 a ]
+"1195
+[; ;main.c: 1195:     g_mass_calc.sadegan = mass / 100;
+[e = . _g_mass_calc 2 -> / -> _mass `ui -> -> 100 `i `ui `uc ]
+"1196
+[; ;main.c: 1196:     buffer = mass % 100;
+[e = _buffer -> % -> _mass `ui -> -> 100 `i `ui `us ]
+"1197
+[; ;main.c: 1197:     g_mass_calc.dahegan = buffer / 10;
+[e = . _g_mass_calc 1 -> / -> _buffer `ui -> -> 10 `i `ui `uc ]
+"1198
+[; ;main.c: 1198:     g_mass_calc.yekan = buffer % 10;
+[e = . _g_mass_calc 0 -> % -> _buffer `ui -> -> 10 `i `ui `uc ]
+"1200
+[; ;main.c: 1200:     g_time_calc.sadegan = time / 100;
+[e = . _g_time_calc 2 -> / -> _time `ui -> -> 100 `i `ui `uc ]
+"1201
+[; ;main.c: 1201:     buffer = time % 100;
+[e = _buffer -> % -> _time `ui -> -> 100 `i `ui `us ]
+"1202
+[; ;main.c: 1202:     g_time_calc.dahegan = buffer / 10;
+[e = . _g_time_calc 1 -> / -> _buffer `ui -> -> 10 `i `ui `uc ]
+"1203
+[; ;main.c: 1203:     g_time_calc.yekan = buffer % 10;
+[e = . _g_time_calc 0 -> % -> _buffer `ui -> -> 10 `i `ui `uc ]
+"1205
+[; ;main.c: 1205: }
+[e :UE 656 ]
+}
+[v F3036 `(v ~T0 @X0 1 tf ]
+"1207
+[; ;main.c: 1207: __attribute__((inline)) void reset_digit_counters(void) {
+[v _reset_digit_counters `TF3036 ~T0 @X0 1 e ]
+{
+[e :U _reset_digit_counters ]
+[f ]
+"1209
+[; ;main.c: 1209:     g_digit_status = sadegan_e;
+[e = _g_digit_status . `E2870 2 ]
+"1211
+[; ;main.c: 1211:     g_mass_calc.yekan = 0;
+[e = . _g_mass_calc 0 -> -> 0 `i `uc ]
+"1212
+[; ;main.c: 1212:     g_mass_calc.dahegan = 0;
+[e = . _g_mass_calc 1 -> -> 0 `i `uc ]
+"1213
+[; ;main.c: 1213:     g_mass_calc.sadegan = 0;
+[e = . _g_mass_calc 2 -> -> 0 `i `uc ]
+"1215
+[; ;main.c: 1215:     g_time_calc.yekan = 0;
+[e = . _g_time_calc 0 -> -> 0 `i `uc ]
+"1216
+[; ;main.c: 1216:     g_time_calc.dahegan = 0;
+[e = . _g_time_calc 1 -> -> 0 `i `uc ]
+"1217
+[; ;main.c: 1217:     g_time_calc.sadegan = 0;
+[e = . _g_time_calc 2 -> -> 0 `i `uc ]
+"1218
+[; ;main.c: 1218: }
+[e :UE 657 ]
+}

@@ -1,0 +1,869 @@
+/**
+ * @Company:
+ *  PARMIS-SMARTHOME
+ * 
+ * @Start_Date:
+ *  18/08/1400
+ *  
+ * @END_Date:    
+ *  28/08/1400
+ *  
+ * @File_Name:
+ *  Coffee_Grinder_Main.c
+ * 
+ * @Version:
+ *  v.2
+ * 
+ * @Summary:
+ *  
+ * 
+ * @Description:    
+ *  FCN                         : Function
+ *  MEM                         : Memory-touch
+ *  INC                         : Increase
+ *  COM                         : Common pin of 7-segment
+ *  sss                         : Start/Stop/Set
+ *  CMD                         : Command
+ * 
+ * @Author:
+ *  Eng.Hamid.Manouchehri
+ */
+
+/*************************************************
+ ******************< Main MCU >*******************
+ *************************************************/
+
+#include "mcc_generated_files/mcc.h"
+#include "sound/sound_unit.h"
+
+//******************************************************************************< ENUMERATOR >
+
+enum {
+    TX_7SEG_ON = 11,
+    TX_7SEG_OFF = 12,
+    TX_MEM_1 = 21,
+    TX_MEM_2 = 22,
+    TX_MEM_3 = 23,
+    TX_MEM_4 = 24,
+    TX_7SEG_MANUAL = 30,
+    TX_7SEG_AUTOMATIC = 31,
+    TX_SELECT_DIGIT = 41,
+    TX_END_SELECT_DIGIT = 42,
+    TX_INCREASE_DIGIT = 43,
+    COUNT_DOWN_FINISHED = 50,
+    TX_STORE_TIME = 62
+
+};
+
+typedef enum {
+    start_e = 1,
+    stop_e,
+    set_e
+} sss_status_e;
+
+sss_status_e g_sss_status;
+
+typedef enum {
+    automatic_e = 1,
+    manual_e,
+    timer_e
+} mode_status_e;
+
+mode_status_e g_mode_status;
+
+typedef enum {
+    yekan_e = 1,
+    dahegan_e,
+    sadegan_e
+} digit_status_e;
+
+digit_status_e g_digit_status;
+
+//******************************************************************************< MACRO >
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+ *****************************< ADJUSTABLE SETTING >*****************************
+ |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+#define ENABLE_SOUND                         true
+#define TMR0_LONGPRESS_LEARN_DURATION        183 // 183 * 16.384(ms) = 3(s)
+
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+#define MOTOR_ON                             true
+#define MOTOR_OFF                            false
+
+#define SHORTPRESS                           true
+#define LONGPRESS                            false
+
+#define ENABLE                               true
+#define DISABLE                              false
+
+#define TX_CMD                               100         
+#define TX_DATA                              120
+
+//******************************************************************************< STRUCTURE >
+
+typedef struct {
+    unsigned PushButton : 1;
+    unsigned up : 1;
+    unsigned next : 1;
+    unsigned memories : 1;
+} touch_status_t;
+
+touch_status_t g_touch_status;
+
+typedef struct {
+    uint8_t yekan;
+    uint8_t dahegan;
+    uint8_t sadegan;
+} timer_calc_t;
+
+timer_calc_t g_timer_calc;
+
+typedef struct {
+    uint8_t yekan;
+    uint8_t dahegan;
+    uint8_t sadegan;
+} mass_calc_t;
+
+mass_calc_t g_mass_calc;
+
+typedef struct {
+    unsigned off_led : 1;
+    unsigned touch_leds : 1;
+    unsigned touches : 1;
+    unsigned motor : 1;
+    unsigned _7segment : 1;
+    unsigned PushButton : 1;
+} status_t;
+
+status_t g_status;
+
+typedef struct {
+    uint16_t mass;
+    uint16_t time;
+} memory_t;
+
+memory_t g_memory[4];
+
+//******************************************************************************< FUNCTION DECLARATION >
+inline void init_panel(void);
+inline void EEPROM_init(void);
+inline void tmr0_long_press_duration(void);
+inline void tmr1_motor_on_duration(void);
+inline void FCN_MEM_1(bool);
+inline void FCN_MEM_2(bool);
+inline void FCN_MEM_3(bool);
+inline void FCN_MEM_4(bool);
+inline void FCN_NEXT(void);
+inline void FCN_UP(void);
+inline void FCN_MODE(bool);
+inline void FCN_POWER(void);
+inline void FCN_START_STOP_SET(void);
+inline void Which_Touch_Pressed(void);
+inline void Touch_Function(uint8_t, bool);
+inline void Toggle_Touch_LEDs(void);
+inline void Toggle_OFFLED(void);
+inline void Toggle_Touches(void);
+inline void Toggle_7seg(void);
+inline void Toggle_PushButton(void);
+inline void Motor_ON(uint24_t);
+inline void Common_Routines(void);
+inline void TX_Command(uint8_t);
+inline uint8_t RX_Command(void);
+
+//******************************************************************************< GLOBAL VARIABLE >
+
+__eeprom uint16_t ge_memory_mass[4];
+__eeprom uint16_t ge_memory_time[4];
+
+uint16_t g_motor_on_duration_ms;
+uint16_t g_7seg_change_digit_duration;
+
+uint16_t g_tmr0_longpress_duration_counter;
+
+uint16_t g_mass;
+uint16_t g_timer_ms; // Grinding time per 1 Gram
+
+//******************************************************************************< MAIN >
+
+void main(void) {
+
+    SYSTEM_Initialize();
+    init_panel();
+    EEPROM_init();
+
+    INTERRUPT_GlobalInterruptEnable();
+    INTERRUPT_PeripheralInterruptEnable();
+
+    TMR0_SetInterruptHandler(tmr0_long_press_duration); // 16.384(ms)
+    TMR1_SetInterruptHandler(tmr1_motor_on_duration); // 40(ms)
+
+    while (1) {
+
+        Which_Touch_Pressed();
+        //        Common_Routines();
+
+    }
+}
+
+//******************************************************************************< FUNCTION DEFINITION >
+
+inline void init_panel(void) {
+
+    g_mass = 0;
+    g_timer_ms = 100; // .1(s) default grinding time per 1 Gram
+
+    g_status.off_led = true; // Initially ON
+    Toggle_OFFLED();
+
+    g_status.touch_leds = false; // Initially OFF
+    Toggle_Touch_LEDs();
+
+    g_status.touches = DISABLE;
+
+    g_status._7segment = DISABLE;
+    Toggle_7seg();
+
+    g_status.PushButton = DISABLE;
+
+    MOTOR_SetLow(); // Ensure motor is off
+
+    g_touch_status.next = ENABLE;
+    g_touch_status.up = ENABLE;
+    g_touch_status.memories = ENABLE;
+
+    g_sss_status = set_e;
+    g_mode_status = automatic_e;
+    g_digit_status = yekan_e;
+}
+
+inline void EEPROM_init(void) {
+
+    for (uint8_t i = 0; i < 4; i++) {
+
+        g_memory[i].mass = ge_memory_mass[i];
+        g_memory[i].time = ge_memory_time[i];
+    }
+
+}
+
+inline void Which_Touch_Pressed(void) {
+
+    uint8_t pressed_touch_num;
+
+    if (true == MTOUCH_Service_Mainloop()) {
+
+        if ((true == MTOUCH_Button_isPressed(Button0)) &&
+                (ENABLE == g_status.touches)) {
+            pressed_touch_num = Button0;
+        } else if ((true == MTOUCH_Button_isPressed(Button1)) &&
+                (ENABLE == g_status.touches)) {
+            pressed_touch_num = Button1;
+        } else if ((true == MTOUCH_Button_isPressed(Button2)) &&
+                (ENABLE == g_status.touches)) {
+            pressed_touch_num = Button2;
+        } else if ((true == MTOUCH_Button_isPressed(Button3)) &&
+                (ENABLE == g_status.touches)) {
+            pressed_touch_num = Button3;
+        } else if ((true == MTOUCH_Button_isPressed(Button4)) &&
+                (ENABLE == g_status.touches)) {
+            pressed_touch_num = Button4;
+        } else if ((true == MTOUCH_Button_isPressed(Button5)) &&
+                (ENABLE == g_status.touches)) {
+            pressed_touch_num = Button5;
+        } else if (true == MTOUCH_Button_isPressed(Button6)) {
+            pressed_touch_num = Button6;
+        } else if ((true == MTOUCH_Button_isPressed(Button7)) &&
+                (ENABLE == g_status.touches)) {
+            pressed_touch_num = Button7;
+        } else if ((true == MTOUCH_Button_isPressed(Button8)) &&
+                (ENABLE == g_status.touches)) {
+            pressed_touch_num = Button8;
+        }
+
+
+        if (true == MTOUCH_Button_isPressed(pressed_touch_num)) {
+
+            g_tmr0_longpress_duration_counter = 0;
+
+            while ((true == MTOUCH_Button_isPressed(pressed_touch_num)) &&
+                    (g_tmr0_longpress_duration_counter < TMR0_LONGPRESS_LEARN_DURATION)) {
+                MTOUCH_Service_Mainloop();
+            }
+
+            if (true == MTOUCH_Button_isPressed(pressed_touch_num)) { //        < LONG-PRESS DETECTED > 
+
+                Touch_Function(pressed_touch_num, LONGPRESS);
+
+
+
+            } else { //                                                         < SHORT-PRESS DETECTED >                                      
+
+                Touch_Function(pressed_touch_num, SHORTPRESS);
+            }
+
+            while (true == MTOUCH_Button_isPressed(pressed_touch_num)) {
+                MTOUCH_Service_Mainloop();
+            }// End of while()
+
+        } // End of if()
+    } // End of main if()
+}
+
+inline void Touch_Function(uint8_t touch_num, bool touch_type) {
+
+    switch (touch_num) {
+
+        case T_3: //                                                            < Touch : MEMORY_1 >
+
+            FCN_MEM_1(touch_type);
+            break;
+
+        case T_1: //                                                            < Touch : MEMORY_2 >
+
+            FCN_MEM_2(touch_type);
+            break;
+
+        case T_2: //                                                            < Touch : MEMORY_3 >
+
+            FCN_MEM_3(touch_type);
+            break;
+
+        case T_4: //                                                            < Touch : MEMORY_4 >
+
+            FCN_MEM_4(touch_type);
+            break;
+
+        case T_8: //                                                            < Touch Short_Press : START/STOP/SET >
+
+            FCN_START_STOP_SET();
+            break;
+
+        case T_7: //                                                            < Touch : MODE >
+
+            FCN_MODE(touch_type);
+            break;
+
+        case T_6: //                                                            < Touch Short_Press : POWER >
+
+            FCN_POWER();
+            break;
+
+        case T_5: //                                                            < Touch Short_Press : NEXT >
+
+            FCN_NEXT();
+            break;
+
+        case T_9: //                                                            < Touch Short_Press : UP >
+
+            FCN_UP();
+            break;
+
+        default:
+            // Do nothing
+            break;
+    }// End of switch()
+}
+
+inline void FCN_MEM_1(bool touch_type) { //                                     < Memory_1 >
+
+    if (g_touch_status.memories) {
+
+        if (LONGPRESS == touch_type) { // Learn
+
+            g_memory[0].mass = g_mass;
+            g_memory[0].time = g_timer_ms;
+
+            ge_memory_mass[0] = g_mass;
+            ge_memory_time[0] = g_timer_ms;
+
+#if ENABLE_SOUND
+            SET_SOUND_MODE(dimmer_is_min);
+#endif
+        } else { // < ShortPress >: function
+
+            if (0 != ((uint24_t) g_memory[0].mass * g_memory[0].time)) {
+
+                Motor_ON((uint24_t) g_memory[0].mass * g_memory[0].time);
+                g_sss_status = stop_e;
+            } else {
+                g_sss_status = start_e;
+            }
+
+
+#if ENABLE_SOUND        
+            SET_SOUND_MODE(learn_rf_code_is_start);
+#endif        
+        } // End of else
+    } // End of if()
+}
+
+inline void FCN_MEM_2(bool touch_type) { //                                     < Memory_2 >
+
+    if (g_touch_status.memories) {
+
+        if (LONGPRESS == touch_type) { // Learn
+
+            g_memory[1].mass = g_mass;
+            g_memory[1].time = g_timer_ms;
+
+            ge_memory_mass[1] = g_mass;
+            ge_memory_time[1] = g_timer_ms;
+
+
+#if ENABLE_SOUND        
+            SET_SOUND_MODE(dimmer_is_min);
+#endif        
+        } else { // < ShortPress >: function
+
+            if (0 != ((uint24_t) g_memory[1].mass * g_memory[1].time)) {
+
+                Motor_ON((uint24_t) g_memory[1].mass * g_memory[1].time);
+                g_sss_status = stop_e;
+            } else {
+                g_sss_status = start_e;
+            }
+
+
+#if ENABLE_SOUND        
+            SET_SOUND_MODE(learn_rf_code_is_start);
+#endif        
+        } // End of else
+    } // End of if()
+}
+
+inline void FCN_MEM_3(bool touch_type) { //                                     < Memory_3 >
+
+    if (g_touch_status.memories) {
+
+        if (LONGPRESS == touch_type) { // Learn
+
+            g_memory[2].mass = g_mass;
+            g_memory[2].time = g_timer_ms;
+
+            ge_memory_mass[2] = g_mass;
+            ge_memory_time[2] = g_timer_ms;
+
+
+#if ENABLE_SOUND        
+            SET_SOUND_MODE(dimmer_is_min);
+#endif        
+        } else { // < ShortPress >: function
+
+            if (0 != ((uint24_t) g_memory[2].mass * g_memory[2].time)) {
+
+                Motor_ON((uint24_t) g_memory[2].mass * g_memory[2].time);
+                g_sss_status = stop_e;
+            } else {
+                g_sss_status = start_e;
+            }
+
+
+
+#if ENABLE_SOUND        
+            SET_SOUND_MODE(learn_rf_code_is_start);
+#endif        
+        } // End of else
+    } // End of if()
+}
+
+inline void FCN_MEM_4(bool touch_type) { //                                     < Memory_4 >
+
+    if (g_touch_status.memories) {
+
+        if (LONGPRESS == touch_type) {
+
+            g_memory[3].mass = g_mass;
+            g_memory[3].time = g_timer_ms;
+
+            ge_memory_mass[3] = g_mass;
+            ge_memory_time[3] = g_timer_ms;
+
+#if ENABLE_SOUND        
+            SET_SOUND_MODE(dimmer_is_min);
+#endif        
+        } else { // < ShortPress >: function
+
+            if (0 != ((uint24_t) g_memory[3].mass * g_memory[3].time)) {
+
+                Motor_ON((uint24_t) g_memory[3].mass * g_memory[3].time);
+                g_sss_status = stop_e;
+            } else {
+                g_sss_status = start_e;
+            }
+
+#if ENABLE_SOUND        
+            SET_SOUND_MODE(learn_rf_code_is_start);
+#endif        
+        } // End of else
+    } // End of if()
+}
+
+inline void FCN_NEXT(void) { //                                                 < Next Digit >
+
+    if (g_touch_status.next) {
+
+        TX_Command(TX_SELECT_DIGIT);
+
+        switch (g_digit_status) {
+
+            case yekan_e:
+                g_digit_status = dahegan_e;
+                break;
+
+            case dahegan_e:
+                g_digit_status = sadegan_e;
+                break;
+
+            case sadegan_e:
+                g_digit_status = yekan_e;
+                break;
+
+            default:
+                // Do nothing
+                break;
+        } // End of switch
+
+        g_sss_status = set_e;
+    } // End of if()
+
+}
+
+inline void FCN_UP(void) { //                                                   < Up >
+
+    if (g_touch_status.up) {
+
+        TX_Command(TX_INCREASE_DIGIT);
+
+        switch (g_mode_status) {
+
+            case automatic_e:
+
+                if (yekan_e == g_digit_status) {
+
+                    g_mass_calc.yekan++;
+                    if (10 == g_mass_calc.yekan) {
+                        g_mass_calc.yekan = 0;
+                    }
+                } else if (dahegan_e == g_digit_status) {
+
+                    g_mass_calc.dahegan++;
+                    if (10 == g_mass_calc.dahegan) {
+                        g_mass_calc.dahegan = 0;
+                    }
+                } else if (sadegan_e == g_digit_status) {
+
+                    g_mass_calc.sadegan++;
+                    if (10 == g_mass_calc.sadegan) {
+                        g_mass_calc.sadegan = 0;
+                    }
+                }
+                break;
+
+            case timer_e:
+
+                if (yekan_e == g_digit_status) {
+
+                    g_timer_calc.yekan++;
+                    if (10 == g_timer_calc.yekan) {
+                        g_timer_calc.yekan = 0;
+                    }
+                } else if (dahegan_e == g_digit_status) {
+
+                    g_timer_calc.dahegan++;
+                    if (10 == g_timer_calc.dahegan) {
+                        g_timer_calc.dahegan = 0;
+                    }
+                } else if (sadegan_e == g_digit_status) {
+
+                    g_timer_calc.sadegan++;
+                    if (10 == g_timer_calc.sadegan) {
+                        g_timer_calc.sadegan = 0;
+                    }
+                }
+                break;
+
+            default:
+                // Do nothing
+                break;
+        } // End of switch()
+
+        g_sss_status = set_e;
+    } // End of if()
+}
+
+inline void FCN_MODE(bool touch_type) { //                                      < Mode >
+
+    if (LONGPRESS == touch_type) { //                                           < LONGPRESS: Timer >
+
+        TX_Command(TX_SELECT_DIGIT);
+        g_touch_status.up = ENABLE;
+        g_touch_status.next = ENABLE;
+        g_status.PushButton = DISABLE;
+        g_mode_status = timer_e;
+        g_sss_status = set_e;
+
+#if ENABLE_SOUND        
+        SET_SOUND_MODE(dimmer_is_min);
+#endif        
+    } else { //                                                                 < SHORTPRESS > 
+        // < Pay attention > the bodies must be vice-versa:
+        if (automatic_e == g_mode_status) { //                                  < Manual >
+
+            TX_Command(TX_7SEG_MANUAL);
+            g_touch_status.up = DISABLE;
+            g_touch_status.next = DISABLE;
+            g_status.PushButton = ENABLE;
+            g_touch_status.memories = DISABLE;
+
+            g_mass_calc.yekan = 0;
+            g_mass_calc.dahegan = 0;
+            g_mass_calc.sadegan = 0;
+            g_mass = 0;
+            g_timer_ms = 100;
+            g_digit_status = yekan_e;
+
+
+            g_sss_status = start_e;
+            g_mode_status = manual_e; // Toggle mode 
+
+        } else if (manual_e == g_mode_status) { //                              < Automatic >
+
+            TX_Command(TX_7SEG_AUTOMATIC);
+            g_touch_status.up = ENABLE;
+            g_touch_status.next = ENABLE;
+            g_status.PushButton = DISABLE;
+            g_touch_status.memories = ENABLE;
+            g_sss_status = set_e;
+            g_mode_status = automatic_e; // Toggle mode            
+        }
+
+
+#if ENABLE_SOUND        
+        SET_SOUND_MODE(learn_rf_code_is_start);
+#endif        
+    }
+}
+
+inline void FCN_POWER(void) { //                                                < Power >
+
+    g_mass = 0;
+    g_timer_ms = 100;
+    g_sss_status = set_e;
+    g_mode_status = automatic_e;
+    g_digit_status = yekan_e;
+
+    Toggle_Touch_LEDs();
+    Toggle_OFFLED();
+    Toggle_Touches();
+    Toggle_7seg();
+    Toggle_PushButton();
+    MOTOR_SetLow(); // Ensure motor is off anyway
+
+#if ENABLE_SOUND    
+    SET_SOUND_MODE(learn_rf_code_is_start);
+#endif    
+}
+
+inline void FCN_START_STOP_SET(void) { //                                       < Start/Stop/Set >
+
+    uint24_t motor_on_time;
+
+    switch (g_sss_status) {
+
+        case start_e: //                                                        < START >
+
+            if (automatic_e == g_mode_status) {
+
+                motor_on_time = (uint24_t) g_mass * g_timer_ms;
+
+                if (0 != motor_on_time) {
+
+                    //                    TMR1_WriteTimer(0);
+                    Motor_ON(motor_on_time);
+                    TX_Command(TX_STORE_TIME); // Start '7-segs' to decrease
+                    g_sss_status = stop_e; // Toggle to stop
+                } else { // Motor is not started
+
+                    TX_Command(TX_SELECT_DIGIT);
+                    g_sss_status = start_e; // Toggle to start
+                }
+
+            } else { // Manual mode:
+
+                MOTOR_SetHigh();
+                //                g_sss_status = stop_e; // Toggle to stop
+            }
+
+            TX_Command(TX_END_SELECT_DIGIT);
+            g_sss_status = stop_e; // Toggle to stop
+            break;
+
+        case stop_e: //                                                         < STOP >
+
+            MOTOR_SetLow();
+            TMR1_StopTimer();
+            g_sss_status = start_e; // Toggle to start
+            TX_Command(TX_END_SELECT_DIGIT);
+            break;
+
+        case set_e: //                                                          < SET >
+
+            if (automatic_e == g_mode_status) {
+
+                g_mass = g_mass_calc.yekan +
+                        (10 * (uint16_t) g_mass_calc.dahegan) +
+                        (100 * (uint16_t) g_mass_calc.sadegan);
+
+            } else if (timer_e == g_mode_status) {
+
+                g_timer_ms = g_timer_calc.yekan +
+                        (10 * (uint16_t) g_timer_calc.dahegan) +
+                        (100 * (uint16_t) g_timer_calc.sadegan);
+
+
+                g_mode_status = automatic_e;
+            }
+
+            TX_Command(TX_END_SELECT_DIGIT);
+            g_sss_status = start_e;
+            g_digit_status = sadegan_e;
+            break;
+
+        default:
+            // Do nothing
+            break;
+    }// End of switch()
+
+#if ENABLE_SOUND    
+    SET_SOUND_MODE(learn_rf_code_is_start);
+#endif    
+}
+
+inline void Toggle_Touch_LEDs(void) {
+
+    if (g_status.touch_leds) {
+
+        TOUCH_LEDs_SetHigh();
+    } else {
+
+        TOUCH_LEDs_SetLow();
+    }
+
+    g_status.touch_leds ^= 1; // Toggle status
+
+}
+
+inline void Toggle_OFFLED(void) {
+
+    if (g_status.off_led) {
+
+        OFF_LED_SetHigh();
+    } else {
+
+        OFF_LED_SetLow();
+    }
+
+    g_status.off_led ^= 1; // Toggle status
+}
+
+inline void Toggle_Touches(void) {
+
+    g_status.touches ^= 1; // Toggle status
+}
+
+inline void Toggle_7seg(void) {
+
+    if (g_status._7segment) {
+
+        TX_Command(TX_7SEG_ON);
+
+    } else {
+
+        g_mass_calc.yekan = 0;
+        g_mass_calc.dahegan = 0;
+        g_mass_calc.sadegan = 0;
+        TX_Command(TX_7SEG_OFF);
+    }
+
+    g_status._7segment ^= 1; // Toggle status
+
+}
+
+inline void Toggle_PushButton(void) {
+
+    g_status.PushButton ^= 1;
+}
+
+inline void Motor_ON(uint24_t motor_on_time_ms) { //                            < Motor ON >
+
+    g_motor_on_duration_ms = (uint16_t) (motor_on_time_ms / 10); // 'tmr1' period = 10(ms)
+    TMR1_StartTimer(); // Start timer for motor 
+    MOTOR_SetHigh();
+}
+
+inline void TX_Command(uint8_t txData) { //                                     < TX >
+
+    if (EUSART_is_tx_ready()) { // Second send data value:
+
+        EUSART_Write(txData);
+
+    }
+}
+
+inline uint8_t RX_Command(void) { //                                            < RX >
+
+    uint8_t buffer;
+
+    if (EUSART_is_rx_ready()) {
+
+        buffer = EUSART_Read();
+        return buffer;
+    }
+
+}
+
+inline void tmr0_long_press_duration(void) {
+
+    g_tmr0_longpress_duration_counter++;
+
+}
+
+inline void tmr1_motor_on_duration(void) {
+
+    static uint16_t tmr1_motor_counter;
+
+    tmr1_motor_counter++;
+
+    if (g_motor_on_duration_ms == tmr1_motor_counter) {
+
+        MOTOR_SetLow();
+        g_sss_status = start_e;
+        TMR1_StopTimer();
+        tmr1_motor_counter = 0;
+
+#if ENABLE_SOUND    
+        SET_SOUND_MODE(dimmer_is_max);
+#endif
+    }
+}
+
+inline void Common_Routines(void) {
+
+    if (g_status.PushButton) {
+
+        if (PUSH_BUTTON_GetValue()) {
+
+            MOTOR_SetLow();
+        } else {
+
+            MOTOR_SetHigh();
+        }
+    }
+}
+
+
+
+

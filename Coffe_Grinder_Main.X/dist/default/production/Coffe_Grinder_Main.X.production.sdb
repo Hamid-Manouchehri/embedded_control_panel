@@ -1,0 +1,1712 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1829 ]
+[d frameptr 6 ]
+"66 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_api_example.c
+[e E97 mtouch_button_names `uc
+Button0 0
+Button1 1
+Button2 2
+Button3 3
+Button4 4
+Button5 5
+Button6 6
+Button7 7
+Button8 8
+]
+"113 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[e E2599 mtouch_sensor_names `uc
+T_1 0
+T_2 1
+T_3 2
+T_4 3
+T_8 4
+T_7 5
+T_6 6
+T_5 7
+T_9 8
+]
+"150
+[e E2609 mtouch_sensor_error `c
+MTOUCH_SENSOR_ERROR_none 0
+MTOUCH_SENSOR_ERROR_invalid_index -1
+MTOUCH_SENSOR_ERROR_interrupt_notEnabled -2
+MTOUCH_SENSOR_ERROR_invalid_calibrate -3
+MTOUCH_SENSOR_ERROR_tooManyRetries -4
+MTOUCH_SENSOR_ERROR_scanOverrun -5
+MTOUCH_SENSOR_ERROR_interruptedScan -6
+]
+"82 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_button.c
+[e E2826 mtouch_button_names `uc
+Button0 0
+Button1 1
+Button2 2
+Button3 3
+Button4 4
+Button5 5
+Button6 6
+Button7 7
+Button8 8
+]
+[e E2765 mtouch_sensor_names `uc
+T_1 0
+T_2 1
+T_3 2
+T_4 3
+T_8 4
+T_7 5
+T_6 6
+T_5 7
+T_9 8
+]
+[e E2895 mtouch_button_state `uc
+MTOUCH_BUTTON_STATE_initializing 0
+MTOUCH_BUTTON_STATE_notPressed 1
+MTOUCH_BUTTON_STATE_pressed 2
+]
+"331
+[e E2899 mtouch_button_hysteresis_thresholds `uc
+HYST_50_PERCENT 1
+HYST_25_PERCENT 2
+HYST_12_5_PERCENT 3
+HYST_6_25_PERCENT 4
+HYST_MAX 5
+]
+"4 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/sound/sound_unit.c
+[e E2 . `uc
+learn_rf_code_is_start 0
+learn_rf_code_is_done 1
+learn_rf_code_is_abort 2
+rf_code_is_remove 3
+memory_is_full 4
+turn_off 5
+turn_on 6
+dimmer_is_max 7
+dimmer_is_min 8
+]
+"80 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[e E2858 . `uc
+start_e 1
+stop_e 2
+set_e 3
+]
+"88
+[e E2864 . `uc
+automatic_e 1
+manual_e 2
+timer_e 3
+]
+"96
+[e E2870 . `uc
+yekan_e 1
+dahegan_e 2
+sadegan_e 3
+]
+"289
+[e E2827 . `uc
+TX_7SEG_ON 11
+TX_7SEG_OFF 12
+TX_MEM_1 21
+TX_MEM_2 22
+TX_MEM_3 23
+TX_MEM_4 24
+TX_7SEG_MANUAL 30
+TX_7SEG_SET_ZERO 31
+TX_7SEG_SHOW_TIME 32
+TX_7SEG_STORE_TIME 33
+TX_7SEG_STORE_INITIAL_VALUE 35
+TX_SELECT_DIGIT 41
+TX_END_SELECT_DIGIT 42
+TX_INCREASE_DIGIT 43
+COUNT_DOWN_FINISHED 50
+TX_START_DECREASE 62
+TX_STOP_DECREASE 63
+TX_START_INCREASE 64
+TX_STOP_INCREASE_SET_MANUAL 65
+TX_7SEG_SHOW_MASS 66
+TX_7SEG_STORE_MASS 67
+RX_7SEG_REACHED_999 68
+TX_7SEG_STORE_MEM_1 111
+TX_7SEG_SET_MEM_1 112
+TX_7SEG_STORE_MEM_2 121
+TX_7SEG_SET_MEM_2 122
+TX_7SEG_STORE_MEM_3 131
+TX_7SEG_SET_MEM_3 132
+TX_7SEG_STORE_MEM_4 141
+TX_7SEG_SET_MEM_4 142
+]
+"391
+[e E2805 . `uc
+learn_rf_code_is_start 0
+learn_rf_code_is_done 1
+learn_rf_code_is_abort 2
+rf_code_is_remove 3
+memory_is_full 4
+turn_off 5
+turn_on 6
+dimmer_is_max 7
+dimmer_is_min 8
+]
+"526
+[e E2704 mtouch_button_names `uc
+Button0 0
+Button1 1
+Button2 2
+Button3 3
+Button4 4
+Button5 5
+Button6 6
+Button7 7
+Button8 8
+]
+[e E2643 mtouch_sensor_names `uc
+T_1 0
+T_2 1
+T_3 2
+T_4 3
+T_8 4
+T_7 5
+T_6 6
+T_5 7
+T_9 8
+]
+"1 /opt/microchip/xc8/v2.32/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.32/pic/sources/c99/common/ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+"5 /opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 /opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"4 /opt/microchip/xc8/v2.32/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 1 0 ]
+"10 /opt/microchip/xc8/v2.32/pic/sources/c99/common/sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"15 /opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 /opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+"4 /opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 /opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"112
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+"157
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+"214 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _main main `(v  1 e 1 0 ]
+"241
+[v _init_panel init_panel `T(v  1 e 1 0 ]
+"272
+[v _EEPROM_init EEPROM_init `T(v  1 e 1 0 ]
+"287
+[v _FCN_NEXT FCN_NEXT `T(v  1 e 1 0 ]
+"316
+[v _FCN_UP FCN_UP `T(v  1 e 1 0 ]
+"381
+[v _FCN_POWER FCN_POWER `T(v  1 e 1 0 ]
+"399
+[v _Toggle_Touch_LEDs Toggle_Touch_LEDs `T(v  1 e 1 0 ]
+"412
+[v _Toggle_OFFLED Toggle_OFFLED `T(v  1 e 1 0 ]
+"425
+[v _Toggle_Touches Toggle_Touches `T(v  1 e 1 0 ]
+"430
+[v _Toggle_7seg Toggle_7seg `T(v  1 e 1 0 ]
+"445
+[v _Toggle_PushButton Toggle_PushButton `T(v  1 e 1 0 ]
+"455
+[v _Motor_ON Motor_ON `T(v  1 e 1 0 ]
+"469
+[v _TX_Command TX_Command `T(v  1 e 1 0 ]
+"482
+[v _RX_Command RX_Command `T(uc  1 e 1 0 ]
+"498
+[v _tmr0_long_press_duration tmr0_long_press_duration `T(v  1 e 1 0 ]
+"503
+[v _tmr1_motor_on_duration tmr1_motor_on_duration `T(v  1 e 1 0 ]
+"522
+[v _Main_Routine Main_Routine `T(v  1 e 1 0 ]
+"548
+[v _Manual_Mode Manual_Mode `T(v  1 e 1 0 ]
+"657
+[v _Timer_Mode Timer_Mode `T(v  1 e 1 0 ]
+"767
+[v _Automatic_Mode Automatic_Mode `T(v  1 e 1 0 ]
+"1180
+[v _Reset_Digit_Value Reset_Digit_Value `T(v  1 e 1 0 ]
+"1191
+[v _set_digit_counters set_digit_counters `T(v  1 e 1 0 ]
+"66 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"94
+[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
+"99
+[v _EUSART_is_rx_ready EUSART_is_rx_ready `(a  1 e 1 0 ]
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+"144
+[v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
+"146
+[v _EUSART_DefaultOverrunErrorHandler EUSART_DefaultOverrunErrorHandler `(v  1 e 1 0 ]
+"154
+[v _EUSART_DefaultErrorHandler EUSART_DefaultErrorHandler `(v  1 e 1 0 ]
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"52 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"62
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"72
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"81 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+"96
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+"130
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+"140
+[v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
+"207 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+"219
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+"237
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+"248
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+"265
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+"285
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+"321
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+"345
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+"353
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+"422
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(a  1 e 1 0 ]
+"447
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+"496
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+"510
+[v _Button_Reading_Update_Helper Button_Reading_Update_Helper `(v  1 s 1 Button_Reading_Update_Helper ]
+"523
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+"529
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+"553
+[v _Button_Baseline_Get_helper Button_Baseline_Get_helper `(us  1 s 2 Button_Baseline_Get_helper ]
+"575
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+"66 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_random.c
+[v _MTOUCH_Random MTOUCH_Random `(uc  1 e 1 0 ]
+"150 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E2609  1 e 1 0 ]
+"164
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+"179
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+"194
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(a  1 e 1 0 ]
+"240
+[v _Sensor_Service Sensor_Service `(E2609  1 s 1 Sensor_Service ]
+"287
+[v _Sensor_Acquisition Sensor_Acquisition `(E2609  1 s 1 Sensor_Acquisition ]
+"322
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E2609  1 s 1 Sensor_Acq_ExecutePacket ]
+"370
+[v _MTOUCH_Delay MTOUCH_Delay `(v  1 s 1 MTOUCH_Delay ]
+"386
+[v _Sensor_Acq_ExecuteScan Sensor_Acq_ExecuteScan `(v  1 s 1 Sensor_Acq_ExecuteScan ]
+"427
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+"437
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+"457
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+"469
+[v _Sensor_setScanFunction Sensor_setScanFunction `(v  1 s 1 Sensor_setScanFunction ]
+"488
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+"502
+[v _Sensor_isEnabled Sensor_isEnabled `(a  1 s 1 Sensor_isEnabled ]
+"517
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+"522
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+"536
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+"542
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+"554
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+"563
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+"571
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+"576
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+"581
+[v _MTOUCH_Sensor_Oversampling_Get MTOUCH_Sensor_Oversampling_Get `(uc  1 e 1 0 ]
+"589
+[v _MTOUCH_Sensor_Oversampling_Set MTOUCH_Sensor_Oversampling_Set `(v  1 e 1 0 ]
+"50 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor_scan.c
+[v _MTOUCH_CVD_ScanA_0 MTOUCH_CVD_ScanA_0 `(v  1 e 1 0 ]
+"113
+[v _MTOUCH_CVD_ScanB_0 MTOUCH_CVD_ScanB_0 `(v  1 e 1 0 ]
+"177
+[v _MTOUCH_CVD_ScanA_1 MTOUCH_CVD_ScanA_1 `(v  1 e 1 0 ]
+"240
+[v _MTOUCH_CVD_ScanB_1 MTOUCH_CVD_ScanB_1 `(v  1 e 1 0 ]
+"304
+[v _MTOUCH_CVD_ScanA_2 MTOUCH_CVD_ScanA_2 `(v  1 e 1 0 ]
+"367
+[v _MTOUCH_CVD_ScanB_2 MTOUCH_CVD_ScanB_2 `(v  1 e 1 0 ]
+"431
+[v _MTOUCH_CVD_ScanA_3 MTOUCH_CVD_ScanA_3 `(v  1 e 1 0 ]
+"494
+[v _MTOUCH_CVD_ScanB_3 MTOUCH_CVD_ScanB_3 `(v  1 e 1 0 ]
+"558
+[v _MTOUCH_CVD_ScanA_4 MTOUCH_CVD_ScanA_4 `(v  1 e 1 0 ]
+"621
+[v _MTOUCH_CVD_ScanB_4 MTOUCH_CVD_ScanB_4 `(v  1 e 1 0 ]
+"685
+[v _MTOUCH_CVD_ScanA_5 MTOUCH_CVD_ScanA_5 `(v  1 e 1 0 ]
+"748
+[v _MTOUCH_CVD_ScanB_5 MTOUCH_CVD_ScanB_5 `(v  1 e 1 0 ]
+"812
+[v _MTOUCH_CVD_ScanA_6 MTOUCH_CVD_ScanA_6 `(v  1 e 1 0 ]
+"875
+[v _MTOUCH_CVD_ScanB_6 MTOUCH_CVD_ScanB_6 `(v  1 e 1 0 ]
+"939
+[v _MTOUCH_CVD_ScanA_7 MTOUCH_CVD_ScanA_7 `(v  1 e 1 0 ]
+"1002
+[v _MTOUCH_CVD_ScanB_7 MTOUCH_CVD_ScanB_7 `(v  1 e 1 0 ]
+"1066
+[v _MTOUCH_CVD_ScanA_8 MTOUCH_CVD_ScanA_8 `(v  1 e 1 0 ]
+"1129
+[v _MTOUCH_CVD_ScanB_8 MTOUCH_CVD_ScanB_8 `(v  1 e 1 0 ]
+"55 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"64 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+"108
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+"125
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+"129
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+"64 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+"93
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+"99
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+[v i1_TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+"120
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+"157
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+"171
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+"175
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+"60 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/sound/sound_unit.c
+[v _SET_SOUND_MODE SET_SOUND_MODE `(v  1 e 1 0 ]
+"119
+[v _GENERATE_PULSE GENERATE_PULSE `(v  1 e 1 0 ]
+[s S1940 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+]
+"131 /opt/microchip/mplabx/v5.45/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8/pic/include/proc/pic16f1829.h
+[s S1946 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S1950 . 1 `S1940 1 . 1 0 `S1946 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES1950  1 e 1 @3 ]
+[s S217 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"374
+[s S226 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S231 . 1 `S217 1 . 1 0 `S226 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES231  1 e 1 @11 ]
+[s S1729 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"444
+[u S1736 . 1 `S1729 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES1736  1 e 1 @12 ]
+[s S1746 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"493
+[u S1752 . 1 `S1746 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES1752  1 e 1 @13 ]
+[s S1040 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"597
+[u S1049 . 1 `S1040 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES1049  1 e 1 @17 ]
+"759
+[v _TMR0 TMR0 `VEuc  1 e 1 @21 ]
+"786
+[v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
+"806
+[v _TMR1H TMR1H `VEuc  1 e 1 @23 ]
+"826
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+[s S1328 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+"848
+[s S1337 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[u S1341 . 1 `S1328 1 . 1 0 `S1337 1 . 1 0 ]
+[v _T1CONbits T1CONbits `VES1341  1 e 1 @24 ]
+"898
+[v _T1GCON T1GCON `VEuc  1 e 1 @25 ]
+[s S1358 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+"918
+[s S1367 . 1 `uc 1 T1GSS 1 0 :2:0 
+]
+[u S1369 . 1 `S1358 1 . 1 0 `S1367 1 . 1 0 ]
+[v _T1GCONbits T1GCONbits `VES1369  1 e 1 @25 ]
+"1185
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1235
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1274
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S1019 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1353
+[u S1028 . 1 `S1019 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES1028  1 e 1 @145 ]
+"1515
+[v _OPTION_REG OPTION_REG `VEuc  1 e 1 @149 ]
+[s S953 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+"1538
+[s S962 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S967 . 1 `S953 1 . 1 0 `S962 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES967  1 e 1 @149 ]
+"1649
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1708
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1766
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1900
+[v _ADRES ADRES `VEus  1 e 2 @155 ]
+"1947
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S266 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+"1972
+[s S274 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S278 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S281 . 1 `S266 1 . 1 0 `S274 1 . 1 0 `S278 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES281  1 e 1 @157 ]
+"2027
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"2099
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+[s S1595 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+]
+"2114
+[u S1602 . 1 `S1595 1 . 1 0 ]
+[v _LATAbits LATAbits `VES1602  1 e 1 @268 ]
+"2144
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+[s S1459 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 LATB4 1 0 :1:4 
+`uc 1 LATB5 1 0 :1:5 
+`uc 1 LATB6 1 0 :1:6 
+`uc 1 LATB7 1 0 :1:7 
+]
+"2158
+[u S1465 . 1 `S1459 1 . 1 0 ]
+[v _LATBbits LATBbits `VES1465  1 e 1 @269 ]
+"2183
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+[s S1675 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 LATC6 1 0 :1:6 
+`uc 1 LATC7 1 0 :1:7 
+]
+"2200
+[u S1684 . 1 `S1675 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1684  1 e 1 @270 ]
+"2517
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"2866
+[v _APFCON0 APFCON0 `VEuc  1 e 1 @285 ]
+"2900
+[v _APFCON1 APFCON1 `VEuc  1 e 1 @286 ]
+"2950
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"2997
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3033
+[v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"3092
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"3151
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"3204
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+[s S1916 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3221
+[u S1925 . 1 `S1916 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES1925  1 e 1 @405 ]
+"3266
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"3286
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3306
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3333
+[v _SPBRGL SPBRGL `VEuc  1 e 1 @411 ]
+"3353
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
+"3373
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+[s S1165 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+"3390
+[u S1174 . 1 `S1165 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES1174  1 e 1 @413 ]
+"3435
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+[s S1144 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"3452
+[u S1153 . 1 `S1144 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES1153  1 e 1 @414 ]
+"3497
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3549
+[v _WPUA WPUA `VEuc  1 e 1 @524 ]
+"3607
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"3655
+[v _WPUC WPUC `VEuc  1 e 1 @526 ]
+"7533
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"80 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _g_sss_status g_sss_status `E2858  1 e 1 0 ]
+"88
+[v _g_mode_status g_mode_status `E2864  1 e 1 0 ]
+"96
+[v _g_digit_status g_digit_status `E2870  1 e 1 0 ]
+[s S1508 . 1 `uc 1 PushButton 1 0 :1:0 
+`uc 1 up 1 0 :1:1 
+`uc 1 next 1 0 :1:2 
+`uc 1 memories 1 0 :1:3 
+]
+"130
+[v _g_touch_status g_touch_status `S1508  1 e 1 0 ]
+[s S1513 . 3 `uc 1 yekan 1 0 `uc 1 dahegan 1 1 `uc 1 sadegan 1 2 ]
+"138
+[v _g_time_calc g_time_calc `S1513  1 e 3 0 ]
+"146
+[v _g_mass_calc g_mass_calc `S1513  1 e 3 0 ]
+[s S1521 . 1 `uc 1 off_led 1 0 :1:0 
+`uc 1 touch_leds 1 0 :1:1 
+`uc 1 touches 1 0 :1:2 
+`uc 1 motor 1 0 :1:3 
+`uc 1 _7segment 1 0 :1:4 
+`uc 1 PushButton 1 0 :1:5 
+]
+"157
+[v _g_status g_status `S1521  1 e 1 0 ]
+[s S1528 . 1 `uc 1 automatic 1 0 :1:0 
+`uc 1 manual 1 0 :1:1 
+`uc 1 timer 1 0 :1:2 
+]
+"165
+[v _g_power_event g_power_event `S1528  1 e 1 0 ]
+"193
+[v _ge_memory_mass ge_memory_mass `VE[4]us  1 e 8 0 ]
+"194
+[v _ge_time_ms ge_time_ms `VEus  1 e 2 0 ]
+"196
+[v _g_memory_mass g_memory_mass `[4]us  1 e 8 0 ]
+"197
+[v _g_motor_on_duration_ms g_motor_on_duration_ms `us  1 e 2 0 ]
+"200
+[v _g_tmr0_longpress_duration_counter g_tmr0_longpress_duration_counter `us  1 e 2 0 ]
+"202
+[v _g_mass g_mass `VEus  1 e 2 0 ]
+"203
+[v _g_time_ms g_time_ms `VEus  1 e 2 0 ]
+"208
+[v _g_tmr1_motor_counter g_tmr1_motor_counter `us  1 e 2 0 ]
+"210
+[v _gb_motor_timer_off gb_motor_timer_off `a  1 e 1 0 ]
+[s S1086 . 1 `uc 1 perr 1 0 :1:0 
+`uc 1 ferr 1 0 :1:1 
+`uc 1 oerr 1 0 :1:2 
+`uc 1 reserved 1 0 :5:3 
+]
+"52 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/eusart.c
+[u S1091 . 1 `S1086 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES1091  1 e 1 0 ]
+"58
+[v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
+"59
+[v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
+"60
+[v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"52 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch.c
+[v _mtouch_time_toScan mtouch_time_toScan `a  1 s 1 mtouch_time_toScan ]
+"53
+[v _mtouch_request_init mtouch_request_init `a  1 s 1 mtouch_request_init ]
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"82 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _mtouch_button_init mtouch_button_init `DC[9]S586  1 e 144 0 ]
+"158
+[v _mtouch_button mtouch_button `[9]S586  1 s 144 mtouch_button ]
+"185
+[v _callback_pressed callback_pressed `*.37(v  1 s 2 callback_pressed ]
+"186
+[v _callback_notPressed callback_notPressed `*.37(v  1 s 2 callback_notPressed ]
+"194
+[v _Button_StateMachine Button_StateMachine `[3]*.37(v  1 e 6 0 ]
+"113 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _callback_sampled callback_sampled `*.37(v  1 s 2 callback_sampled ]
+[s S58 . 1 `uc 1 packet_done 1 0 :1:0 
+`uc 1 interrupted 1 0 :1:1 
+]
+"120
+[v _sensor_globalFlags sensor_globalFlags `VES58  1 s 1 sensor_globalFlags ]
+"121
+[v _currentScannSensor currentScannSensor `E2599  1 s 1 currentScannSensor ]
+"122
+[v _packet_counter packet_counter `uc  1 s 1 packet_counter ]
+"123
+[v _packet_sample packet_sample `us  1 s 2 packet_sample ]
+"124
+[v _sample_delay sample_delay `uc  1 s 1 sample_delay ]
+"125
+[v _lowpowerActivated lowpowerActivated `a  1 s 1 lowpowerActivated ]
+"126
+[v _Sensor_scanA Sensor_scanA `*.37(v  1 s 2 Sensor_scanA ]
+"127
+[v _Sensor_scanB Sensor_scanB `*.37(v  1 s 2 Sensor_scanB ]
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"133
+[v _mtouch_sensor mtouch_sensor `[9]S75  1 s 81 mtouch_sensor ]
+"58 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr0.c
+[v _timer0ReloadVal timer0ReloadVal `VEuc  1 e 1 0 ]
+"59
+[v _TMR0_InterruptHandler TMR0_InterruptHandler `*.37(v  1 e 2 0 ]
+"57 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr1.c
+[v _timer1ReloadVal timer1ReloadVal `VEus  1 e 2 0 ]
+"58
+[v _TMR1_InterruptHandler TMR1_InterruptHandler `*.37(v  1 e 2 0 ]
+"4 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/sound/sound_unit.c
+[v _SOUND_MODE_e SOUND_MODE_e `E2  1 s 1 SOUND_MODE_e ]
+"214 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"232
+} 0
+"241
+[v _init_panel init_panel `T(v  1 e 1 0 ]
+{
+"270
+} 0
+"1180
+[v _Reset_Digit_Value Reset_Digit_Value `T(v  1 e 1 0 ]
+{
+"1189
+} 0
+"50 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"60
+} 0
+"72
+[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+{
+"76
+} 0
+"64 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr1.c
+[v _TMR1_Initialize TMR1_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"171
+[v _TMR1_SetInterruptHandler TMR1_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR1_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
+"173
+} 0
+"64 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr0.c
+[v _TMR0_Initialize TMR0_Initialize `(v  1 e 1 0 ]
+{
+"85
+} 0
+"125
+[v _TMR0_SetInterruptHandler TMR0_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR0_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 2 ]
+"127
+} 0
+"55 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"98
+} 0
+"62 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"66 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/eusart.c
+[v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+{
+"92
+} 0
+"161
+[v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetOverrunErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
+"163
+} 0
+"157
+[v _EUSART_SetFramingErrorHandler EUSART_SetFramingErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetFramingErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
+"159
+} 0
+"165
+[v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+{
+[v EUSART_SetErrorHandler@interruptHandler interruptHandler `*.37(v  1 p 2 2 ]
+"167
+} 0
+"522 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _Main_Routine Main_Routine `T(v  1 e 1 0 ]
+{
+"541
+} 0
+"767
+[v _Automatic_Mode Automatic_Mode `T(v  1 e 1 0 ]
+{
+"771
+[v Automatic_Mode@motor_on_time_ms motor_on_time_ms `um  1 a 3 0 ]
+"772
+[v Automatic_Mode@buffer buffer `us  1 a 2 3 ]
+"1178
+} 0
+"1191
+[v _set_digit_counters set_digit_counters `T(v  1 e 1 0 ]
+{
+"1193
+[v set_digit_counters@buffer buffer `us  1 a 2 5 ]
+"1191
+[v set_digit_counters@mass mass `us  1 p 2 0 ]
+[v set_digit_counters@time time `us  1 p 2 2 ]
+"1205
+} 0
+"15 /opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul24.c
+[v ___tmul __tmul `(um  1 e 3 0 ]
+{
+"17
+[v ___tmul@product product `um  1 a 3 0 ]
+"15
+[v ___tmul@multiplier multiplier `um  1 p 3 2 ]
+[v ___tmul@multiplicand multiplicand `um  1 p 3 5 ]
+"99
+} 0
+"657 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _Timer_Mode Timer_Mode `T(v  1 e 1 0 ]
+{
+"659
+[v Timer_Mode@buffer buffer `us  1 a 2 39 ]
+"661
+[v Timer_Mode@b_power_touched b_power_touched `a  1 a 1 38 ]
+"660
+[v Timer_Mode@b_mode_touched b_mode_touched `a  1 a 1 37 ]
+"760
+} 0
+"5 /opt/microchip/xc8/v2.32/pic/sources/c99/common/lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwmod@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwmod@divisor divisor `ui  1 p 2 2 ]
+[v ___lwmod@dividend dividend `ui  1 p 2 4 ]
+"25
+} 0
+"5 /opt/microchip/xc8/v2.32/pic/sources/c99/common/lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 8 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 7 ]
+"5
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+[v ___lwdiv@dividend dividend `ui  1 p 2 4 ]
+"30
+} 0
+"157 /opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+[v ___itoee __itoee `(ui  1 e 2 0 ]
+{
+[v ___itoee@addr addr `*.28VEv  1 a 1 wreg ]
+[v ___itoee@addr addr `*.28VEv  1 a 1 wreg ]
+[v ___itoee@data data `ui  1 p 2 8 ]
+"159
+[v ___itoee@addr addr `*.28VEv  1 a 1 2 ]
+"161
+} 0
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+{
+[v ___memcpyee@to to `*.28VEuc  1 a 1 wreg ]
+"41
+[v ___memcpyee@ptr ptr `*.1DCuc  1 a 1 6 ]
+"39
+[v ___memcpyee@to to `*.28VEuc  1 a 1 wreg ]
+[v ___memcpyee@from from `*.1DCuc  1 p 1 2 ]
+[v ___memcpyee@size size `uc  1 p 1 3 ]
+"41
+[v ___memcpyee@to to `*.28VEuc  1 a 1 7 ]
+"101
+} 0
+"316 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _FCN_UP FCN_UP `T(v  1 e 1 0 ]
+{
+"374
+} 0
+"287
+[v _FCN_NEXT FCN_NEXT `T(v  1 e 1 0 ]
+{
+"309
+} 0
+"99 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr1.c
+[v _TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+{
+"103
+} 0
+"455 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _Motor_ON Motor_ON `T(v  1 e 1 0 ]
+{
+[v Motor_ON@motor_on_time_ms motor_on_time_ms `um  1 p 3 4 ]
+"462
+} 0
+"5 /opt/microchip/xc8/v2.32/pic/sources/c99/common/ltdiv.c
+[v ___ltdiv __ltdiv `(um  1 e 3 0 ]
+{
+"10
+[v ___ltdiv@quotient quotient `um  1 a 3 0 ]
+"11
+[v ___ltdiv@counter counter `uc  1 a 1 3 ]
+"5
+[v ___ltdiv@divisor divisor `um  1 p 3 2 ]
+[v ___ltdiv@dividend dividend `um  1 p 3 5 ]
+"30
+} 0
+"93 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr1.c
+[v _TMR1_StartTimer TMR1_StartTimer `(v  1 e 1 0 ]
+{
+"97
+} 0
+"548 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _Manual_Mode Manual_Mode `T(v  1 e 1 0 ]
+{
+"554
+[v Manual_Mode@Flag_sound Flag_sound `a  1 a 1 32 ]
+"553
+[v Manual_Mode@Flag Flag `a  1 a 1 31 ]
+"552
+[v Manual_Mode@b_power_touched b_power_touched `a  1 a 1 30 ]
+"551
+[v Manual_Mode@b_mode_touched b_mode_touched `a  1 a 1 29 ]
+"550
+[v Manual_Mode@received_command received_command `uc  1 a 1 28 ]
+"650
+} 0
+"482
+[v _RX_Command RX_Command `T(uc  1 e 1 0 ]
+{
+"484
+[v RX_Command@buffer buffer `uc  1 a 1 3 ]
+"491
+} 0
+"99 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/eusart.c
+[v _EUSART_is_rx_ready EUSART_is_rx_ready `(a  1 e 1 0 ]
+{
+"102
+} 0
+"113
+[v _EUSART_Read EUSART_Read `(uc  1 e 1 0 ]
+{
+"130
+} 0
+"96 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Service_Mainloop MTOUCH_Service_Mainloop `(a  1 e 1 0 ]
+{
+"123
+} 0
+"140
+[v _MTOUCH_needReburst MTOUCH_needReburst `(a  1 s 1 MTOUCH_needReburst ]
+{
+"145
+} 0
+"130
+[v _MTOUCH_Tick MTOUCH_Tick `(v  1 e 1 0 ]
+{
+"133
+} 0
+"345 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_Tick MTOUCH_Button_Tick `(v  1 e 1 0 ]
+{
+"347
+[v MTOUCH_Button_Tick@i i `uc  1 a 1 0 ]
+"352
+} 0
+"353
+[v _Button_Tick_helper Button_Tick_helper `(v  1 s 1 Button_Tick_helper ]
+{
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Tick_helper@button button `*.39S586  1 p 2 2 ]
+"364
+} 0
+"194 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_SampleAll MTOUCH_Sensor_SampleAll `(a  1 e 1 0 ]
+{
+"196
+[v MTOUCH_Sensor_SampleAll@sensor sensor `E2599  1 a 1 24 ]
+"203
+} 0
+"240
+[v _Sensor_Service Sensor_Service `(E2609  1 s 1 Sensor_Service ]
+{
+[v Sensor_Service@name name `E2599  1 a 1 wreg ]
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"242
+[v Sensor_Service@sensor sensor `*.39S75  1 a 2 21 ]
+"243
+[v Sensor_Service@error error `E2609  1 a 1 20 ]
+"240
+[v Sensor_Service@name name `E2599  1 a 1 wreg ]
+"242
+[v Sensor_Service@name name `E2599  1 a 1 19 ]
+"274
+} 0
+"576
+[v _Sensor_setSampled Sensor_setSampled `T(v  1 s 1 Sensor_setSampled ]
+{
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_setSampled@sensor sensor `*.39S75  1 p 2 2 ]
+"579
+} 0
+"437
+[v _Sensor_RawSample_Update Sensor_RawSample_Update `(v  1 s 1 Sensor_RawSample_Update ]
+{
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_RawSample_Update@sensor sensor `*.39S75  1 p 2 2 ]
+"449
+} 0
+"457
+[v _Sensor_DefaultCallback Sensor_DefaultCallback `(v  1 s 1 Sensor_DefaultCallback ]
+{
+[v Sensor_DefaultCallback@sensor sensor `E2599  1 p 1 2 ]
+} 0
+"287
+[v _Sensor_Acquisition Sensor_Acquisition `(E2609  1 s 1 Sensor_Acquisition ]
+{
+"290
+[v Sensor_Acquisition@retry retry `uc  1 a 1 14 ]
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"287
+[v Sensor_Acquisition@sensor sensor `*.39S75  1 p 2 11 ]
+"314
+} 0
+"1 /opt/microchip/xc8/v2.32/pic/sources/c99/common/abs.c
+[v _abs abs `(i  1 e 2 0 ]
+{
+[v abs@a a `i  1 p 2 2 ]
+"4
+} 0
+"522 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _Sensor_setInactive Sensor_setInactive `T(v  1 s 1 Sensor_setInactive ]
+{
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_setInactive@sensor sensor `*.39S75  1 p 2 2 ]
+"525
+} 0
+"517
+[v _Sensor_setActive Sensor_setActive `T(v  1 s 1 Sensor_setActive ]
+{
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_setActive@sensor sensor `*.39S75  1 p 2 2 ]
+"520
+} 0
+"502
+[v _Sensor_isEnabled Sensor_isEnabled `(a  1 s 1 Sensor_isEnabled ]
+{
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_isEnabled@sensor sensor `*.39S75  1 p 2 2 ]
+"508
+} 0
+"322
+[v _Sensor_Acq_ExecutePacket Sensor_Acq_ExecutePacket `(E2609  1 s 1 Sensor_Acq_ExecutePacket ]
+{
+"325
+[v Sensor_Acq_ExecutePacket@error error `E2609  1 a 1 10 ]
+"329
+[v Sensor_Acq_ExecutePacket@GIE_state GIE_state `uc  1 a 1 9 ]
+"327
+[v Sensor_Acq_ExecutePacket@ADCON1_temp ADCON1_temp `uc  1 a 1 8 ]
+"326
+[v Sensor_Acq_ExecutePacket@ADCON0_temp ADCON0_temp `uc  1 a 1 7 ]
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"322
+[v Sensor_Acq_ExecutePacket@sensor sensor `*.39S75  1 p 2 4 ]
+"368
+} 0
+"469
+[v _Sensor_setScanFunction Sensor_setScanFunction `(v  1 s 1 Sensor_setScanFunction ]
+{
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_setScanFunction@sensor sensor `*.39S75  1 p 2 2 ]
+"473
+} 0
+"386
+[v _Sensor_Acq_ExecuteScan Sensor_Acq_ExecuteScan `(v  1 s 1 Sensor_Acq_ExecuteScan ]
+{
+"389
+[v Sensor_Acq_ExecuteScan@result result `us  1 a 2 8 ]
+"419
+} 0
+"1002 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor_scan.c
+[v _MTOUCH_CVD_ScanB_7 MTOUCH_CVD_ScanB_7 `(v  1 e 1 0 ]
+{
+"1053
+} 0
+"875
+[v _MTOUCH_CVD_ScanB_6 MTOUCH_CVD_ScanB_6 `(v  1 e 1 0 ]
+{
+"926
+} 0
+"748
+[v _MTOUCH_CVD_ScanB_5 MTOUCH_CVD_ScanB_5 `(v  1 e 1 0 ]
+{
+"799
+} 0
+"621
+[v _MTOUCH_CVD_ScanB_4 MTOUCH_CVD_ScanB_4 `(v  1 e 1 0 ]
+{
+"672
+} 0
+"494
+[v _MTOUCH_CVD_ScanB_3 MTOUCH_CVD_ScanB_3 `(v  1 e 1 0 ]
+{
+"545
+} 0
+"367
+[v _MTOUCH_CVD_ScanB_2 MTOUCH_CVD_ScanB_2 `(v  1 e 1 0 ]
+{
+"418
+} 0
+"240
+[v _MTOUCH_CVD_ScanB_1 MTOUCH_CVD_ScanB_1 `(v  1 e 1 0 ]
+{
+"291
+} 0
+"113
+[v _MTOUCH_CVD_ScanB_0 MTOUCH_CVD_ScanB_0 `(v  1 e 1 0 ]
+{
+"164
+} 0
+"1129
+[v _MTOUCH_CVD_ScanB_8 MTOUCH_CVD_ScanB_8 `(v  1 e 1 0 ]
+{
+"1180
+} 0
+"939
+[v _MTOUCH_CVD_ScanA_7 MTOUCH_CVD_ScanA_7 `(v  1 e 1 0 ]
+{
+"989
+} 0
+"812
+[v _MTOUCH_CVD_ScanA_6 MTOUCH_CVD_ScanA_6 `(v  1 e 1 0 ]
+{
+"862
+} 0
+"685
+[v _MTOUCH_CVD_ScanA_5 MTOUCH_CVD_ScanA_5 `(v  1 e 1 0 ]
+{
+"735
+} 0
+"558
+[v _MTOUCH_CVD_ScanA_4 MTOUCH_CVD_ScanA_4 `(v  1 e 1 0 ]
+{
+"608
+} 0
+"431
+[v _MTOUCH_CVD_ScanA_3 MTOUCH_CVD_ScanA_3 `(v  1 e 1 0 ]
+{
+"481
+} 0
+"304
+[v _MTOUCH_CVD_ScanA_2 MTOUCH_CVD_ScanA_2 `(v  1 e 1 0 ]
+{
+"354
+} 0
+"177
+[v _MTOUCH_CVD_ScanA_1 MTOUCH_CVD_ScanA_1 `(v  1 e 1 0 ]
+{
+"227
+} 0
+"50
+[v _MTOUCH_CVD_ScanA_0 MTOUCH_CVD_ScanA_0 `(v  1 e 1 0 ]
+{
+"100
+} 0
+"1066
+[v _MTOUCH_CVD_ScanA_8 MTOUCH_CVD_ScanA_8 `(v  1 e 1 0 ]
+{
+"1116
+} 0
+"66 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_random.c
+[v _MTOUCH_Random MTOUCH_Random `(uc  1 e 1 0 ]
+{
+"68
+[v MTOUCH_Random@seed seed `uc  1 s 1 seed ]
+"86
+} 0
+"370 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Delay MTOUCH_Delay `(v  1 s 1 MTOUCH_Delay ]
+{
+"372
+[v MTOUCH_Delay@i i `uc  1 a 1 3 ]
+"374
+} 0
+"81 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch.c
+[v _MTOUCH_Initialize MTOUCH_Initialize `(v  1 e 1 0 ]
+{
+"88
+} 0
+"179 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Scan_Initialize MTOUCH_Sensor_Scan_Initialize `(v  1 e 1 0 ]
+{
+"184
+} 0
+"554
+[v _MTOUCH_Sensor_Sampled_ResetAll MTOUCH_Sensor_Sampled_ResetAll `(v  1 e 1 0 ]
+{
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+"556
+[v MTOUCH_Sensor_Sampled_ResetAll@sensor sensor `*.39S75  1 a 2 2 ]
+"561
+} 0
+"164
+[v _MTOUCH_Sensor_InitializeAll MTOUCH_Sensor_InitializeAll `(v  1 e 1 0 ]
+{
+"166
+[v MTOUCH_Sensor_InitializeAll@sensor sensor `E2599  1 a 1 10 ]
+"171
+} 0
+"150
+[v _MTOUCH_Sensor_Initialize MTOUCH_Sensor_Initialize `(E2609  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Initialize@sensor sensor `E2599  1 a 1 wreg ]
+[v MTOUCH_Sensor_Initialize@sensor sensor `E2599  1 a 1 wreg ]
+"152
+[v MTOUCH_Sensor_Initialize@sensor sensor `E2599  1 a 1 8 ]
+"156
+} 0
+"571
+[v _Sensor_Sampled_Reset Sensor_Sampled_Reset `T(v  1 s 1 Sensor_Sampled_Reset ]
+{
+[s S75 . 9 `DCE2599 1 sensor_name 1 0 `DC*.37(v 1 scanA 2 1 `DC*.37(v 1 scanB 2 3 `uc 1 oversampling 1 5 `us 1 rawSample 2 6 `uc 1 enabled 1 8 :1:0 
+`uc 1 sampled 1 8 :1:1 
+`uc 1 active 1 8 :1:2 
+]
+[v Sensor_Sampled_Reset@sensor sensor `*.39S75  1 p 2 8 ]
+"574
+} 0
+"488
+[v _MTOUCH_Sensor_Enable MTOUCH_Sensor_Enable `(v  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_Enable@sensor sensor `E2599  1 a 1 wreg ]
+[v MTOUCH_Sensor_Enable@sensor sensor `E2599  1 a 1 wreg ]
+"490
+[v MTOUCH_Sensor_Enable@sensor sensor `E2599  1 a 1 8 ]
+"492
+} 0
+"219 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_InitializeAll MTOUCH_Button_InitializeAll `(v  1 e 1 0 ]
+{
+"221
+[v MTOUCH_Button_InitializeAll@button button `E2826  1 a 1 5 ]
+"229
+} 0
+"4 /opt/microchip/xc8/v2.32/pic/sources/c99/common/memcpy.c
+[v _memcpy memcpy `(*.39v  1 e 1 0 ]
+{
+"8
+[v memcpy@s s `*.25DCuc  1 a 2 3 ]
+"7
+[v memcpy@d d `*.39uc  1 a 2 1 ]
+"9
+[v memcpy@tmp tmp `uc  1 a 1 0 ]
+"4
+[v memcpy@d1 d1 `*.39v  1 p 2 2 ]
+[v memcpy@s1 s1 `*.25DCv  1 p 2 4 ]
+[v memcpy@n n `ui  1 p 2 6 ]
+"18
+} 0
+"237 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _MTOUCH_Button_ServiceAll MTOUCH_Button_ServiceAll `(v  1 e 1 0 ]
+{
+"239
+[v MTOUCH_Button_ServiceAll@button button `E2826  1 a 1 25 ]
+"246
+} 0
+"248
+[v _Button_Service Button_Service `(v  1 s 1 Button_Service ]
+{
+[v Button_Service@name name `E2826  1 a 1 wreg ]
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"250
+[v Button_Service@button button `*.39S586  1 a 2 22 ]
+"248
+[v Button_Service@name name `E2826  1 a 1 wreg ]
+"250
+[v Button_Service@name name `E2826  1 a 1 21 ]
+"263
+} 0
+"563 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_wasSampled MTOUCH_Sensor_wasSampled `(a  1 e 1 0 ]
+{
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E2599  1 a 1 wreg ]
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E2599  1 a 1 wreg ]
+"565
+[v MTOUCH_Sensor_wasSampled@sensor sensor `E2599  1 a 1 8 ]
+"569
+} 0
+"536
+[v _MTOUCH_Sensor_isCalibrated MTOUCH_Sensor_isCalibrated `(a  1 e 1 0 ]
+{
+"540
+} 0
+"285 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_State_NotPressed Button_State_NotPressed `(v  1 s 1 Button_State_NotPressed ]
+{
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_NotPressed@button button `*.39S586  1 p 2 11 ]
+"319
+} 0
+"265
+[v _Button_State_Initializing Button_State_Initializing `(v  1 s 1 Button_State_Initializing ]
+{
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Initializing@button button `*.39S586  1 p 2 11 ]
+"284
+} 0
+"321
+[v _Button_State_Pressed Button_State_Pressed `(v  1 s 1 Button_State_Pressed ]
+{
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_State_Pressed@button button `*.39S586  1 p 2 11 ]
+"338
+} 0
+"207
+[v _MTOUCH_Button_Initialize MTOUCH_Button_Initialize `(v  1 e 1 0 ]
+{
+[v MTOUCH_Button_Initialize@name name `E2826  1 a 1 wreg ]
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"209
+[v MTOUCH_Button_Initialize@button button `*.39S586  1 a 2 7 ]
+"207
+[v MTOUCH_Button_Initialize@name name `E2826  1 a 1 wreg ]
+"209
+[v MTOUCH_Button_Initialize@name name `E2826  1 a 1 6 ]
+"217
+} 0
+"542 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_Calibrate MTOUCH_Sensor_Calibrate `(v  1 e 1 0 ]
+{
+"545
+} 0
+"575 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_DefaultCallback Button_DefaultCallback `(v  1 s 1 Button_DefaultCallback ]
+{
+[v Button_DefaultCallback@button button `E2826  1 p 1 2 ]
+} 0
+"529
+[v _Button_Baseline_Update Button_Baseline_Update `(v  1 s 1 Button_Baseline_Update ]
+{
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Update@button button `*.39S586  1 p 2 2 ]
+"543
+} 0
+"523
+[v _Button_Baseline_Initialize Button_Baseline_Initialize `(v  1 s 1 Button_Baseline_Initialize ]
+{
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Baseline_Initialize@button button `*.39S586  1 p 2 5 ]
+"527
+} 0
+"496
+[v _Button_Reading_Update Button_Reading_Update `(v  1 s 1 Button_Reading_Update ]
+{
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update@button button `*.39S586  1 p 2 9 ]
+"508
+} 0
+"510
+[v _Button_Reading_Update_Helper Button_Reading_Update_Helper `(v  1 s 1 Button_Reading_Update_Helper ]
+{
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+[v Button_Reading_Update_Helper@button button `*.39S586  1 p 2 5 ]
+"521
+} 0
+"427 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_sensor.c
+[v _MTOUCH_Sensor_RawSample_Get MTOUCH_Sensor_RawSample_Get `(us  1 e 2 0 ]
+{
+[v MTOUCH_Sensor_RawSample_Get@name name `E2599  1 a 1 wreg ]
+[v MTOUCH_Sensor_RawSample_Get@name name `E2599  1 a 1 wreg ]
+"429
+[v MTOUCH_Sensor_RawSample_Get@name name `E2599  1 a 1 4 ]
+"435
+} 0
+"15 /opt/microchip/xc8/v2.32/pic/sources/c99/common/Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 6 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 2 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 4 ]
+"53
+} 0
+"447 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/mtouch/mtouch_button.c
+[v _Button_Deviation_Update Button_Deviation_Update `(v  1 s 1 Button_Deviation_Update ]
+{
+"449
+[v Button_Deviation_Update@deviation deviation `l  1 a 4 4 ]
+[s S586 . 16 `DCE2826 1 name 1 0 `DCE2765 1 sensor 1 1 `E2895 1 state 1 2 `us 1 reading 2 3 `ul 1 baseline 4 5 `c 1 deviation 1 9 `us 1 counter 2 10 `us 1 baseline_count 2 12 `uc 1 threshold 1 14 `uc 1 scaling 1 15 ]
+"447
+[v Button_Deviation_Update@button button `*.39S586  1 p 2 2 ]
+"467
+} 0
+"422
+[v _MTOUCH_Button_isPressed MTOUCH_Button_isPressed `(a  1 e 1 0 ]
+{
+[v MTOUCH_Button_isPressed@name name `E2826  1 a 1 wreg ]
+[v MTOUCH_Button_isPressed@name name `E2826  1 a 1 wreg ]
+"424
+[v MTOUCH_Button_isPressed@name name `E2826  1 a 1 6 ]
+"428
+} 0
+"381 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _FCN_POWER FCN_POWER `T(v  1 e 1 0 ]
+{
+"392
+} 0
+"425
+[v _Toggle_Touches Toggle_Touches `T(v  1 e 1 0 ]
+{
+"428
+} 0
+"399
+[v _Toggle_Touch_LEDs Toggle_Touch_LEDs `T(v  1 e 1 0 ]
+{
+"410
+} 0
+"445
+[v _Toggle_PushButton Toggle_PushButton `T(v  1 e 1 0 ]
+{
+"448
+} 0
+"412
+[v _Toggle_OFFLED Toggle_OFFLED `T(v  1 e 1 0 ]
+{
+"423
+} 0
+"430
+[v _Toggle_7seg Toggle_7seg `T(v  1 e 1 0 ]
+{
+"443
+} 0
+"469
+[v _TX_Command TX_Command `T(v  1 e 1 0 ]
+{
+[v TX_Command@txData txData `uc  1 a 1 wreg ]
+[v TX_Command@txData txData `uc  1 a 1 wreg ]
+"471
+[v TX_Command@txData txData `uc  1 a 1 3 ]
+"475
+} 0
+"94 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/eusart.c
+[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
+{
+"97
+} 0
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 2 ]
+"139
+} 0
+"60 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/sound/sound_unit.c
+[v _SET_SOUND_MODE SET_SOUND_MODE `(v  1 e 1 0 ]
+{
+[v SET_SOUND_MODE@MODE MODE `E2  1 a 1 wreg ]
+[v SET_SOUND_MODE@MODE MODE `E2  1 a 1 wreg ]
+[v SET_SOUND_MODE@MODE MODE `E2  1 a 1 0 ]
+"102
+} 0
+"119
+[v _GENERATE_PULSE GENERATE_PULSE `(v  1 e 1 0 ]
+{
+"120
+[v GENERATE_PULSE@counter counter `ui  1 a 2 6 ]
+"119
+[v GENERATE_PULSE@NUMBER_OF_PULSE NUMBER_OF_PULSE `ui  1 p 2 2 ]
+[v GENERATE_PULSE@PULSE_PERIODE PULSE_PERIODE `ui  1 p 2 4 ]
+"135
+} 0
+"272 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _EEPROM_init EEPROM_init `T(v  1 e 1 0 ]
+{
+"274
+[v EEPROM_init@i i `uc  1 a 1 6 ]
+"280
+} 0
+"112 /opt/microchip/xc8/v2.32/pic/sources/c99/pic/__eeprom.c
+[v ___eetoi __eetoi `(ui  1 e 2 0 ]
+{
+[v ___eetoi@addr addr `*.28VEv  1 a 1 wreg ]
+"114
+[v ___eetoi@data data `ui  1 a 2 2 ]
+"112
+[v ___eetoi@addr addr `*.28VEv  1 a 1 wreg ]
+"115
+[v ___eetoi@addr addr `*.28VEv  1 a 1 4 ]
+"117
+} 0
+"6
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+{
+[v ___eecpymem@to to `*.4VEuc  1 a 1 wreg ]
+"8
+[v ___eecpymem@cp cp `*.4VEuc  1 a 1 6 ]
+"6
+[v ___eecpymem@to to `*.4VEuc  1 a 1 wreg ]
+[v ___eecpymem@from from `*.28VEuc  1 p 1 2 ]
+[v ___eecpymem@size size `uc  1 p 1 3 ]
+"8
+[v ___eecpymem@to to `*.4VEuc  1 a 1 7 ]
+"36
+} 0
+"52 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"74
+} 0
+"157 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr1.c
+[v _TMR1_ISR TMR1_ISR `(v  1 e 1 0 ]
+{
+"168
+} 0
+"175
+[v _TMR1_DefaultInterruptHandler TMR1_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"178
+} 0
+"503 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _tmr1_motor_on_duration tmr1_motor_on_duration `T(v  1 e 1 0 ]
+{
+"515
+} 0
+"99 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr1.c
+[v i1_TMR1_StopTimer TMR1_StopTimer `(v  1 e 1 0 ]
+{
+"103
+} 0
+"120
+[v _TMR1_WriteTimer TMR1_WriteTimer `(v  1 e 1 0 ]
+{
+[v TMR1_WriteTimer@timerVal timerVal `us  1 p 2 0 ]
+"140
+} 0
+"108 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/mcc_generated_files/tmr0.c
+[v _TMR0_ISR TMR0_ISR `(v  1 e 1 0 ]
+{
+"122
+} 0
+"129
+[v _TMR0_DefaultInterruptHandler TMR0_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"132
+} 0
+"498 /home/perseverance/MPLABXProjects/Coffe_Grinder_Main.X/main.c
+[v _tmr0_long_press_duration tmr0_long_press_duration `T(v  1 e 1 0 ]
+{
+"501
+} 0
